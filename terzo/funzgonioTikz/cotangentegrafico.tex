@@ -1,0 +1,36 @@
+\documentclass[preview=true]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+
+%\usetikzlibrary{...}
+\begin{document}
+	
+
+
+	
+	
+\begin{tikzpicture}[>=triangle  45]
+\tikzset{samples=600}
+\pgfmathsetmacro{\a}{4};
+\pgfmathsetmacro{\Xm}{-2*pi};
+\pgfmathsetmacro{\XM}{2*pi+0.5};
+\coordinate [label=above left:$o$] (oo)  at (0,0);
+\node (x)at (\XM-1,0)[above right] {$\alpha$};
+\clip  (\Xm,-\a-1) rectangle (\XM,\a+1);
+\draw[->] (\Xm,0) -- (\XM,0)  ;
+\draw[->] (0,-\a-1) -- (0,\a+1);
+\foreach \t/ \w in {
+	%-6.28/-4.7 ,
+	-6.28/-3.3 ,
+	%-4.5/-3.3 ,
+	-2.9/-0.2,
+	0.2/2.9 ,
+	3.3/6.28
+}
+\draw [thick, domain=\t:\w] plot  (\x,{1/tan(\x r)}); 
+\draw[dotted] (-2*pi,-\a-1) -- (-2*pi,\a+1) node[below right, midway] {$-2\pi$};
+\draw[dotted] (-1*pi,-\a-1) -- (-1*pi,\a+1)node[below, midway] {$-\pi$};
+\draw[dotted] (pi,-\a-1) -- (pi,\a+1)node[below, midway] {$\pi$};
+\draw[dotted] (2*pi,-\a-1) -- (2*pi,\a+1)node[below left, midway] {$2\pi$};
+\end{tikzpicture}
+\end{document}

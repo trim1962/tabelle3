@@ -1,0 +1,29 @@
+\documentclass{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+%\usetikzlibrary{...}
+\begin{document}
+	
+
+	\begin{tikzpicture}[>=triangle 45]
+	% draw the coordinates
+	\pgfmathsetmacro{\raggio}{4};
+	\pgfmathsetmacro{\pangolo}{90};
+	\pgfmathsetmacro{\sangolo}{{180-\pangolo}};
+	\pgfmathsetmacro{\mraggio}{\raggio/3};
+	\pgfmathsetmacro{\sraggio}{1.9*\raggio};
+	% draw the unit circle
+	\draw[->] (0,-\raggio-\mraggio) -- (0,\raggio+\mraggio) node[above] {$y$};
+	\draw[->] (-\raggio-\mraggio,0) -- (\raggio+\mraggio,0) node[right] {$x$};
+	\draw (-\raggio-\mraggio,\raggio) -- (\raggio+\mraggio,\raggio) ;
+	\draw[thick] (0,0) circle(\raggio);
+	\coordinate [label= below left:$O$] (OO)at(0,0);
+	\coordinate (P)  at ({\raggio*cos(\pangolo},{\raggio*sin(\pangolo});
+	\node at (P) [label=above right:$m$]{};
+	\fill [color=black] (OO) circle (1.5pt);
+	\fill [color=black] (P) circle (1.5pt);
+	\draw [->] (0:\sraggio/4) arc (0:\pangolo:\sraggio/4) ;
+	\draw (\pangolo/2:\sraggio/3) node[ left]  {$\ang{90}$};
+	\end{tikzpicture} 
+	
+\end{document}

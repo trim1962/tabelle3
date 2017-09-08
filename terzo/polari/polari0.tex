@@ -1,0 +1,32 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->,color=black] (-5.159172824157511,0.) -- (7.828259206022904,0.);
+\foreach \x in {-4.,-2.,2.,4.,6.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-2.2244754994000364) -- (0.,7.790480890070084);
+\foreach \y in {-2.,2.,4.,6.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-5.159172824157511,-2.2244754994000364) rectangle (7.828259206022904,7.790480890070084);
+\draw [shift={(0.,0.)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (0.:0.6859559170869938) arc (0.:135.:0.6859559170869938) -- cycle;
+\draw (0.,0.)-- (-2.,2.);
+\draw [domain=0.0:7.828259206022904] plot(\x,{(-0.-0.*\x)/5.});
+\begin{scriptsize}
+\draw [fill=uuuuuu] (0.,0.) circle (1.5pt);
+\draw[color=uuuuuu] (0.16841813188480703,0.3135613938218432) node {$P$};
+\draw [fill=xdxdff] (5.,0.) circle (2.5pt);
+\draw [fill=qqqqff] (-2.,2.) circle (2.5pt);
+\draw[color=qqqqff] (-1.843719224903708,2.417159539555293) node {$A$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,23 @@
+\documentclass{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/matematica}
+\begin{document}
+\begin{tikzpicture} %[scale=0.7]
+\tkzInit[xmin=-4,xmax=5,ymin=-1.5,ymax=4]
+\tkzDrawX[noticks,label=$\Re$]
+\tkzDrawY[noticks,label=$\Im$]
+\tkzDefPoint(4,3){A} \tkzDefPoint(3,-1){B} \tkzDefPoint(-3,1){C}
+\tkzDefPoint(0,0){O}
+\tkzDefPointWith[colinear=at A](O,C)
+\tkzGetPoint{D}
+\tkzDrawPoints(A,B,O,D,C)
+\tkzLabelPoints[above](A,B,C,D)
+\tkzLabelPoints[below left](O)
+\tkzDrawVectors(O,A O,B O,D A,D O,C C,D) 
+\tkzLabelSegment[above=3pt](O,A){$z_1$}
+\tkzLabelSegment[below](O,B){$z_2$}
+\tkzLabelSegment[below](O,C){$-z_2$}
+\tkzLabelLine[below,midway,sloped](O,D){$z=z_1-z_2$}
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,1103 @@
+\chapter{Goniometria}
+\label{sec:GONIOMETRIA}
+\section{Angoli}
+\label{sec:gonioang}
+\begin{definizionet}{Angolo}{}
+Un angolo\index{Angolo} è la parte di piano compreso fra due semirette dette lati. I lati hanno in comune l'origine chiamata vertice.
+\end{definizionet}
+
+Le  semirette formano due angoli  uno convesso\index{Angolo!convesso} l'altro concavo\index{Angolo!concavo} come nella figura\nobs\vref{fig:angconconvposoneg}. 
+\begin{figure} %[htbp]
+	\centering
+\includestandalone[width=.6\textwidth]{terzo/funzgonioTikz/angoliconcaviconvessi}
+	\caption{Angoli concavi e convessi, positivi e negativi}\label{fig:angconconvposoneg}
+\end{figure}
+\begin{figure} %[htbp]
+	\centering
+\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angolinotevoli}
+	\caption{Angoli notevoli}\label{fig:Angolorettoposneggonio}
+\end{figure}
+\begin{figure}
+\includestandalone[width=\textwidth]{terzo/funzgonioTikz/mappe_concettuali_Angoli_1}
+%\includestandalone[width=\textwidth]{terzo/funzgonioTikz/mappagomiometricaangolo}
+	\caption{Mappa goniometria l'angolo}\label{fig:MappaGonometria1}
+\end{figure}
+\begin{definizionet}{Angoli Positivi e Negativi}{}
+	Fissato un lato, l'angolo è  positivo\index{Angolo!positivo}  se per costruirlo ruoteremo l'altra semiretta in senso antiorario.  Un angolo è negativo\index{Angolo!negativo} se ruoteremo l'altro lato in senso orario come nella figura\nobs\vref{fig:angconconvposoneg}. 
+\end{definizionet}
+\begin{definizionet}{Angolo giro}{}
+Un angolo è giro\index{Angolo!giro} quando le due semirette coincidono. 
+\end{definizionet}
+\begin{definizionet}{Angolo piatto}{}
+Un angolo è  piatto\index{Angolo!retto} quando i suoi lati  coincidono con la stessa retta.
+\end{definizionet}
+\begin{definizionet}{Angolo retto}{}
+Avremo un angolo è retto\index{Angolo!retto} quando è la metà di un angoli piatto. 
+\end{definizionet}
+\begin{definizionet}{Angolo acuto}{}
+Un angolo è acuto\index{Angolo!acuto} se  minore di un  retto.
+\end{definizionet}
+\begin{definizionet}{Angolo ottuso}{}
+Un angolo è ottuso\index{Angolo!ottuso} se  maggiore di un  retto.
+\end{definizionet}
+ La figura\nobs\vref{fig:Angolorettoposneggonio} mostra  vari casi
+\section{Misura dell'angolo}
+\label{sec:MisuraAngoloGonio}
+
+A ogni angolo viene associata una grandezza detta ampiezza.  Per misurare l'ampiezza dell'angolo si usa o il grado sessagesimale  o i radianti
+\subsection{Angolo sessagesimale}
+\begin{definizionet}{Grado}{}
+Un grado\index{Grado} è la trecentosessantesima parte in un angolo giro. Il grado si suddivide in minuti e  secondi. Il minuto è la sessantesima parte di un grado. Il secondo è la sessantesima parte di un minuto. Il secondo è suddiviso in decimi e centesimi.
+\end{definizionet}
+ Quindi \[\ang{;1;}=\dfrac{\ang{1}}{60}\] e  \[\ang{;;1}=\dfrac{\ang{;1;}}{60}=\dfrac{\ang{1}}{3600}\]
+\begin{esempiot}{Angoli sessagesimali}{}
+L'angolo  \ang{45;30;20}  ha l'ampiezza di \ang{45} gradi \ang{;30;} minuti e \ang{;;20} secondi. L'angolo \ang{30;45;23,7} secondo ha l'ampiezza di \ang{30} gradi \ang{;45;} minuti e \ang{;;23} secondi e $7$ decimi.
+\end{esempiot}
+Un angolo giro\index{Angolo!giro} è quindi ampio \ang{360} gradi. L'angolo piatto\index{Angolo!piatto},  metà di un angolo giro, ha l'ampiezza di \ang{180} gradi. L'angolo retto\index{Angolo!retto}  metà di una angolo piatto, ha ampiezza di \ang{90} gradi.
+
+Un angolo espresso in gradi sessagesimali può essere scritto in forma decimale. 
+\begin{esempiot}{Conversione}{}
+Convertire in forma decimale un angolo di ampiezza pari a \ang{44;58;48}
+\end{esempiot}
+ Abbiamo un angolo di ampiezza pari a \ang{44;58;48} e vogliamo
+ scriverlo in forma decimale\index{Grado!forma decimale}. Dato che $\ang{;1;}=\dfrac{\ang{1}}{60}$ e che $\ang{;;1}=\dfrac{\ang{;1;}}{60}=\dfrac{\ang{1}}{3600}$  avremo
+\begin{align*}
+	\ang{44;58;48}&=\ang{44}+\left(\dfrac{58}{60}\right)^{\circ}+\left(\dfrac{48}{3600} \right)^{\circ}\\
+	&=\ang{44}+\left(\dfrac{29}{30}\right)^{\circ}+\left(\dfrac{3}{225} \right)^{\circ}\\
+	&=\ang{44}+\left(\dfrac{6+435}{450} \right)^{\circ}\\
+	&=\ang{44}+\left(\dfrac{441}{450} \right)^{\circ}\\
+	&=\ang{44}+\num{0,98}^{\circ}\\
+	&=\num{44,98}^{\circ}
+\end{align*}
+\begin{esempiot}{Convertire in forma sessagesimale}{}
+Convertiamo $7,42^{\circ}$ in gradi minuti e secondi:
+\end{esempiot}
+\begin{align*}
+	7,42^{\circ}&=7^{\circ}+0,42^{\circ}\\
+	&=\ang{7}+0,42\cdot \ang{1}\\
+	&=\ang{7}+0,42\cdot \ang{;60;}\\
+	&=\ang{7;25,2;}\\
+	&=\ang{7;25;}+\ang{;0,2;}\\
+	&=\ang{7;25;}+0,2\cdot\ang{;1;}\\
+	&=\ang{7;25;}+0,2\cdot\ang{;;60}\\
+	&=\ang{7;25;12}
+\end{align*} 
+
+\subsection{Radianti}
+\begin{definizionet}{Radiante}{}\index{Radiante}
+Data una circonferenza di raggio $r$ e  un angolo $\alpha$ con il vertice nel centro $C$ della circonferenza, come nella figura\nobs\vref{fig:radinatidefgonio}. Se $l$ è la lunghezza dell'arco di circonferenza sotteso dall'angolo, chiamo radiante il rapporto \[\rho=\dfrac{l}{r} \]
+\end{definizionet}
+\begin{figure}
+	\centering
+	\includestandalone[width=7.5cm]{terzo/funzgonioTikz/radianti}
+	\caption{Radianti}
+	\label{fig:radinatidefgonio}
+\end{figure}
+Avremo quindi che un angolo ha l'ampiezza di un radiante\index{Radiante} se l'arco di circonferenza $l$ è uguale al raggio $r$.
+
+In un angolo giro\index{Angolo!giro} l'arco è lungo quanto la circonferenza. La sua misura in radianti è  quindi \[\rho=\dfrac{2\pi r}{r}=2\pi\]
+
+Un angolo piatto, meta di un giro,  misura  \[\rho=\pi\]\index{Angolo!piatto} e  un angolo
+retto\index{Angolo!retto} misura \[\rho=\dfrac{\pi}{2} \] 
+
+Per convertire  da gradi sessagesimali a radianti\index{Grado!radiante!conversione} si procede in questo modo:
+\begin{align*}
+\dfrac{l}{2\pi r}&=\dfrac{\alpha}{\ang{360}}\\
+\dfrac{\rho}{2\pi}&=\dfrac{\alpha}{\ang{360}}\\
+\rho&=\dfrac{\alpha 2\pi}{\ang{360}}\\
+\rho&=\dfrac{\pi}{\ang{180}}\alpha
+\intertext{segue che per passare da radianti a gradi sessagesimali avremo}
+\alpha&=\dfrac{\ang{180}}{\pi}\rho
+\end{align*}
+Alcuni semplici esempi di conversione fra angoli e radianti
+\begin{esempiot}{Radianti in gradi}{}
+Quanto corrisponde in gradi un radiante
+\end{esempiot}
+\begin{align*}
+\alpha&=\dfrac{\ang{180}}{\pi}\rho \\
+&=\dfrac{\ang{180}}{\pi}\cdot 1\\
+&\simeq\ang{57.2957}\cdot 1\\
+&\simeq\ang{57.30}
+\end{align*} 
+\begin{esempiot}{Gradi in radianti}{}
+	Quanto corrisponde in radianti un grado
+\end{esempiot}
+	\begin{align*}
+	\rho&=\dfrac{\pi}{\ang{180}}\alpha \\
+	&=\dfrac{\pi}{\ang{180}}\cdot 1\\
+	&\simeq\ang{0.01745}\cdot 1\\
+	&\simeq\ang{0.017}
+	\end{align*} 
+\section{Funzioni goniometriche}
+\label{sec:FunzioniGoniometriche}
+\begin{definizionet}{Circonferenza goniometrica}{}
+	Dato un sistema di riferimento cartesiano ortogonale, una circonferenza goniometrica\index{Circonferenza!goniometrica} è una circonferenza con centro nell'origine e raggio uguale a uno. 
+\end{definizionet}
+ La circonferenza incontra gli assi in quattro punti. $A(1,0)$, $B(0,1)$, $C(-1,0)$ e $D(-1,0)$. Costruiamo un angolo  $\alpha$  in modo che il suo vertice coincida con il centro della circonferenza. L'angolo incontra la circonferenza nei punti $A$ e $P$ come nella  figura\nobs\vref{fig:circonferenzagonimetricagonio}. 
+\subsection{Coseno}
+\label{sec:cosenogonio}
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone[width=5cm]{terzo/funzgonioTikz/cosenodefinizione}
+		\caption{Coseno definizione}\label{sub:cosenodef}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+	\centering
+		\includestandalone[width=7.5cm]{terzo/funzgonioTikz/cosenografico}
+		\caption{Coseno grafico}\label{sub:cosenograf}
+	\end{subfigure}
+	\captionof{figure}{Coseno}
+	\label{ztzcos}
+\end{figure}
+\begin{definizionet}{Coseno}{}
+Data una circonferenza goniometrica\nobs\vref{sub:cosenodef}, disegniamo un angolo con centro nell'origine e con un lato coincidente con l'asse delle ascisse.  Chiamiamo  $\alpha$ la sua ampiezza. L'altro lato dell'angolo incontra la circonferenza in un punto $P$.  Diremo  coseno\index{Funzione!Coseno!definizione} dell'angolo $\alpha$ e lo indico con $\cos\alpha$ l'ascissa del punto $P$.
+\end{definizionet}
+\subsection{Andamento coseno}
+\label{sec:andamentocoseno}
+Al variare dell'ampiezza dell'angolo varia anche il valore del coseno\index{Funzione!Coseno}, consideriamo la figura\nobs\vref{fig:AndamentoCoseno1}. Supponiamo di far variare l'angolo $\alpha$ da zero a centottanta gradi, quindi che $\ang{0}\leq\alpha\leq\ang{180}$ o se utilizziamo i radianti $0\leq\alpha\leq\pi$. 
+\begin{description}
+	\item[$\alpha_0$] L'angolo ha ampiezza zero. La verticale del punto $P_0$ all'asse $x$ lo incontra in $px_0$. In questo caso il coseno di $\alpha$ cioè $\cos\alpha_0$ vale uno.
+	\item [$\alpha_1$] l'angolo è compreso fra zero e novanta gradi, incontra la circonferenza nel punto $P_1$. La sua verticale incontra l'asse delle ascisse nel punto $px_1$. Il coseno dell'angolo $\alpha_1$ è un numero positivo minore di uno.
+	\item [$\alpha_2$] L'angolo  è retto. La proiezione del punto $P_2$ incontra l'asse $x$ nell'origine. In questo caso l'ascissa è $x_2$ è   nulla e $\cos\alpha_2$ è zero. 
+	\item [$\alpha_3$]  L'angolo è ottuso. La proiezione del punto $P_3$ incontra  l'asse $x$ nel semiasse negativo. Quindi $\cos\alpha_2$ è negativo.
+	\item [$\alpha_4$] L'angolo  è  piatto. Il  $P_4$ incontra l'asse $x$ nel punto $(-1;0)$. In questo  $\cos\alpha_4$ vale meno uno.
+\end{description}
+\begin{figure}
+	\centering
+	\includestandalone[width=7.5cm]{terzo/funzgonioTikz/circonferenzagoniometrica}
+	\captionof{figure}{Circonferenza goniometrica}
+	\label{fig:circonferenzagonimetricagonio}
+\end{figure}
+Analogo discorso per angoli di ampiezza  maggiore di un angolo  piatto come nella figura~\vref{fig:AndamentoCoseno2}.
+\begin{description}
+	\item [$\alpha_4$] L'angolo è piatto. Il  $P_4$ incontra l'asse $x$ nel punto $(-1;0)$. In questo  $\cos\alpha_4$ vale meno uno.
+	\item [$\alpha_5$] L'angolo è compreso tra \ang{180} e \ang{270}. La proiezione del punto $P_5$ cade sul semiasse negativo delle ascisse. Quindi $\cos\alpha_2$ è negativo.
+	\item [$\alpha_6$] L'angolo è di duecentosettanta gradi. Il punto ha ascissa zero quindi  $\cos\alpha_6=0$.
+	\item [$\alpha_7$] L'angolo è compreso tra \ang{270} e \ang{360}. La proiezione del punto $P_7$ cade sul semiasse positivo delle ascisse. Quindi $\cos\alpha_7$ è positivo.
+	\item [$\alpha_8$] L'angolo è di trecentosessanta gradi. Il punto ha ascissa uno quindi  $\cos\alpha_8=1$.
+\end{description}
+Per angoli superiori a \ang{360} otteniamo gli stessi casi illustrati in precedenza. 
+Possiamo quindi dire che il coseno
+\begin{enumerate}
+	\item è limitato e varia fra $-1$ e $+1$.
+	\item è periodico, di periodo pari a \ang{360} o $2\pi$
+	\end{enumerate} 
+\begin{figure}
+		\centering
+\includestandalone[width=7.5cm]{terzo/funzgonioTikz/andamentocoseno1}
+		\captionof{figure}{Andamento coseno $\ang{0}<\alpha<\ang{180}$}\label{fig:AndamentoCoseno1}
+	\end{figure}%
+	\begin{figure}
+		\centering
+\includestandalone[width=7.5cm]{terzo/funzgonioTikz/andamentocoseno2}
+		\captionof{figure}{Andamento coseno $\ang{180}<\alpha<\ang{360} $}\label{fig:AndamentoCoseno2}
+\end{figure}
+\subsection{Seno}
+\label{sec:senogonio}
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+%		\centering\includegraphics[scale=0.35]{senoalpha-crop}
+		\centering
+			\includestandalone[width=5cm]{terzo/funzgonioTikz/senodefinizione}
+		\caption{Seno definizione}\label{sub:senodef}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone[width=7.5cm]{terzo/funzgonioTikz/senografico}
+		\caption{Seno grafico}\label{sub:senograf}
+	\end{subfigure}
+	\captionof{figure}{Seno}
+	\label{tab:funseno}
+\end{figure}
+\begin{definizionet}{Seno}{}
+	Data una circonferenza goniometrica\nobs\vref{sub:senodef}, disegniamo un angolo con centro nell'origine e con un lato coincidente con l'asse delle ascisse.  Chiamiamo  $\alpha$ la sua ampiezza. L'altro lato dell'angolo incontra la circonferenza in un punto $P$.  Diremo seno\index{Funzione!Seno!definizione} dell'angolo $\alpha$ e lo indichiamo con $\sin\alpha$ l'ordinata $OQ$  del punto $P$
+\end{definizionet}
+\subsection{Andamento seno}
+\label{subs:AndamentoSeno}
+Al variare dell'angolo varia anche il valore del seno\index{Funzione!Seno}, consideriamo la figura\nobs\vref{fig:AndamentoSeno1}. Supponiamo di far variare l'angolo $\alpha$ da zero a centottanta gradi, quindi che $\ang{0}\leq\alpha\leq\ang{180}$ o se utilizziamo i radianti $0\leq\alpha\leq\pi$. 
+\begin{description}
+	\item[$\alpha_0$] L'angolo ha ampiezza zero. La verticale del punto $P_0$  incontra l'asse delle ordinate in $py_0$. In questo caso il seno di $\alpha$ cioè $\sin\alpha_0$ vale zero.
+	\item [$\alpha_1$] l'angolo è compreso fra zero e novanta gradi, incontra la circonferenza nel punto $P_1$. La sua verticale incontra l'asse delle ordinate nel punto $py_1$. Il seno dell'angolo $\alpha_1$ è un numero positivo minore di uno.
+	\item [$\alpha_2$] L'angolo  è retto. L'ordinata del punto $P_2$ è uno. In questo caso  è   $\sin\alpha_2$ è uno. 
+	\item [$\alpha_3$]  L'angolo è ottuso. La perpendicolare del punto $P_3$ incontra  l'asse $y$ nel semiasse positivo. Quindi $\sin\alpha_2$ è maggiore di zero.
+	\item [$\alpha_4$] L'angolo  è  piatto. Il  $P_4$ incontra l'asse $y$ nel punto $(-1;0)$. In questo  $\sin\alpha_4$ vale zero.
+\end{description}
+Analogo discorso per angoli di ampiezza  maggiore di un angolo  piatto come nella figura~\vref{fig:AndamentoSeno2}.
+\begin{description}
+	\item [$\alpha_4$] L'angolo è piatto. Il punto  $P_4$ ha coordinate  $(-1;0)$. In questo  $\sin\alpha_4$ vale zero.
+	\item [$\alpha_5$] L'angolo è compreso tra \ang{180} e \ang{270}. La proiezione del punto $P_5$ cade sul semiasse negativo delle ordinate. Quindi $\sin\alpha_2$ è negativo.
+	\item [$\alpha_6$] L'angolo è di duecentosettanta gradi. Il punto ha ordinata uno quindi  $\sin\alpha_6=1$.
+	\item [$\alpha_7$] L'angolo è compreso tra \ang{270} e \ang{360}. La proiezione del punto $P_7$ cade sul semiasse negativo delle ordinate. Quindi $\sin\alpha_7$ è negativo.
+	\item [$\alpha_8$] L'angolo è di trecentosessanta gradi. Il punto ha ordinata zero quindi  $\sin\alpha_8=0$.
+\end{description}
+Per angoli superiori a \ang{360} otteniamo gli stessi casi illustrati in precedenza. 
+Possiamo quindi dire che il seno
+\begin{enumerate}
+	\item è limitato e varia fra $-1$ e $+1$.
+	\item è periodico, di periodo pari a \ang{360} o $2\pi$
+\end{enumerate} 
+\begin{figure}
+	\centering
+	\includestandalone[width=7.5cm]{terzo/funzgonioTikz/andamentoseno1}
+	\captionof{figure}{Andamento seno $\ang{0}<\alpha<\ang{180}$}\label{fig:AndamentoSeno1}
+\end{figure}%
+\begin{figure}
+	\centering
+	\includestandalone[width=7.5cm]{terzo/funzgonioTikz/andamentoseno2}
+	\captionof{figure}{Andamento seno $\ang{180}<\alpha<\ang{360}$}\label{fig:AndamentoSeno2}
+\end{figure}%
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/segnocoseno}
+		\caption{Segno coseno}\label{fig:SegnoCoseno}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/segnoseno}
+		\caption{Segno seno}\label{fig:SegnoSeno}
+	\end{subfigure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/segnotangente}
+		\caption{Segno tangente}\label{fig:SegnoTangente}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/segnocotangente}
+		\caption{Segno cotangente}\label{fig:SegnoCotangente}
+	\end{subfigure}
+	\captionof{figure}{Segno funzioni goniometriche}
+	\label{tab:segnofunzionigoniometriche}
+\end{figure}
+\subsection{Tangente}
+\begin{definizionet}{Tangente}{}
+	Data una circonferenza goniometrica\nobs\vref{fig:TangenteDefinizione}, disegno un angolo con centro nell'origine e di ampiezza $\alpha$. Un lato dell'angolo incontra la tangente  alla circonferenza  per $(1;0)$ in un punto $T$.  Chiamo tangente\index{Funzione!Tangente!definizione} dell'angolo $\alpha$ e lo indico con $\tan\alpha$ l'ordinata  del punto $T$
+\end{definizionet}
+\label{sec:Tangente}
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+			\includestandalone[width=5cm]{terzo/funzgonioTikz/tangentedefinizione}
+		\caption{Tangente definizione}\label{fig:TangenteDefinizione}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=7.5cm]{terzo/funzgonioTikz/tangentegrafico}
+		\caption{Tangente grafico}\label{fig:TangenteGrafico}
+	\end{subfigure}
+	\captionof{figure}{Tangente}
+	\label{tab:funztg}
+\end{figure}
+\subsection{Andamento tangente}
+\label{sec:AndamentoTangente}
+Al variare dell'angolo varia anche il valore della tangente\index{Funzione!Tangente}, consideriamo la figura\nobs\vref{fig:AndamentoTangente1}. Supponiamo di far variare l'angolo $\alpha$ da zero a centottanta gradi, quindi che $\ang{0}\leq\alpha\leq\ang{180}$ o se utilizziamo i radianti $0\leq\alpha\leq\pi$. 
+\begin{description}
+	\item[$\alpha_0$] L'angolo ha ampiezza zero. Il raggio incontra la retta tangente in  $T_0$. In questo caso  tangente  dell'angolo $\alpha$ cioè $\tan\alpha_0$ vale zero.
+	\item [$\alpha_1$] l'angolo è compreso fra zero e novanta gradi, il prolungamento del raggio  incontra la retta nel punto $T_1$. La tangente di $\alpha_1$ è un numero positivo.
+	\item [$\alpha_2$] L'angolo  è retto. In questo caso il prolungamento del raggio non incontra la parallela all'asse $y$.In questo    $\tan\alpha_2$ non esiste. 
+	\item [$\alpha_3$]  L'angolo è ottuso. Il prolungamento del raggio incontra le retta in $T_3$  con valori dell'ordinata negativi. Quindi $\tan\alpha_2$ è negativo.
+	\item [$\alpha_4$] L'angolo  è  piatto. Il  prolungamento incontra la retta tangente  nel punto $(-1;0)$. In questo  $\tan\alpha_4$ vale zero.
+\end{description}
+Analogo discorso per angoli di ampiezza  maggiore di un angolo  piatto come nella figura~\vref{fig:AndamentoTangente2}.
+\begin{description}
+	\item [$\alpha_4$] L'angolo è piatto. Incontra l'asse delle ordinate nel punto $(-1;0)$. In questo  $\tan\alpha_4$ vale zero.
+	\item [$\alpha_5$] L'angolo è compreso tra \ang{180} e \ang{270}. Il prolungamento del raggio incontra la retta tangente  nel primo quadrante. Quindi $\tan\alpha_5$ è positivo.
+	\item [$\alpha_6$] L'angolo è di duecentosettanta gradi. Il prolungamento del raggio non incontra la retta  tangente. In questo caso  $\tan\alpha_6$ non esiste. 
+	\item [$\alpha_7$] L'angolo è compreso tra \ang{180} e \ang{360}. Il prolungamento del raggio incontra la retta tangente nel quarto quadrante. Quindi $\tan\alpha_7$ è negativo.
+	\item [$\alpha_8$] L'angolo è di trecentosessanta gradi. Il punto ha ordinata zero quindi  $\tan\alpha_8=0$.
+\end{description}
+Per angoli superiori a \ang{360} otteniamo gli stessi casi illustrati in precedenza. 
+Possiamo quindi dire che la tangente:
+\begin{enumerate}
+	\item è illimitata.
+	\item è periodica, di periodo pari a \ang{180} o $\pi$
+\end{enumerate} 
+\begin{figure}
+	\centering
+\includestandalone[width=7.5cm]{terzo/funzgonioTikz/tangenteandamento1}
+	\captionof{figure}{Andamento tangente $\ang{0}<\alpha<\ang{180}$}\label{fig:AndamentoTangente1}
+\end{figure}%
+\begin{figure}
+	\centering
+	\includestandalone[width=7.5cm]{terzo/funzgonioTikz/tangenteandamento2}
+\captionof{figure}{Andamento tangente $\ang{180}<\alpha<\ang{360}$}\label{fig:AndamentoTangente2}
+\end{figure}%
+\subsection{Cotangente}
+\label{sec:Cotangente}
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone[width=5cm]{terzo/funzgonioTikz/cotangentedefinizione}
+	\caption{Cotangente}\label{fig:CotangenteDefinizione}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=7.5cm]{terzo/funzgonioTikz/cotangentegrafico}
+		\caption{Cotangente grafico}\label{fig:CotangenteGrafico}
+	\end{subfigure}
+	\captionof{figure}{Tangente}\label{tab:funzcotg}
+\end{figure}
+%\begin{figure}
+%	\begin{subfigure}[b]{.5\linewidth}
+%		\centering
+%		\includestandalone[width=5cm]{terzo/funzgonioTikz/cotangentedefinizione}
+%		\caption{Cotangente}\label{fig:CotangenteDefinizione}
+%	\end{subfigure}%
+%	\begin{subfigure}[b]{.5\linewidth}
+%		\centering\includegraphics[scale=0.3]{cotgalphagrafico-crop}
+%		\caption{Cotangente grafico}\label{fig:CotangenteGrafico}
+%	\end{subfigure}
+%	\captionof{figure}{Cotangente}
+%	\label{tab:funzcotg}
+%\end{figure}
+\begin{definizionet}{Cotangente}{}
+	Data una circonferenza goniometrica\nobs\vref{fig:CotangenteDefinizione}, disegno un angolo con centro nell'origine e di ampiezza $\alpha$. Un lato dell'angolo incontra la tangente  alla circonferenza  per $(0;1)$ in un punto $C$.  Chiamo cotangente\index{Funzione!Cotangente!definizione} dell'angolo $\alpha$ e lo indico con $\cot\alpha$ l'ascissa  del punto $C$
+\end{definizionet}
+\subsection{Andamento Cotangente}\label{sec:AndamentoCotangente}
+Al variare dell'angolo varia anche il valore della cotangente\index{Funzione!Cotangente}, consideriamo la figura\nobs\vref{fig:AndamentoCotangente1}. Supponiamo di far variare l'angolo $\alpha$ da zero a centottanta gradi, quindi che $\ang{0}\leq\alpha\leq\ang{180}$ o se utilizziamo i radianti $0\leq\alpha\leq\pi$.
+\begin{figure}
+	\centering
+	\includestandalone[width=7.5cm]{terzo/funzgonioTikz/cotangenteandamento1}
+	\captionof{figure}{Andamento cotangente $\ang{0}<\alpha<\ang{180}$}\label{fig:AndamentoCotangente1}
+\end{figure}% 
+\begin{description}
+	\item[$\alpha_0$] L'angolo ha ampiezza zero. Il raggio non incontra la retta tangente. In questo caso  la cotangente  dell'angolo $\alpha$ cioè $\cot\alpha_0$  non esiste.
+	\item [$\alpha_1$] l'angolo è compreso fra zero e novanta gradi, il prolungamento del raggio  incontra la retta nel punto $T_1$. La cotangente di $\alpha_1$ è un numero positivo.
+	\item [$\alpha_2$] L'angolo  è retto. In questo caso il prolungamento del raggio incontra la parallela all'asse $x$. in $T_2$. In questo    $\cot\alpha_2$ vale zero. 
+	\item [$\alpha_3$]  L'angolo è ottuso. Il prolungamento del raggio incontra le retta in $T_3$  con valori dell'ascissa negativi. Quindi $\tan\alpha_3$ è negativo.
+	\item [$\alpha_4$] L'angolo  è  piatto. Il  prolungamento non incontra la retta tasngente. In questo  $\cot\alpha_4$ non esiste.
+\end{description}
+Analogo discorso per angoli di ampiezza  maggiore di un angolo  piatto come nella figura~\vref{fig:AndamentoCotangente2}.
+\begin{description}
+	\item [$\alpha_4$] L'angolo  è  piatto. Il  prolungamento non incontra la retta tangente. In questo  $\cot\alpha_4$ non esiste.
+	\item [$\alpha_5$] L'angolo è compreso tra \ang{180} e \ang{270}. Il prolungamento del raggio incontra la retta tangente  nel primo quadrante. Quindi $\cot\alpha_5$ è positivo.
+	\item [$\alpha_6$] L'angolo è di duecentosettanta gradi.  In questo caso il prolungamento del raggio incontra la parallela all'asse $x$. in $T_6$. In questo    $\tan\alpha_6$ vale zero. 
+	\item [$\alpha_7$] L'angolo è compreso tra \ang{180} e \ang{360}. Il prolungamento del raggio incontra la retta tangente nel secondo quadrante. Quindi $co\tan\alpha_7$ è negativo.
+	\item [$\alpha_8$] L'angolo è di trecentosessanta gradi. Il raggio non incontra la retta tangente. In questo caso  la cotangente  dell'angolo $\alpha_8$ cioè $\cot\alpha_8$  non esiste.
+\end{description}
+Per angoli superiori a \ang{360} otteniamo gli stessi casi illustrati in precedenza. 
+Possiamo quindi dire che cotangente:
+\begin{enumerate}
+	\item è illimitata.
+	\item è periodica, di periodo pari a \ang{180} o $\pi$
+\end{enumerate} 
+\begin{figure}
+	\centering
+	\includestandalone[width=7.5cm]{terzo/funzgonioTikz/cotangenteandamento2}
+	\captionof{figure}{Andamento cotangente $\ang{180}<\alpha<\ang{360}$}\label{fig:AndamentoCotangente2}
+\end{figure}%
+\section{Funzioni goniometriche inverse}
+Una funzione goniometrica inversa associa ad un valore numerico un angolo.
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+	\includestandalone[width=8.5cm]{terzo/funzgonioTikz/acrsengrafico}
+		\caption{Grafico di $\arcsin x$}\label{fig:ArcSenGrafico}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+	\includestandalone[width=8.5cm]{terzo/funzgonioTikz/acrcosengrafico}
+		\caption{Grafico di $\arccos x$}\label{fig:ArcCosenGrafico}
+	\end{subfigure}
+		\begin{subfigure}[b]{\linewidth}
+			\centering
+	\includestandalone[width=8.5cm]{terzo/funzgonioTikz/arcotangente}
+		\caption{Grafico di $\arctan x$}\label{fig:ArcTangenteGrafico}
+		\end{subfigure}
+			\caption{Funzioni inverse}\label{tab:funzinverse_1}
+\end{figure}
+\subsection{Arcoseno}\index{Funzione!Arcocoseno!definizione}
+La funzione inversa $y=\arcsin x$ associa ad un valore numerico compreso fra$[-1,+1]$ un angolo compreso in $[-\dfrac{\pi}{2},\dfrac{\pi}{2}]$. Il grafico\nobs\vref{fig:ArcSenGrafico} 
+\subsection{Arcoseno}\index{Funzione!Arcoseno!definizione}
+La funzione inversa del coseno è l'arcocoseno, è definita  in $[-1,+1]$ e ha come valori in uscita angoli in $[0,\pi]$ come appare dal grafico\nobs\vref{fig:ArcCosenGrafico} 
+\subsection{Arcotangente}\index{Funzione!Arcotangente!definizione}
+\altapriorita{Inserire definizione arcotangente}
+\section{Relazioni fondamentali}
+\label{sec:RelazioniFondamentali}
+\begin{table} %[tbp]
+	\centering
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{rccccc}
+	\toprule
+	%\backslashbox{Ottengo}{Noto} & $\sin\alpha$ &$\cos\alpha$&$\tan\alpha$ &$\cot\alpha$ & \multirow{2}{1cm}{$\sin\alpha$ $\cos\alpha$} \\[.5cm]
+	& $\sin\alpha$ &$\cos\alpha$&$\tan\alpha$ &$\cot\alpha$ & $\sin\alpha$, $\cos\alpha$ \\[.6cm]
+	\midrule
+	$\cos\alpha={}$& $\pm\sqrt{1-\sin^2\alpha}$ & &$\pm\dfrac{1}{\sqrt{1+\tan^2\alpha}}$ & & \\ [.6cm]
+	%\hline
+	$\sin\alpha={}$& & $\pm\sqrt{1-\cos^2\alpha}$ &$\pm\dfrac{\tan\alpha}{\sqrt{1+\tan^2\alpha}}$ & & \\ [.6cm]
+	%\hline
+	$\tan\alpha={}$& & & & $\dfrac{1}{\cot\alpha}$ &$\dfrac{\sin\alpha}{\cos\alpha}$\\ [.6cm]
+	%\hline
+	$\cot\alpha={}$& & &$\dfrac{1}{\tan\alpha}$ & &$\dfrac{\cos\alpha}{\sin\alpha}$\\[.6cm] 
+	\bottomrule
+	\end{tabular}
+	\caption{Seno Coseno Tangente Cotangente}
+	\label{tab:SenoCosenoTangenteCotangente}
+\end{table}
+\renewcommand{\arraystretch}{1}
+\subsection{Seno e coseno}
+\label{sec:RelazioniFondamentaliSenoCoseno}
+\begin{teoremat}{Relazione fondamentale goniometria}{}\index{Relazione!fondamentale goniometria}\index{Funzione!Seno}\index{Funzione!Coseno}
+Dato un angolo $\alpha$ allora vale quanto segue:
+\begin{equation*}
+\cos^2\alpha+\sin^2\alpha=1\label{eqn:RelazioneFondamentaleTrigonometria1}
+\end{equation*}
+\end{teoremat}
+\begin{figure}
+	\centering
+	\includestandalone[width=7.5cm]{terzo/funzgonioTikz/RelFondGoniometria}
+\caption{Relazione fondamentale goniometria}\label{fig:relFondGonio}
+\end{figure}
+\begin{proof}
+	Consideriamo la figura\nobs\vref{fig:relFondGonio} per il triangolo POH vale il teorema di Pitagora\index{Teorema!Pitagora} \[a^2=b^2+c^2\] Dato che la circonferenza è una circonferenza goniometrica
+	\begin{align*}
+	a&=1\\
+	b&=\cos\alpha\\
+	c&=\sin\alpha\\
+	\intertext{otteniamo}
+	1&=cos^2\alpha+\sin^2\alpha\\
+	\end{align*}
+\end{proof}
+Dalla relazione\nobs\vref{eqn:RelazioneFondamentaleTrigonometria1} è possibile ottenere le seguenti\index{Coseno!noto!seno}\index{Seno!noto!coseno}
+\begin{align*}
+&\cos^{2}\alpha={}1-\sin^{2}\alpha\\
+&\cos\alpha={}\pm\sqrt{1-\sin^{2}\alpha}\\
+&\sin^{2}\alpha={}1-\cos^{2}\alpha \\
+&\sin\alpha={}\pm\sqrt{1-\cos^{2}\alpha}
+\end{align*}
+Nella sezione\nobs\vref{sec:EsempiGoniometria} vi sono esempi per l'uso di queste formule. 
+\begin{esempiot}{Trovare il valore del coseno di un angolo noto il seno}{}
+Trovare il valore del coseno di un angolo noto il seno. Per esempio poniamo 
+\end{esempiot}
+\begin{align*}
+\sin\alpha&{}=\dfrac{3}{5}\\
+\cos\alpha&=\pm\sqrt{1-\sin^2\alpha}\\
+&=\pm\sqrt{1-\left(\dfrac{3}{5}\right)^2}\\
+&=\pm\sqrt{1-\dfrac{9}{25}}\\
+&=\pm\sqrt{\dfrac{25-9}{25}}\\
+&=\pm\sqrt{\dfrac{16}{25}} \\
+&=\pm\dfrac{4}{5}=\num{8e-1} 
+\end{align*}
+Geometricamente il doppio segno davanti alla radice è spiegabile in questo modo:
+\begin{enumerate}
+	\item A un valore del seno $M(0,\dfrac{3}{5})$\nobs\vref{fig:CosenoNotoSeno1}
+	\item A $M$ Corrispondono due punti sulla circonferenza $Q$ e $P$\nobs\vref{fig:CosenoNotoSeno2}
+	\item $P$ e $Q$ A questi punti corrispondono due angoli $\alpha$ e $\beta$\nobs\vref{fig:CosenoNotoSeno3}
+	\item  Da questi angoli ottengo due valori opposti per il coseno $x_1$ e $x_2$\nobs\vref{fig:CosenoNotoSeno4}
+	\end{enumerate}
+e quindi il doppio segno.
+Analogo ragionamento vale per il coseno basta guardare la figura\nobs\vref{fig:senoNotoCosenoEs1a}
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/CosenoNotoSeno1}
+			\caption{A un valore del seno}\label{fig:CosenoNotoSeno1}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/CosenoNotoSeno2}
+			\caption{Corrispondono due punti sulla circonferenza}\label{fig:CosenoNotoSeno2}
+	\end{subfigure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/CosenoNotoSeno3}
+			\caption{A questi punti corrispondono due angoli}\label{fig:CosenoNotoSeno3}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/CosenoNotoSeno4}
+			\caption{Da cui ottengo due valori per il coseno}\label{fig:CosenoNotoSeno4}
+	\end{subfigure}
+	\captionof{figure}{Coseno noto seno}\label{fig:CosenoNotoSenoEs1}
+\end{figure}
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/senoNotoCoseno1}
+	\caption{A un valore del coseno}\label{fig:senoNotoCoseno1}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/senoNotoCoseno2}
+		\caption{Corrispondono due punti sulla circonferenza}\label{fig:senoNotoCoseno2}
+	\end{subfigure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/senoNotoCoseno3}
+		\caption{Ottengo due angoli}\label{fig:senoNotoCoseno3}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/senoNotoCoseno4}
+		\caption{E due valori opposti per il seno}\label{fig:senoNotoCoseno4}
+	\end{subfigure}
+	\captionof{figure}{Seno Noto Coseno}\label{fig:senoNotoCosenoEs1a}
+\end{figure}
+\subsection{Tangente cotangente}
+\label{sec:TangenteCotangente}
+\begin{definizionet}{Tangente Cotangente}{}
+	\index{Funzione!Tangente}\index{Funzione!Cotangente}\index{Funzione!Seno}\index{Funzione!Coseno}
+	Dato un angolo $\alpha$ allora vale quanto segue:
+\begin{align}
+\tan\alpha=&{}\dfrac{\sin\alpha}{\cos\alpha}&\alpha&{}\neq\dfrac{\pi}{2}+k\pi\label{equ:tangente1}\\
+\cot\alpha=&{}\dfrac{\cos\alpha}{\sin\alpha}={}\dfrac{1}{\tan\alpha}& \alpha&{}\neq\pi\label{equ:cotangente1}
+\end{align}
+\end{definizionet}
+Dalle formule\nobs\vrefrange{equ:tangente1}{equ:cotangente1} è possibile ottenere le seguenti relazioni
+\begin{align*}
+\cos^{2}\alpha=&{}\dfrac{1}{1+{\tan}^{2}\alpha} &\alpha&{}\neq\dfrac{\pi}{2}+k\pi\\
+\cos\alpha=&{}\pm\dfrac{1}{\sqrt{1+{\tan}^{2}\alpha}} &\alpha{}&\neq\dfrac{\pi}{2}+k\pi\\
+\sin^{2}\alpha=&{}\dfrac{\tan^{2}\alpha}{1+\tan^{2}\alpha}&\alpha{}&\neq\dfrac{\pi}{2}+k\pi\\
+\sin\alpha=&{}\pm\dfrac{\tan\alpha}{\sqrt{1+\tan^{2}\alpha}}&\alpha{}&\neq\dfrac{\pi}{2}+k\pi
+\end{align*}
+\begin{esempiot}{Trovare le funzioni nota una}{}
+Supponiamo di conoscere un valore di $\tan\alpha$
+\begin{align*}
+\tan\alpha&{}=\dfrac{3}{5}\\
+\cos\alpha=&{}\pm\dfrac{1}{\sqrt{1+\left(\dfrac{3}{5}\right)^2}}\\
+\cos\alpha=&{}\pm\dfrac{1}{\sqrt{1+\dfrac{9}{25}}}\\
+\cos\alpha=&{}\pm\dfrac{1}{\sqrt{\dfrac{25+9}{25}}}\\
+\cos\alpha=&{}\pm\dfrac{1}{\dfrac{\sqrt{34}}{5}}\\
+\cos\alpha=&{}\pm\dfrac{5}{\sqrt{34}}\cdot\dfrac{\sqrt{34}}{\sqrt{34}}=\pm\dfrac{5\sqrt{34}}{34}\\
+\sin\alpha=&{}\pm\dfrac{\dfrac{3}{5}}{\sqrt{1+\left(\dfrac{3}{5}\right)^2}}\\
+\sin\alpha=&{}\pm\dfrac{\dfrac{3}{5}}{\dfrac{\sqrt{34}}{5}}=\pm\dfrac{3}{5}\cdot\dfrac{5}{\sqrt{34}}=\pm\dfrac{3}{\sqrt{34}}\cdot\dfrac{\sqrt{34}}{\sqrt{34}}=\pm\dfrac{3\sqrt{34}}{34}\simeq\num{5.145e-1}
+\end{align*}
+\end{esempiot}
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/SenoCosenoNototangente1}
+		\caption{A un valore della tangente}\label{fig:SenoCosenoNototangente1}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/SenoCosenoNototangente2}
+		\caption{Corrispondono due punti sulla circonferenza}\label{fig:SenoCosenoNototangente2}
+	\end{subfigure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/SenoCosenoNototangente3}
+		\caption{Ottengo due angoli}\label{fig:SenoCosenoNototangente3}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/SenoCosenoNototangente4}
+		\caption{E due valori opposti per il seno e il coseno}\label{fig:SenoCosenoNototangente4}
+	\end{subfigure}
+	\captionof{figure}{Seno Coseno nota la tangente}\label{fig:senocosenoNototangentEs1}
+\end{figure}
+\section{Angoli associati}
+\label{sec:goniometriaAngoliAssociati}
+\altapriorita{Inserire esempi}
+\subsection{Angoli supplementari}
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{.48\linewidth}
+	\centering
+	\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angoliassociati1}\caption{Angoli supplementari $\alpha$ $\ang{180}-\alpha$}\label{fig:AngoliAssociatisupplementari}		
+   \end{subfigure}
+ \begin{subfigure}[b]{.48\linewidth}
+ 	\centering
+ 	\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angoliassociati2}
+ 	\caption{Angoli che differiscono di $\ang{180}$ $\alpha$ e $\ang{180}+\alpha$}
+ 	\label{fig:AngoliAssociatidiff180}	
+ \end{subfigure}
+ 	\begin{subfigure}[b]{.49\linewidth}
+ 		\centering
+ 		\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angoliassociati3}
+ 		\caption{Angoli esplementari $\alpha$ e $\ang{360}-\alpha$}\label{fig:Angolidif360}
+ 	\end{subfigure}
+ 	\begin{subfigure}[b]{.49\linewidth}
+ 		\centering
+ 		\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angoliopposti}
+ 		\caption{Angoli opposti}\label{fig:angoliopposti}
+ 	\end{subfigure}
+\caption{Angoli associati}
+	\label{fig:angoliassociatii}
+\end{figure}
+Sono angoli la cui somma\index{Angoli!Somma!$\ang{180}$} è $\ang{180}$, $\alpha$, $\ang{180}-\alpha$ la figura corrispondente è la\nobs\vref{fig:AngoliAssociatisupplementari}
+Per questi angoli valgono le seguenti relazioni
+\begin{align*}
+\cos\alpha=&{}-\cos(\ang{180}-\alpha)\\
+\sin\alpha=&{}\sin(\ang{180}-\alpha)\\
+\tan\alpha=&{}-\tan(\ang{180}-\alpha)\\
+\cot\alpha=&{}-\cot(\ang{180}-\alpha)
+\end{align*}
+\subsection{Angoli la cui differenza è $\ang{180}$}
+\label{sub:Dif180}
+Gli angoli $\alpha$, $\ang{180}+\alpha$ sono angoli la cui differenza\index{Angoli!Differenza!$\ang{180}$} è $\ang{180}$.  Costruiamo la figura\nobs\vref{fig:AngoliAssociatidiff180}
+
+Per questi angoli valgono le seguenti relazioni
+\begin{align*}
+\cos\alpha=&{}-\cos(\ang{180}+\alpha)\\
+\sin\alpha=&{}-\sin(\ang{180}+\alpha)\\
+\tan\alpha=&{}\tan(\ang{180}+\alpha)\\
+\cot\alpha=&{}\cot(\ang{180}+\alpha)
+\end{align*}
+\subsection{Angoli esplementari}
+Sono angoli la cui somma\index{Angoli!Somma!$\ang{360}$} è $\ang{360}$, $\alpha$, $\ang{360}-\alpha$ la figura corrispondente è la\nobs\vref{fig:Angolidif360}
+Per questi angoli valgono le seguenti relazioni
+\begin{align*}
+\cos\alpha=&{}\cos(\ang{360}-\alpha)\\
+\sin\alpha=&{}-\sin(\ang{360}-\alpha)\\
+\tan\alpha=&{}-\tan(\ang{360}-\alpha)\\
+\cot\alpha=&{}-\cot(\ang{360}-\alpha)
+\end{align*}
+\subsection{Angoli opposti}
+Sono angoli la cui somma\index{Angoli!Somma!$\ang{0}$} è $\ang{0}$, $\alpha$, $-\alpha$ la figura corrispondente è la\nobs\vref{fig:angoliopposti}
+Per questi angoli valgono le seguenti relazioni
+\begin{align*}
+\cos\alpha=&{}\cos(-\alpha)\\
+\sin\alpha=&{}-\sin(-\alpha)\\
+\tan\alpha=&{}-\tan(-\alpha)\\
+\cot\alpha=&{}-\cot(-\alpha)
+\end{align*}
+\subsection{Angoli complementari}
+\label{sub:AngoliComp}
+\begin{figure}
+	\begin{subfigure}[b]{.49\linewidth}
+    	\centering
+    	\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angolicomplementari1}
+    	\caption{Angoli complementari $\alpha$ e  $\ang{90}-\alpha$}\label{fig:angolicomplementari1}
+    \end{subfigure}
+  	\begin{subfigure}[b]{.49\linewidth}
+  		\centering
+  		\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angolicomplementari2}
+  		\caption{Angoli che differiscono di $\ang{90}$, $\alpha$ e $\ang{90}+\alpha$}\label{fig:angolicomplementari2}
+  	\end{subfigure}
+    \begin{subfigure}[b]{.49\linewidth}
+  		\centering
+  		\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angolicomplementari3}
+  		\caption{Angoli la cui somma è $\ang{270}$,  $\alpha$ e $\ang{270}-\alpha$}\label{tab:angolicomplementari3}	
+  	\end{subfigure}
+	\begin{subfigure}[b]{.49\linewidth}
+		\centering
+		\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angolicomplementari4}
+		\caption{Angoli la cui differenza è $\ang{270}$, $\alpha$ e $\ang{270}+\alpha$}\label{tab:angolicomplementari4}	
+	\end{subfigure}
+	\caption{Angoli complementari}
+	\label{fig:angolicomplementari}
+\end{figure}
+Sono angoli la cui somma\index{Angoli!Somma!$\ang{90}$} è $\ang{90}$, $\alpha$ e $\ang{90}-\alpha$ la figura corrispondente è la\nobs\vref{fig:angolicomplementari1}
+%\begin{figure} %[H]
+%	\centering
+%	\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angolicomplementari1}
+%		\caption{Angoli complementari $\alpha$ e  $\ang{90}-\alpha$}\label{fig:angolicomplementari1}
+%\end{figure}
+Per questi angoli valgono le seguenti relazioni
+\begin{align*}
+\cos\alpha=&{}\sin(\ang{90}-\alpha)\\
+\sin\alpha=&{}\cos(\ang{90}-\alpha)\\
+\tan\alpha=&{}\cot(\ang{90}-\alpha)\\
+\cot\alpha=&{}\tan(\ang{90}-\alpha)
+\end{align*}
+\subsection{Angoli la cui differenza\index{Angoli!Differenza!$\ang{90}$} è $\ang{90}$}
+Sono angoli la cui differenza è $\ang{90}$, $\alpha$ e $\ang{90}+\alpha$ la figura corrispondente è la\nobs\vref{fig:angolicomplementari2}
+%\begin{figure} %[H]
+%	\centering
+%	\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angolicomplementari2}
+%\caption{Angoli che differiscono di $\ang{90}$, $\alpha$ e $\ang{90}+\alpha$}\label{fig:angolicomplementari2}
+%\end{figure}
+Per questi angoli valgono le seguenti relazioni
+\begin{align*}
+\cos\alpha=&{}\sin(\ang{90}+\alpha)\\
+\sin\alpha=&{}-\cos(\ang{90}+\alpha)\\
+\tan\alpha=&{}-\cot(\ang{90}+\alpha)\\
+\cot\alpha=&{}-\tan(\ang{90}+\alpha)
+\end{align*}
+\subsection{Angoli la cui somma è $\ang{270}$}
+Sono angoli la cui somma\index{Angoli!Somma!$\ang{270}$} è $\ang{270}$, $\alpha$ e $\ang{270}-\alpha$ la figura corrispondente è la\nobs\vref{tab:angolicomplementari3}
+%\begin{figure} %[H]
+%	\centering
+%		\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angolicomplementari3}
+%		\caption{Angoli la cui somma è $\ang{270}$,  $\alpha$ e $\ang{270}-\alpha$}\label{tab:angolicomplementari3}
+%\end{figure}
+Per questi angoli valgono le seguenti relazioni
+\begin{align*}
+\cos\alpha=&{}-\sin(\ang{270}-\alpha)\\
+\sin\alpha=&{}-\cos(\ang{270}-\alpha)\\
+\tan\alpha=&{}\cot(\ang{270}-\alpha)\\
+\cot\alpha=&{}\tan(\ang{270}-\alpha)
+\end{align*}
+\subsection{Angoli la cui differenza\index{Angoli!Differenza!$\ang{270}$} è $\ang{270}$}
+Sono angoli la cui differenza è $\ang{270}$, $\alpha$ e $\ang{270}+\alpha$ la figura corrispondente è la\nobs\vref{tab:angolicomplementari4}
+%\begin{figure} %[H]
+%	\centering
+%		\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angolicomplementari4}
+%		\caption{Angoli la cui differenza è $\ang{270}$, $\alpha$ e $\ang{270}+\alpha$}\label{tab:angolicomplementari4}
+%\end{figure}
+Per questi angoli valgono le seguenti relazioni
+\begin{align*}
+\cos\alpha=&{}-\sin(\ang{270}+\alpha)\\
+\sin\alpha=&{}\cos(\ang{270}+\alpha)\\
+\tan\alpha=&{}-\cot(\ang{270}+\alpha)\\
+\cot\alpha=&{}-\tan(\ang{270}+\alpha)
+\end{align*}
+%\mediapriorita{Manca la tabella 270+$\alpha$}
+\begin{table}
+\centering
+	\footnotesize
+	\begin{tabular}{rlllllll}
+	\toprule
+	$\sin\alpha=$&$\cos(\ang{90}-\alpha)$&$-\cos(\ang{90}+\alpha)$&$\sin(\ang{180}-\alpha)$&$-\sin(\ang{180}+\alpha)$&$-\cos(\ang{270}-\alpha)$&$\cos(\ang{270}+\alpha)$&$-\sin(-\alpha)$\\[.6cm] 
+	$\cos\alpha=$&$\sin(\ang{90}-\alpha)$&$\sin(\ang{90}+\alpha)$&$-\cos(\ang{180}-\alpha)$&$-\cos(\ang{180}+\alpha)$&$-\sin(\ang{270}-\alpha)$&$-\sin(\ang{270}+\alpha)$&$\cos(-\alpha)$\\[.6cm] 
+	$\tan\alpha=$&$\cot(\ang{90}-\alpha)$&$-\cot(\ang{90}+\alpha)$&$-\tan(\ang{180}-\alpha)$&$\tan(\ang{180}+\alpha)$&$\cot(\ang{270}-\alpha)$&$-\cot(\ang{270}+\alpha)$&$-\tan(-\alpha)$\\[.6cm] 
+	$\cot\alpha=$&$\tan(\ang{90}-\alpha)$&$-\tan(\ang{90}+\alpha)$&$-\cot(\ang{180}-\alpha)$&$\cot(\ang{180}+\alpha)$&$\tan(\ang{270}-\alpha)$&$-\tan(\ang{270}+\alpha)$&$-\cot(-\alpha)$\\[.6cm]
+	\bottomrule
+	\end{tabular}
+	\caption{Angoli complementari e supplementari}\label{tab:differnzediangoli}
+\end{table}
+La tabella\nobs\vref{tab:differnzediangoli} riassume i risultati precedenti.
+%\section{Formule di addizione e sottrazione}
+%\label{sec:Formulediaddizionesottrazione}
+%\altapriorita{Inserire testo}
+%\subsection{Coseno della differenza di due angoli}
+%\label{sec:cosenodifferenza}
+%\begin{figure}
+%	\centering
+%\includestandalone[width=8.5cm]{terzo/funzgonioTikz/cosenosommadifferenza1}
+%	\caption{Differenza di angoli}
+%	\label{fig:DifferenzaCosenoAngoli}
+%\end{figure}
+%\begin{table}
+%	\centering
+%	$
+%	\begin{array}{cc}
+%	\toprule
+%	\cos(\alpha-\beta)=	&\cos\alpha\cos\beta+\sin\alpha\sin\beta \\ 
+%	\cos(\alpha+\beta)=	&\cos\alpha\cos\beta-\sin\alpha\sin\beta \\ 
+%	\sin\left(\alpha-\beta\right)={} &\sin\alpha\cos\beta-\cos\alpha\sin\beta\\
+%\sin\left(\alpha+\beta\right)={}&\sin\alpha\cos\beta+\cos\alpha\sin\beta\\
+%	\bottomrule
+%	\end{array}
+%	$ 
+%	\caption{Seno e Coseno, somma o differenza di angoli}
+%	\label{Tab:sommadifferenzacosenoseno}
+%\end{table}
+\section{Equazioni goniometriche elementari}
+\label{sec:EquazioniGoniometricheElementari}
+Le equazioni goniometriche elementari\index{Equazione!elementare!seno} sono equazioni del tipo
+\begin{align*}
+	\sin x&=m&\cos x&=n&\tan x&=q
+\end{align*}
+\subsection{Equazione $\sin x=m$}
+Il seno di un angolo è una funzione limitata con valori compresi tra meno uno ed uno $(1\leq\sin x\leq 1)$ quindi l'equazione è impossibile per valori di $m$ esterni a tale intervallo. Abbiamo vari casi:
+\begin{description}
+	\item[$0<m<1$] In questo caso le soluzioni sono due come nella figura\nobs\vref{fig:EquaElementareSeno1} $x=\alpha+k\ang{360}$ e $x=\ang{180}-\alpha+k\ang{360}$
+	\item [$m=+1$] Guardando la figura\nobs\vref{fig:EquaElementareSeno2} la soluzione  è unica, $x=\ang{90}+k\ang{360}$
+	\item [$m=-1$] Guardando la figura\nobs\vref{fig:EquaElementareSeno2} la soluzione  è unica, $x=\ang{270}+k\ang{360}$
+\end{description} 
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+			\includestandalone[width=7.5cm]{terzo/funzgonioTikz/EquaElementareSeno1}
+			\captionof{figure}{$\sin x=m$\  $0<m<1$}\label{fig:EquaElementareSeno1}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone[width=7.5cm]{terzo/funzgonioTikz/EquaElementareCoseno1}
+		\captionof{figure}{$\cos x=m$ $0<m<1$}\label{fig:EquaElementareCoseno1}
+	\end{subfigure}
+	\captionof{figure}{Equazioni Elementari}\label{fig:EquaElementareSenoCoseno}
+\end{figure}
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+			\includestandalone[width=7.5cm]{terzo/funzgonioTikz/EquaElementareSeno4}
+			\captionof{figure}{$\sin x=m$\  $-1<m<0$}\label{fig:EquaElementareSeno4}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone[width=7.5cm]{terzo/funzgonioTikz/EquaElementareCoseno4}
+		\captionof{figure}{$\cos x=m$ $-1<m<0$}\label{fig:EquaElementareCoseno4}
+	\end{subfigure}
+	\captionof{figure}{Equazioni Elementari}\label{fig:EquaElementareSenoCoseno2}
+\end{figure}
+\begin{esempiot}{Equazione goniometrica}{}
+Risolvere l'equazione $\sin x =\dfrac{\sqrt{2}}{2}$
+\end{esempiot}
+\begin{align*}
+\intertext{Supponiamo di dover risolvere}
+\sin x& =\dfrac{\sqrt{2}}{2}
+\intertext{quindi}
+m& =\dfrac{\sqrt{2}}{2}
+\intertext{In questo caso vale la figura\nobs\vref{fig:EquaElementareSeno1} m è un valore noto quindi l'angolo è}
+\alpha&=\ang{45}
+\intertext{le due soluzioni sono}
+x&=\ang{45}+k\ang{360}\\
+ x&=\ang{180}-\ang{45}+k\ang{360}\\
+\end{align*}
+\begin{esempiot}{Equazione goniometrica}{}
+Risolvere l'equazione $\sin x=-\dfrac{\sqrt{2}}{2}$
+\end{esempiot}
+\begin{align*}
+\intertext{Supponiamo di dover risolvere}
+\sin x& =-\dfrac{\sqrt{2}}{2}
+\intertext{quindi}
+m& =-\dfrac{\sqrt{2}}{2}
+\intertext{In questo caso vale la figura\nobs\vref{fig:EquaElementareSeno4} m è un valore noto quindi l'angolo è}
+\alpha&=\ang{45}
+\intertext{le due soluzioni sono}
+x&=\ang{180}+\ang{45}+k\ang{360}\\
+ x&=\ang{360}-\ang{45}+k\ang{360}\\
+\end{align*}
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+	\includestandalone[width=7.5cm]{terzo/funzgonioTikz/EquaElementareSeno2}
+	\captionof{figure}{$\sin x=1$}\label{fig:EquaElementareSeno2}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+	\includestandalone[width=7.5cm]{terzo/funzgonioTikz/EquaElementareSeno3}
+	\captionof{figure}{$\sin x=-1$}\label{fig:EquaElementareSeno3}
+	\end{subfigure}
+	\captionof{figure}{Seno casi particolari}\label{fig:EquaElementareSeno3a}
+\end{figure}
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\begin{esempiot}{Equazione goniometrica}{}
+Risolvere l'equazione $ \sin(x+\ang{30})=\dfrac{\sqrt{2}}{2}$
+\end{esempiot}
+\begin{align*}
+\sin(x+\ang{30})&=\dfrac{\sqrt{2}}{2}
+\intertext{Trovo la prima soluzione}
+x+\ang{30}&=3x+\ang{45}+k\ang{360}\\
+x&=\ang{45}-\ang{30}+k\ang{360}\\
+x&=\ang{15}+k\ang{360}
+\intertext{La soluziione associata è}
+x+\ang{30}&=\ang{180}-\ang{45}+k\ang{360}\\
+x&=\ang{180}-\ang{45}-\ang{30}+k\ang{360}\\
+x&=\ang{105}+k\ang{360}
+\intertext{Le due soluzioni sono}
+x&=\ang{15}+k\ang{360}\\
+x&=\ang{105}+k\ang{360}
+\end{align*}
+\begin{esempiot}{Equazione goniometrica}{}
+Risolvere l'equazione $\sin(4x+\ang{20})=\sin(3x+\ang{30})$
+\end{esempiot}
+\begin{align*}
+\sin(4x+\ang{20})&=\sin(3x+\ang{30})
+\intertext{Uguaglio gli argomenti e trovo la prima soluzione}
+4x+\ang{20}&=3x+\ang{30}+k\ang{360}\\
+4x-3x&=\ang{30}-\ang{20}+k\ang{360}\\
+x&=\ang{10}+k\ang{360}
+\intertext{La soluziione associata è}
+4x+\ang{20}&=\ang{180}-(3x+\ang{30})+k\ang{360}\\
+4x+\ang{20}&=\ang{180}-3x-\ang{30}+k\ang{360}\\
+4x-3x&=\ang{180}-\ang{20}-\ang{30}+k\ang{360}\\
+x&=\ang{130}+k\ang{360}
+\intertext{Le due soluzioni sono}
+x&=\ang{10}+k\ang{360}\\
+x&=\ang{130}+k\ang{360}
+\end{align*}
+\begin{table}
+\[
+\begin{array}{cccc}
+\toprule
+Equazione &Soluzione & Soluzione & Trasformazione  \\ 
+\midrule
+\sin\alpha=\sin\beta & \alpha=\beta+k\ang{360} & \alpha=\ang{180}-\beta+k\ang{360} &\\
+\midrule
+\sin\alpha=-\sin\beta&&&\sin(-\beta)=-\sin\beta\\
+& \alpha=-\beta+k\ang{360} & \alpha=\ang{180}+\beta+k\ang{360} &\\
+\bottomrule
+\end{array}
+\] 
+\caption{Equazioni elementari in seno}
+\label{tab:EquazioniElementariInSeno}
+\end{table}
+L'esempio che segue è quasi analogo al precedente, bisogna prima procedere ad una trasformazione del secondo membro utilizzando gli angoli associati\nobs\vref{sub:Dif180}. 
+\begin{esempiot}{Equazione goniometrica}{}
+Risolvere l'equazione $ \sin(3x-\ang{10})=-\sin(5x+\ang{40})$
+\end{esempiot}
+\begin{align*}
+\sin(3x-\ang{10})&=-\sin(5x+\ang{40})
+\intertext{Consideriamo l'angolo associato}
+\sin(\ang{180}+\alpha)&=-\sin(\alpha)\\
+\sin(\ang{180}+5x+\ang{40})&=-\sin(5x+\ang{40})\\
+\intertext{L'equazione di partenza diventa}
+\sin(3x-\ang{10})&=\sin(\ang{180}+5x+\ang{40})
+\intertext{Uguaglio gli argomenti e trovo la prima soluzione}
+3x-\ang{10}&=\ang{180}+5x+\ang{40}+k\ang{360}\\
+3x-5x&=\ang{10}+\ang{180}+\ang{40}+k\ang{360}\\
+-2x&=\ang{230}+k\ang{360}\\
+x&=-\ang{115}+k\ang{180}
+\intertext{La soluziione associata è}
+3x-\ang{10}&=\ang{180}-(\ang{180}+5x+\ang{40})+k\ang{360}\\
+3x-\ang{10}&=-5x-\ang{40}+k\ang{360}\\
+3x+5x&=\ang{10}-\ang{40}+k\ang{360}\\
+8x&=-\ang{30}+k\ang{360}\\
+x&=-\dfrac{\ang{30}}{8}+k\dfrac{\ang{360}}{8}
+\intertext{Le due soluzioni sono}
+x&=-\ang{115}+k\ang{180}\\
+x&=-\dfrac{\ang{30}}{8}+k\ang{45}
+\end{align*}
+Esempio uguale a precedente. Prima di risolvere l'equazione bisogna trasformare il secondo membro utilizzando\nobs\vref{sub:AngoliComp}  
+\begin{esempiot}{Equazione goniometrica}{}
+Risolvere l'equazione $\sin(2x+\ang{30})=\cos(x+\ang{40})\\$
+\end{esempiot}
+	\begin{align*}
+\sin(2x+\ang{30})&=\cos(x+\ang{40})\\
+\intertext{Consideriamo l'angolo complementare}
+\cos(\alpha)&=\sin(90-\alpha)
+\intertext{L'equazione di partenza diventa}
+\sin(2x+\ang{30})&=\sin([\ang{90}-(x+\ang{40})])+k\ang{360}
+\intertext{Uguaglio gli argomenti e trovo la prima soluzione}
+2x+\ang{30}&=\ang{90}-(x+\ang{40})+k\ang{360}\\
+2x+x&=\ang{90}-\ang{40}-\ang{30}+k\ang{360}\\
+3x&=\ang{20}+k\ang{360}\\
+x&=\dfrac{\ang{20}}{3}+k\ang{120}
+\intertext{La soluzione associata è}
+2x+\ang{30}&=\ang{180}-[\ang{90}-(x+\ang{40})]+k\ang{360}\\
+2x+\ang{30}&=\ang{180}-\ang{90}+x+\ang{40}+k\ang{360}\\
+2x-x&=\ang{180}-\ang{90}+x+\ang{40}-\ang{30}+k\ang{360}\\
+x&=\ang{100}+k\ang{360}
+\intertext{Le due soluzioni sono}
+x&=\dfrac{\ang{20}}{3}+k\ang{120}\\
+x&=\ang{100}+k\ang{360}
+	\end{align*}
+\subsection{Equazione $\cos x=m$}
+Il coseno di un angolo\index{Equazione!elementare!coseno} è una funzione limitata con valori compresi tra meno uno ed uno $(1\leq\cos x\leq 1)$ quindi l'equazione è impossibile per valori di $m$ esterni a tale intervallo. Abbiamo vari casi:
+\begin{description}
+	\item[$0<m<1$]Le soluzioni sono due come dalla figura\nobs\vref{fig:EquaElementareCoseno1} $x=\alpha+k\ang{360}$ e $x=-\alpha+k\ang{360}$
+	\item [$m=+1$]La figura\nobs\vref{fig:EquaElementareCoseno2} mostra la soluzione che è $\alpha=0 + k\ang{360}$
+	\item [$m=-1$] La soluzione è $\alpha=\ang{180}+k\ang{360}$ o analogamente $\alpha=-\ang{180}+k\ang{360}$, come segue dal grafico\nobs\vref{fig:EquaElementareCoseno3} 
+\end{description} 
+\begin{esempiot}{Equazione goniometrica}{}
+Risolvere l'equazione $\sin x =\dfrac{1}{2} $
+\end{esempiot}
+\begin{align*}
+\sin x& =\dfrac{1}{2}
+\intertext{quindi}
+m& =\dfrac{1}{2}
+\intertext{In questo caso vale la figura\nobs\vref{fig:EquaElementareCoseno1} m è un valore noto quindi l'angolo è}
+\alpha&=\ang{60}
+\intertext{le due soluzioni sono}
+x&=\ang{60}+k\ang{360}\\
+x&=\ang{180}-\ang{60}+k\ang{360}\\
+\end{align*}
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+	\includestandalone[width=7.5cm]{terzo/funzgonioTikz/EquaElementareCoseno3}
+	\captionof{figure}{$\cos x=m$ $m=-1$}\label{fig:EquaElementareCoseno3}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone[width=7.5cm]{terzo/funzgonioTikz/EquaElementareCoseno2}
+		\captionof{figure}{$\cos x=m$ $m=+1$}\label{fig:EquaElementareCoseno2}
+	\end{subfigure}
+	\captionof{figure}{Coseno casi particolari}\label{fig:EquaElementareCoseno1a}
+\end{figure}
+\begin{esempiot}{Equazione goniometrica}{}
+Risolvere l'equazione $\cos(5x+\ang{40})=\cos(2x+\ang{30})$
+\end{esempiot}
+\begin{align*}
+\cos(5x+\ang{40})&=\cos(2x+\ang{30})
+\intertext{Uguaglio gli argomenti e trovo la prima soluzione}
+5x+\ang{40}&=2x+\ang{30}+k\ang{360}\\
+5x-2x&=\ang{30}-\ang{40} +k\ang{360}\\
+3x&=-\ang{10} +k\ang{360}\\
+x&=-\dfrac{\ang{10}}{3} +k\ang{120}
+\intertext{La soluziione associata è}
+5x+\ang{40}&=-(2x+\ang{30})+k\ang{360}\\
+5x+\ang{40}&=-2x-\ang{30}+k\ang{360}\\
+5x+2x&=-\ang{30}-\ang{40}+k\ang{360}\\
+7x&=-\ang{70}+k\ang{360}\\
+x&=-\ang{10}+k\dfrac{\ang{360}}{7}
+\intertext{Le due soluzioni sono}
+x&=-\dfrac{\ang{10}}{3} +k\ang{120}\\
+x&=-\ang{10}+k\dfrac{\ang{360}}{7}
+\end{align*}
+\begin{table}
+\[
+\begin{array}{cccc}
+\toprule
+Equazione &Soluzione & Soluzione & Trasformazione  \\ 
+\midrule
+\cos\alpha=\cos\beta & \alpha=\beta+k\ang{360} & \alpha=-\beta+k\ang{360} &\\
+\midrule
+\cos\alpha=-\cos\beta&&&\cos(\ang{180}-\beta)=-\cos\beta\\
+& \alpha=\ang{180}-\beta+k\ang{360} & \alpha=\ang{180}+\beta+k\ang{360} &\\
+\bottomrule
+\end{array}
+\] 
+\caption{Equazioni elementari in coseno}\label{tab:EquazioniElementariInCoseno}
+\end{table}
+\begin{esempiot}{Equazione goniometrica}{}
+Risolvere l'equazione $\cos(3x-\ang{40})=-\cos(5x-\ang{20})$
+\end{esempiot}
+	\begin{align*}
+\cos(3x-\ang{40})&=-\cos(5x-\ang{20})\\
+\cos(\ang{180}-\alpha)&=-\cos(\alpha)\\
+\cos(3x-\ang{40})&=\cos(\ang{180}-(5x-\ang{20}))
+\intertext{Uguaglio gli argomenti e trovo la prima soluzione}
+3x-\ang{40}&=\ang{180}-(5x-\ang{20})+k\ang{360}\\
+3x-\ang{40}&=\ang{180}-5x+\ang{20}+k\ang{360}\\
+3x+5x&=\ang{180}-5x+\ang{20}+\ang{40}+k\ang{360}\\
+8x&=\ang{240}+k\ang{360}\\
+x&=\ang{30}+k\ang{45}
+\intertext{La soluziione associata è}
+3x-\ang{40}&=-(\ang{180}-(5x-\ang{20}))+k\ang{360}\\
+3x-\ang{40}&=-\ang{180}+5x-\ang{20}+k\ang{360}\\
+3x-5x&=-\ang{180}-\ang{20}+\ang{40}+k\ang{360}\\
+-2x&=-\ang{160}+k\ang{360}\\
+x&=\ang{80}+k\ang{180}\\
+\intertext{Le due soluzioni sono}
+x&=\ang{30}+k\ang{45}\\
+x&=\ang{80}+k\ang{180}
+	\end{align*}
+\subsection{Equazione $\tan x=m$}
+La tangente\index{Equazione!elementare!tangente} è una funzione non limitata che  esiste per valori di $x\neq\ang{90}+k\ang{180}$ 
+\begin{figure}
+	\centering
+	\includestandalone[width=7.5cm]{terzo/funzgonioTikz/EquaElementaretangente1}
+	\captionof{figure}{Tangente equazione elementare}\label{fig:EquaElementaretangente1}
+\end{figure}%
+Se $\alpha$ è soluzione di $\tan x=m$, come si vede dalla figura\nobs\vref{fig:EquaElementaretangente1} anche $\alpha+\ang{180}$ è soluzione. Dato che la funzione non è sempre definita, la soluzione è accettabile per $x\neq\ang{90}+k\ang{180}$
+\begin{esempiot}{Equazione goniometrica}{}
+Risolvere l'equazione $\tan x=1$
+\end{esempiot}
+\begin{align*}
+\tan x&=1
+\intertext{m è un valore noto quindi l'angolo è}
+x&=\ang{45}
+\intertext{se \ang{45} è soluzione dalla figura\nobs\vref{fig:EquaElementaretangente1} anche \ang{45} + \ang{180} è soluzione. Quindi le soluzioni sono:}
+x&=\ang{45}+k\ang{180}
+	\end{align*}
+Un esempio leggermente più complesso. Qui bisogna prima verificare quando esistono le tangenti.
+\begin{esempiot}{Equazione goniometrica}{}
+Risolvere l'equazione $\tan (3x+\ang{50})=\tan(x-\ang{30})$
+\end{esempiot}
+\begin{align*}
+\intertext{Supponiamo di dover risolvere}
+\tan (3x+\ang{50})&=\tan(x-\ang{30})
+\intertext{Discuto il lato sinistro}
+3x+\ang{50}&=\ang{90}+k\ang{180}\\
+3x&=\ang{90}-\ang{50}+k\ang{180}\\
+x&=\dfrac{\ang{40}}{3}+k\ang{180}
+\intertext{quindi}
+x&\neq\dfrac{\ang{40}}{3}+k\ang{180}
+\intertext{Discuto il lato destro}
+x-\ang{30}&=\ang{90}+k\ang{180}\\
+x&=\ang{90}+\ang{30}+k\ang{180}\\
+x&=\ang{120}+k\ang{180}
+\intertext{quindi}
+x&\neq\ang{120}+k\ang{180}
+\intertext{Uguaglio gli argomenti e trovo le soluzioni}
+3x+\ang{50}&=x-\ang{30}+k\ang{180}\\
+3x-x&=-\ang{50}-\ang{30}+k\ang{180}\\
+2x&=-\ang{80}+k\ang{180}
+\intertext{La soluzione è}
+x&=-\ang{40}+k\ang{180}
+\intertext{La soluzione è accettabile perchè}
+x&\neq\dfrac{\ang{40}}{3}+k\ang{180}\\
+x&\neq\ang{120}+k\ang{180}
+\end{align*}
+\begin{table}
+\[
+\begin{array}{cccc}
+\toprule
+Equazione &Esistenza & Soluzione & Trasformazione  \\ 
+\midrule
+\tan\alpha=\tan\beta &\alpha\neq\ang{90}+k\ang{180} & &\\
+& \beta\neq\ang{90}+k\ang{180}& &\\
+&&\alpha=\beta+k\ang{180}  &\\
+\midrule
+\tan\alpha=-\tan\beta & \alpha\neq\ang{90}+k\ang{180} & &\tan(\ang{180}-\beta)=-\tan(\beta)\\
+& \beta\neq\ang{90}+k\ang{180}& &\\
+&&\alpha=\ang{180}-\beta+k\ang{180} &\\
+\bottomrule
+\end{array}
+\] 
+\caption{Equazioni elementari in tangente}\label{tab:EquazioniElementariInTangente}
+\end{table}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

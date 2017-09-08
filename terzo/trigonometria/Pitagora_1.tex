@@ -1,0 +1,49 @@
+% Tikz File 'mytikz.tex'
+\documentclass{standalone}
+%\input{../../Mod_base/grafica}
+\input{../Mod_base/grafica}
+\begin{document}
+\begin{tikzpicture} %[scale=.75]
+\tkzInit
+\tkzDefPoint(0,0){A}
+\tkzDefPoint(4,0){B}
+\tkzDefPoint(0,3){C}
+
+\tkzDefSquare(B,A)\tkzGetPoints{E}{F}
+\tkzDefSquare(A,C)\tkzGetPoints{G}{H}
+\tkzDefSquare(C,B)\tkzGetPoints{I}{J}
+\tkzLabelPoints[above left](C)
+\tkzLabelPoints(B)
+\tkzLabelPoints[below left](A)
+
+\tkzMarkAngle[size=1cm](C,B,A)
+\tkzLabelAngle[pos=1.5](C,B,A){$\beta$}
+\tkzMarkAngle[size=1cm](A,C,B)
+\tkzLabelAngle[pos=1.5](A,C,B){$\gamma$}
+\tkzMarkAngle[size=1cm](B,A,C)
+\tkzLabelAngle[pos=1.5](B,A,C){$\alpha$}
+%\tkzLabelPoints(E)
+%\tkzLabelPoints(F)
+%\tkzLabelPoints(G)
+%\tkzLabelPoints(H)
+%\tkzLabelPoints(I)
+%\tkzLabelPoints(J)
+\tkzInterLL(A,F)(E,B) \tkzGetPoint{M}
+\tkzLabelPoint(M){$c^2$}
+\tkzInterLL(A,G)(H,C) \tkzGetPoint{N}
+\tkzLabelPoint(N){$b^2$}
+\tkzInterLL(C,I)(J,B) \tkzGetPoint{O}
+\tkzLabelPoint(O){$a^2$}
+%\tkzFillPolygon[fill = red!50 ](A,C,G,H)
+%\tkzFillPolygon[fill = blue!50 ](C,B,I,J)
+%\tkzFillPolygon[fill = purple!50](B,A,E,F)
+%\tkzFillPolygon[fill = orange,opacity=.5](A,B,C)
+\tkzDrawPolygon[line width = 1pt](A,B,C)
+\tkzDrawPolygon[line width = 1pt](A,C,G,H)
+\tkzDrawPolygon[line width = 1pt](C,B,I,J)
+\tkzDrawPolygon[line width = 1pt](B,A,E,F)
+\tkzLabelSegment[left](C,A){$b$}
+\tkzLabelSegment[right](B,C){$a$}
+\tkzLabelSegment[below left](B,A){$c$}
+\end{tikzpicture}
+\end{document}

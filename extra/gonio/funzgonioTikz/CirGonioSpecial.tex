@@ -1,0 +1,28 @@
+\documentclass[preview=true]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\begin{document}
+	
+\begin{tikzpicture} %[>=triangle  45] %, x=0.8cm,y=0.8cm]
+% draw the coordinates
+\pgfmathsetmacro{\raggio}{10};
+\pgfmathsetmacro{\mraggio}{\raggio/3};
+\pgfmathsetmacro{\qraggio}{\raggio/5};
+%\pgfmathsetmacro{\sraggio}{1.9*\raggio};
+% draw the unit circle
+\draw[->] (0,-\raggio-\mraggio) -- (0,\raggio+\mraggio) node[above,fill=white] {$y$};
+\draw[->] (-\raggio-\mraggio,0) -- (\raggio+\mraggio,0) node[right,fill=white] {$x$};
+\draw[very thick] (0,0) circle(\raggio);
+
+\foreach \y/\ztext in {-9/-0.9,-8/-0.8,-7/-0.7,-6/-0.6, -5/-0.5,-4/-0.4,-3/-0.3,-2/-0.2,-1/-0.1,1/0.1,2/0.2,3/0.3,4/0.4,5/0.5,6/0.6,7/0.7,8/0.8,9/0.9}
+ \draw[very thick] (-0.1,\y cm) -- (0.1,\y cm) node[left=.15cm] {$\ztext$};
+ \foreach \x/\ztext in {-9/-0.9,-8/-0.8,-7/-0.7,-6/-0.6, -5/-0.5,-4/-0.4,-3/-0.3,-2/-0.2,-1/-0.1,1/0.1,2/0.2,3/0.3,4/0.4,5/0.5,6/0.6,7/0.7,8/0.8,9/0.9}
+ \draw[very thick] (\x cm,-0.1) -- (\x cm,0.1) node[below=.15cm] {$\ztext$};
+ \node (oo) at (0,0)[below right=.18cm] {$0$};
+ \node (oa) at (0,-10)[below left=.18cm] {$-1$};
+ \node (ob) at (0,10)[above left=.18cm] {$1$};
+ \node (oc) at (10,0)[below right=.18cm] {$1$};
+\node (od) at (-10,0)[below left=.18cm] {$-1$};
+\end{tikzpicture}
+
+\end{document}

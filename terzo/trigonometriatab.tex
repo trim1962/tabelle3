@@ -1,0 +1,341 @@
+\chapter{Trigonometria}
+\label{cha:trigonometria}
+\begin{figure}
+	\centering
+	\includestandalone{terzo/trigonometria/triangolopitagorico1}
+	\caption{Triangolo rettangolo}
+	\label{fig:triangolopitagorico1}
+\end{figure}
+\section{I triangoli rettangoli}
+\begin{table}
+\centering
+\begin{tabular}{CCC}
+\toprule
+\multicolumn{3}{c}{TRIANGOLI RETTANGOLI} \tabularnewline
+\midrule\tabularnewline
+\multicolumn{1}{C}{\beta} &  & \multicolumn{1}{C}{\gamma} \tabularnewline\tabularnewline
+b=a\sin\beta &  & c=a\sin\gamma \tabularnewline\tabularnewline
+c=a\cos\beta &  & b=a\cos\gamma \tabularnewline\tabularnewline
+b=c\tan\beta &  & c=b\tan\gamma \tabularnewline\tabularnewline
+A=\dfrac{1}{2}ac\sin\beta &  & A=\dfrac{1}{2}ab\sin\gamma \tabularnewline\tabularnewline
+\multicolumn{3}{C}{\beta+\gamma=\ang{90}} \tabularnewline\tabularnewline 
+\multicolumn{3}{C}{2P=a+b+c} \tabularnewline\tabularnewline
+%&&\\
+\midrule
+\multicolumn{3}{c}{TRIANGOLI QUALUNQUE} \tabularnewline
+\midrule\tabularnewline
+\multicolumn{1}{C}{\alpha} & \multicolumn{1}{C}{\beta} & \multicolumn{1}{C}{\gamma} \tabularnewline\tabularnewline
+a^2=b^2+c^2-2bc\cos\alpha & b^2=a^2+c^2-2ac\cos\beta & c^2=a^2+b^2-2ab\cos\gamma \tabularnewline\tabularnewline
+\multicolumn{3}{C}{\dfrac{a}{\sin\alpha}=\dfrac{b}{\sin\beta}=\dfrac{c}{\sin\gamma}} \tabularnewline\tabularnewline
+A=\dfrac{1}{2}bc\sin\alpha & A=\dfrac{1}{2}ac\sin\beta & A=\dfrac{1}{2}ab\sin\gamma \tabularnewline\tabularnewline
+\multicolumn{3}{C}{\alpha+\beta+\gamma=\ang{180}} \tabularnewline\tabularnewline
+\multicolumn{3}{C}{2P=a+b+c} \tabularnewline\tabularnewline
+\bottomrule
+\end{tabular}
+\caption{I triangoli}
+\end{table}
+
+Iniziamo con un po di notazione. I punti si indicano con le lettere maiuscole, la lunghezza dei segmenti con le  minuscole.  L'ampiezza degli angoli con le lettere greche. All'angolo di maggiore  ampiezza corrisponde la lettera $A$. Per rimanenti partendo da $A$ e muovendosi in senso antiorario, si assegnano gli altri vertici. Al vertice $A$ corrisponde l'angolo $\alpha$. Opposto ad $A$ vi è il lato $a$. Un triangolo rettangolo è formato da due lati chiamati cateti\index{Triangolo!rettangolo!cateto} e un lato chiamato ipotenusa. L'ipotenusa\index{Triangolo!rettangolo!ipotenusa} è il lato di lunghezza maggiore. 
+
+I lati di un triangolo sono classificati, rispetto ad un angolo, come opposti o adiacenti. Guardando la figura\nobs\vref{fig:triangolooppostoadiacente}, vediamo che rispetto all'angolo $\gamma$ il cateto\index{Cateto!opposto}\index{Cateto!adiacente} $AC$ è adiacente perché lato dell'angolo, mentre $AB$ è opposto\index{Angolo!opposto}\index{Angolo!adiacente}  non facendo parte dell'angolo. 
+ 
+ La figura\nobs\vref{fig:triangolopitagorico1} mostra come devono essere assegnati i nomi.
+ 
+ La somma degli angoli interni\index{Angoli!interni!somma} di un triangolo è un angolo piatto. Quindi $\alpha+\beta+\gamma=\ang{180}$. 
+\begin{figure}
+	\centering
+	\includestandalone{terzo/trigonometria/triangolooppostoadiacente}
+	\caption{Elementi di un triangolo rettangolo}
+	\label{fig:triangolooppostoadiacente}
+\end{figure}
+\subsection{Relazioni fondamentali}
+\begin{teoremat}{}{}
+Consideriamo la figura\nobs\vref{fig:triangolopitagorico1}. Valgono le seguenti relazioni fra i cateti gli angoli e l'ipotenusa
+\begin{align*}
+c&=a\sin\gamma&b&=a\cos\gamma\\
+b&=a\sin\beta&c&=a\cos\beta
+\end{align*}
+\end{teoremat}
+Quindi
+
+Un cateto è uguale  al prodotto dell'ipotenusa per il seno dell'angolo opposto
+
+\noindent oppure
+
+Un cateto è uguale al prodotto dell'ipotenusa per il coseno dell'angolo opposto.
+
+\noindent Valgono le seguenti relazioni
+\begin{align*}
+\dfrac{c}{a}&=\sin\gamma&\dfrac{b}{a}&=\cos\gamma\\
+\dfrac{b}{a}&=\sin\beta&\dfrac{c}{a}&=\cos\beta
+\end{align*}
+Quindi
+
+Il rapporto fra  cateto e l'ipotenusa è uguale al seno dell'angolo opposto
+
+\noindent oppure
+
+Il rapporto fra  cateto e l'ipotenusa è uguale al coseno dell'angolo adiacente.
+
+\noindent Dalle relazioni di partenza si ottiene
+\[\dfrac{b}{sen\beta}=\dfrac{b}{\cos\gamma}=\dfrac{c}{\sin\gamma}=\dfrac{c}{cos\beta}=a \]
+\begin{teoremat}{}{}
+Dividendo fra loro le relazioni di partenza otteniamo
+\begin{align*}
+b&=c\tan\beta&c&=b\tan\gamma\\
+b&=c\cot\gamma&c&=b\cot\beta
+\end{align*}
+\end{teoremat}
+\section{Risoluzione triangoli rettangoli}
+La risoluzione di un triangolo consiste nel trovare tutti i suoi elementi conoscendone alcuni. Ricordiamo che in un triangolo rettangolo vale il teorema di Pitagora.\index{Teorema!Pitagora} Quindi, facendo riferimento alla figura\nobs\vref{fig:TeoremaPitagora_1}:
+\begin{align*}
+a^2&=b^2+c^2\\
+a{}&=\sqrt{b^2+c^2}\\
+b^2&=a^2-c^2\\
+b{}&=\sqrt{a^2-c^2}\\
+c^2&=a^2-b^2\\
+c{}&=\sqrt{a^2-b^2}\\
+\end{align*}
+\begin{figure}
+	\centering
+	\includestandalone{terzo/trigonometria/pitagora_1}
+	\caption{Teorema di Pitagora}
+	\label{fig:TeoremaPitagora_1}
+\end{figure}
+Inoltre dato che la somma degli angoli interni di un triangolo è 
+$\ang{180}$ la somma dei due angoli acuti è di $\ang{90}$. quindi
+\[\beta+\gamma=\ang{90}\]
+\subsection{Angolo acuto e ipotenusa noti}
+Risolviamo questo caso, conosciamo, come nella figura\nobs\vref{fig:risTriangRett_1}, l'ipotenusa $a$ e un angolo acuto, per esempio\nobs$\gamma$.
+\begin{align*}
+\beta&=\ang{90}-\gamma&\beta&=\ang{90}-\gamma\\
+c&=a\sin\gamma&c&=a\cos\beta\\
+b&=a\cos\gamma&b&=a\cos\beta
+\end{align*}
+\begin{esempiot}{Risolvere triangolo rettangolo}{}
+Trovare gli altri elementi di un triangolo sapendo che l'ipotenusa $a=3$ e l'angolo acuto $\gamma=\ang{30}$ 
+\end{esempiot}
+\begin{align*}
+a&=3\\
+\gamma&=\ang{30}\\
+\beta&=\ang{90}-\ang{30}=\ang{60}\\
+c&=a\sin\gamma\\
+c&=3\sin\ang{30}=3\cdot\dfrac{1}{2}=\dfrac{3}{2}\\
+b&=a\cos\gamma\\
+b&=3\cos\ang{30}=3\cdot\dfrac{\sqrt{3}}{2}=\dfrac{3\sqrt{3}}{2}
+\end{align*}
+\subsection{Angolo acuto e cateto noti}
+Risolviamo questo caso, conosciamo, come nella figura\nobs\vref{fig:risTriangRett_2}, un cateto $b$ e un angolo acuto, ad esempio $\gamma$.
+\begin{align*}
+\beta&=\ang{90}-\gamma&\beta&=\ang{90}-\gamma\\
+c&=b\tan\gamma&c&=a\cot\beta\\
+a&=\dfrac{b}{\sin\beta}&a&=\dfrac{b}{\cos\beta}
+\end{align*}
+\begin{esempiot}{Risolvere triangolo rettangolo}{}
+Trovare gli elementi ignoti di un triangolo rettangolo, sapendo che  il cateto $b=5$ e l'angolo $\gamma=\ang{60}$.
+\end{esempiot}
+\begin{align*}
+b&=5\\
+\gamma &=\ang{60}\\
+\beta&=\ang{90}-\ang{60}=\ang{30}\\
+c&=b\tan\gamma\\
+c&=5\tan\ang{60}=5\cdot\sqrt{5}=5\sqrt{3}\\
+a&=\dfrac{b}{\sin\beta}\\
+a&=\dfrac{5}{\sin\ang{30}}=\dfrac{5}{\dfrac{1}{2}}=10
+\end{align*}
+Una variante di quanto prima è quello che segue. Qui un angolo è noto tramite il valore di una funzione goniometrica.
+\begin{esempiot}{Trovare gli elementi ignoti di un triangolo rettangolo}{}
+Trovare gli elementi ignoti di un triangolo rettangolo, sapendo che  il cateto $b=4$ e l'angolo $\cos\gamma=\dfrac{4}{5}$.
+\end{esempiot}
+\begin{align*}
+\cos\gamma&=\dfrac{4}{5}\\
+b&=4
+\intertext{determiniamo l'ipotenusa $a$}
+b&=a\cos\gamma\\
+4&=a\dfrac{4}{5}\\
+\intertext{l'ipotenusa è:}
+a&=\dfrac{20}{4}=5\\
+\intertext{Per determinare il cateto $c$ ho bisogno di $\sin\gamma$}
+\sin\gamma&=\sqrt{1-\cos^2\gamma}\\
+&=\sqrt{1-\dfrac{16}{25}}\\
+&=\sqrt{\dfrac{25-16}{25}}\\
+&=\sqrt{\dfrac{9}{25}}=\dfrac{3}{5}\\
+\intertext{ora posso trovare il cateto $c$}
+c&=a\sin\gamma\\
+c&=5\dfrac{3}{5}=3
+\end{align*}
+\subsection{Ipotenusa e cateto}
+Risolviamo questo caso, conosciamo, come nella figura\nobs\vref{fig:risTriangRett_3}, un cateto $b$ e l'ipotenusa $a$.
+\begin{align*}
+\beta&=\arcsin\dfrac{b}{a}&\gamma&=\arccos\dfrac{b}{a}\\
+\gamma&=\ang{90}-\beta&\beta&=\ang{90}-\gamma\\
+c&=a\cos\beta&c&a\sin\gamma
+\end{align*}
+\begin{esempiot}{Risolvere triangolo rettangolo 1}{}
+Trovare gli elementi ignoti di un triangolo rettangolo sapendo che l'ipotenusa $a=2$  il cateto $b=\sqrt{5}$.
+\end{esempiot}
+\begin{align*}
+a&=\num{2}\\
+b&=\sqrt{\num{3}}\\
+\beta&=\arcsin\dfrac{b}{a}\\
+\beta&=\arcsin\dfrac{\sqrt{3}}{2}=\ang{60}\\
+\gamma&=\ang{90}-\ang{60}=\ang{30}\\
+c&=a\cos\beta\\
+c&=2\cos\ang{60}=2\cdot\dfrac{1}{2}=1
+\end{align*} 
+\subsection{Cateti noti}
+Risolviamo questo caso, conosciamo, come nella figura\nobs\vref{fig:risTriangRett_4}, con i cateti $b$ e $c$ noti.
+\begin{align*}
+\gamma&=\arctan\dfrac{c}{b}&\beta&=\arctan\dfrac{b}{c}\\
+\beta&=\ang{90}-\gamma&\gamma&=\ang{90}-\beta\\
+a&=\dfrac{c}{\sin\gamma}&a&=\dfrac{c}{\cos\beta}
+\end{align*}
+\begin{esempiot}{Risolvere triangolo rettangolo 2}{}
+Trovare gli elementi ignoti di un triangolo rettangolo sapendo che  il cateto $b=5$ e il lato $c=12$
+\end{esempiot}
+\begin{align*}
+b&=5\\
+c&=12\\
+\gamma&=\arctan\dfrac{c}{b}\\
+\gamma&=\arctan\dfrac{12}{5}\approxeq\ang{67.38}\\
+\beta&=\ang{90}-\gamma=\ang{67.38}\\
+a&=\dfrac{c}{\sin\gamma}\\
+a&=\dfrac{12}{\sin\ang{67.38}}\approxeq\dfrac{12}{\num{0.92}}\approxeq\num{13.0}
+\end{align*}
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+\includestandalone{terzo/trigonometria/risTriangRett_1}
+	\caption{Ipotenusa e angolo acuto noto}
+	\label{fig:risTriangRett_1}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone{terzo/trigonometria/risTriangRett_2}
+		\caption{Cateto e angolo acuto noto}
+		\label{fig:risTriangRett_2}
+	\end{subfigure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+	\includestandalone{terzo/trigonometria/risTriangRett_3}
+	\caption{Ipotenusa e cateto noto}
+	\label{fig:risTriangRett_3}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone{terzo/trigonometria/risTriangRett_4}
+		\caption{Cateti noti}
+		\label{fig:risTriangRett_4}
+	\end{subfigure}
+	\captionof{figure}{Risoluzione triangoli rettangoli}
+	\label{fig:RisoluzioneTriangoliRettangoli}
+\end{figure}
+\section{Triangoli qualunque}
+\subsection{Teorema dei seni}
+\begin{figure}
+	\centering
+	\includestandalone{terzo/trigonometria/TeoSeni_1}
+	\caption{Teorema dei seni}
+	\label{fig:TeoremDeiSeni}
+\end{figure}
+Per un triangolo qualunque\index{Teorema!seni} valgono le seguenti uguaglianze\[\dfrac{a}{\sin\alpha}=\dfrac{b}{\sin\beta}=\dfrac{c}{\sin\beta}=2R \]
+
+Quindi in un triangolo qualunque il rapporto fra il lato e il seno dell'angolo opposto è costante e uguale al diametro della circonferenza circoscritta. La figura\nobs\vref{fig:TeoremDeiSeni} mostra le relazioni.
+
+Possiamo riscrivere il teorema dei seni in questa maniera: 
+\begin{align*}
+a&=b\dfrac{\sin\alpha}{\sin\beta}& a&=c\dfrac{\sin\alpha}{\sin\gamma}\\
+b&=a\dfrac{\sin\beta}{\sin\beta}& b&=c\dfrac{\sin\beta}{\sin\gamma}\\
+c&=a\dfrac{\sin\gamma}{\sin\alpha}& c&=b\dfrac{\sin\gamma}{\sin\beta}
+\end{align*}
+o in questa
+\begin{align*}
+\sin\alpha&=\dfrac{a}{b}\sin\beta&\sin\alpha&=\dfrac{a}{c}\sin\gamma\\
+\sin\beta&=\dfrac{b}{a}\sin\alpha&\sin\beta&=\dfrac{b}{c}\sin\gamma\\
+\sin\gamma&=\dfrac{c}{a}\sin\alpha&\sin\gamma&=\dfrac{c}{b}\sin\beta\\
+\end{align*}
+\subsection{Teorema di Carnot}
+\begin{figure}
+	\centering
+	\includestandalone{terzo/trigonometria/canot_1}
+	\caption{Teorema di Carnot}
+	\label{fig:TeoremDiCarnot_1}
+\end{figure}
+Una versione più generale del teorema di Pitagora è il teorema di Carnot\index{Teorema!Carnot}. Partendo dalla figura\nobs\vref{fig:TeoremDiCarnot_1} avremo queste relazioni.
+\begin{align*}
+a^2&=b^2+c^2-2bc\cos\alpha\\
+b^2&=a^2+c^2-2ac\cos\beta\\
+c^2&=a^2+b^2-2ab\cos\gamma
+\end{align*}
+Possiamo scrivere le precedenti equazioni isolando i coseni cioè:
+\begin{align*}
+\cos\alpha&=\dfrac{b^2+c^2-a^2}{2bc}\\
+\cos\beta&=\dfrac{a^2+c^2-b^2}{2ac}\\
+\cos\gamma&=\dfrac{a^2+b^2-c^2}{2ab}\\
+\end{align*}
+queste soluzioni possono servire per definire gli angoli del triangolo cioè:
+\begin{align*}
+\alpha&=\arccos(\dfrac{b^2+c^2-a^2}{2bc})\\
+\beta&=\arccos(\dfrac{a^2+c^2-b^2}{2ac})\\
+\gamma&=\arccos(\dfrac{a^2+b^2-c^2}{2ab})\\
+\end{align*}
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+\includestandalone{terzo/trigonometria/risTriangQualunque_1}
+	\caption{Un lato e due angoli noti}
+	\label{fig:risTriangQqualunque_1}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+	\includestandalone{terzo/trigonometria/risTriangQualunque_2}
+		\caption{Due lati l'angolo fra loro compreso noti}
+		\label{fig:risTriangQqualunque_2}
+	\end{subfigure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone{terzo/trigonometria/risTriangQualunque_3}
+		\caption{Due lati l'angolo fra loro non compreso noti}
+		\label{fig:risTriangQqualunque_3}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone{terzo/trigonometria/risTriangQualunque_4}
+		\caption{Due lati l'angolo fra loro non compreso noti}
+		\label{fig:risTriangQqualunque_4}
+	\end{subfigure}
+	\captionof{figure}{Risoluzione triangoli qualunque}
+	\label{fig:RisoluzioneTriangoliQualunque}
+\end{figure}
+\section{Risoluzione di triangolo qualunque}
+\subsection{Un lato e due angoli}
+Se è noto il lato $c$ e gli angoli $\alpha$ e $\beta$ come nella figura\nobs\vref{fig:risTriangQqualunque_1} avremo:
+\begin{align*}
+\gamma&=\ang{180}-(\alpha+\beta)\\
+a&=c\dfrac{\sin\alpha}{\sin\gamma}\\
+b&=c\dfrac{\sin\beta}{\sin\gamma}\\
+\end{align*}
+\subsection{Due lati e l'angolo fra essi compreso} 
+In questo caso supponiamo noti i lati $b$ e $c$ e l'angolo $\alpha$ fra loro compreso, come nella figura\nobs\vref{fig:risTriangQqualunque_2} avremo:
+\begin{align*}
+a&=\sqrt{b^2+c^2-2bc\cos\alpha}\\
+\beta&=\arccos(\dfrac{a^2+c^2-b^2}{2ac})\\
+\gamma&=\arccos(\dfrac{a^2+b^2-c^2}{2ab})
+\intertext{verificando che}
+\alpha+&\beta+\gamma=\ang{180}
+\end{align*}
+\subsection{Due lati e l'angolo apposto a quello compreso}
+In questo caso supponiamo noti i lati $b$ e $c$ e l'angolo $\beta$ fra loro non compreso, come nella figura\nobs\vref{fig:risTriangQqualunque_3} avremo:
+\begin{align*}
+\intertext{verificando le soluzioni}
+\gamma&=\arcsin(\dfrac{c}{b}{\sin\beta}) \\
+\alpha&=\ang{180}-(\beta+\gamma)\\
+a&=b\dfrac{\sin\alpha}{\sin\beta}
+\end{align*}
+\subsection{Tre lati}
+In questo caso supponiamo noti i lati $a$ $b$ e $c$  come nella figura\nobs\vref{fig:risTriangQqualunque_4} avremo:
+\begin{align*}
+\alpha&=\arccos(\dfrac{b^2+c^2-a^2}{2bc})\\
+\beta&=\arccos(\dfrac{a^2+c^2-b^2}{2ac})\\
+\gamma&=\arccos(\dfrac{a^2+b^2-c^2}{2ab})\\
+\end{align*}

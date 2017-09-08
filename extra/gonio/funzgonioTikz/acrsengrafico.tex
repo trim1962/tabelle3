@@ -1,0 +1,45 @@
+\documentclass[preview=true]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\pgfplotsset{
+%compat=1.8,
+every axis plot/.append style={
+  no marks,
+  black,
+  thick
+  },
+every axis/.style={
+  enlargelimits=false,
+  axis lines=middle,
+  %xticklabels=empty,
+  %yticklabels=empty,
+  %xtick=\empty,
+  %ytick=\empty,
+  width=10cm,
+  xlabel style={at={(rel axis cs:0.94,0.48)},anchor=north west},
+  ylabel style={at={(rel axis cs:0.5,1.01)},anchor=east},
+  xlabel=$\scriptstyle x$,
+  ylabel=$\scriptstyle y$
+  },
+%legend style={
+ % draw=none,
+ % font=\footnotesize\color{blue}
+ % },
+every axis legend/.append style={
+  at={(0.55,1.15)},
+  anchor=north west
+  },
+empty legend
+}
+
+\begin{document}
+\begin{tikzpicture}
+	\begin{axis}[xmin=-1,xmax=1,ymin=-pi/2,ymax=pi/2,enlargelimits=true,xtick={-1,-0.5,...,1},ytick={-1.570796,-0.7853981,0,0.7853981,1.570796},
+	    yticklabels={
+	    $-\frac{\pi}{2}$,$-\frac{\pi}{4}$,$0$,$\frac{\pi}{4}$,$\frac{\pi}{2}$
+	     }]
+
+\addplot gnuplot [domain=-1:1,unbounded coords=jump,samples=140] {asin(x)};
+	\end{axis}
+	\end{tikzpicture}
+\end{document}

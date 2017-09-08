@@ -1,0 +1,251 @@
+\chapter{I numeri complessi}
+\label{cha:INumeriComplessi}
+\section{Definizioni e vocabolario}
+\label{sec:NumCompDefinizioniVocabolario}
+\begin{definizionet}{Unità immaginaria}{}
+	Chiamo unità immaginaria\index{Unità!Immaginaria} $\uimm$ il simbolo definito da \[\uimm^2=-1\]  
+\end{definizionet}
+L'unità immaginaria permette di dare un senso alle radici di numeri negativi. Per esempio \[\sqrt{-2}=\sqrt{-1}\sqrt{2}=\sqrt{\uimm^2}\sqrt{2}=\pm\uimm\sqrt{2}\]
+\begin{attenzionet}{}{}
+Attenzione all'uso dell'unità immaginaria
+\end{attenzionet}
+\[-1=\uimm\cdot\uimm=\sqrt{-1}\cdot\sqrt{-1}=\sqrt{(-1)\cdot(-1)}=\sqrt{1}=1 \]L'errore nasce dall'aver accettato come valida $\sqrt{a}\cdot\sqrt{b}=\sqrt{ab}$ che è definita solo per $a\geq 0$ e $b\geq 0$
+
+\subsection{Potenze dell'unità immaginaria}
+Per la potenza immaginaria\index{Unità!Immaginaria!Potenza} valgono le seguenti relazioni
+\begin{align*}
+	&\uimm^0=1\\
+	&\uimm^1=\uimm\\
+	&\uimm^2=-1\\
+	&\uimm^3=-\uimm\\
+	&\uimm^4=1\\
+	&\uimm^5=\uimm\\
+	&\uimm^6=-1
+\end{align*}
+L'esempio precedente ha un'interpretazione geometrica. Le potenze dell'unità sono rotazioni  con  centro nell'origine come appare evidente dalla figura~\vref{fig:nuncomplPianoComplesso}.
+\begin{definizionet}{Numero complesso}{}
+	 Un numero complesso\index{Numero!Complesso} è \[z=a+\uimm b\] $a$ è chiamata parte reale \[\Re\left(z\right)=a\]
+	$b$ viene detta  parte immaginaria\[\Im\left(z\right)=b \] 
+\end{definizionet}
+\begin{esempiot}{Numero complesso}{}
+Il numero \[z=-2+3\uimm \] è un numero complesso che ha per parte reale \[\Re(z)=-2\]  e per parte immaginaria \[\Im(z)=3\]
+\end{esempiot}
+\begin{definizionet}{Complesso coniugato}{}
+	Dato un numero complesso $z=a+b\uimm$, il coniugato\index{Numero!Complesso!Coniugato} è  il numero $\conj{z}=a-b\uimm$
+\end{definizionet}
+\begin{esempiot}{Coniugato}{}
+Se $z=3+2\uimm$ il coniugato è $\conj{z}=3-2\uimm$ 
+\end{esempiot}
+\begin{definizionet}{Numero opposto}{}
+Dato un numero complesso $z=a+b\uimm$, è opposto\index{Numero!Complesso!Oppoto} è il numero $-z=-a-b\uimm$
+\end{definizionet}
+\begin{definizionet}{Modulo}{}
+Dato un numero  complesso $z=a+b\uimm$, il modulo\index{Numero!Complesso!Modulo} è il numero $\abs{z}=\sqrt{a^2+b^2}$
+\end{definizionet}
+\section{Piano complesso}
+Un numero complesso $z=a+b\uimm$ è una coppia di numeri $(a;b)$. A questa coppia di punti corrisponde un punto del piano chiamato piano di  Argand-Gauss. 
+Nel piano di Argand-Gauss l'asse delle $x$ viene chiamato asse reale $\Re$ mentre l'asse delle $y$ è chiamato asse immaginario $\Im$.
+Al numero complesso corrisponde il vettore applicato all'origine ed estremità in $(a;b)$. Nella figura\nobs\vref{fig:pianonumcomplesso} sono rappresentati tre numeri complessi $z$, $\conj{z}$ e $-z$. Ad ogni vettore è associato un angolo $\theta$ che forma con l'asse reale chiamato fase. 
+\begin{figure}
+	\centering
+	\includestandalone[width=.5\textwidth]{terzo/complessi/complessi00}
+	\caption{Piano complesso}
+	\label{fig:nuncomplPianoComplesso}
+\end{figure}
+\begin{figure} %[htbp]
+	\centering
+\includestandalone[width=.6\textwidth]{terzo/complessi/complessi0}
+	\caption{Numeri complesso, coniugato e opposto}
+	\label{fig:pianonumcomplesso}
+\end{figure}
+\section{Operazioni con i numeri complessi}
+\label{sec:NumCompOperazioni}
+\subsection{Somma e differenza di numeri complessi}
+\begin{definizionet}{Somma di numeri e differenza di complessi}{}
+Dati due numeri complessi\index{Numero!Complesso!Somma}  $z=a+\uimm b$ e  $z_1=a_1+\uimm b_1$ la loro somma è il numero \[z+z_1=a+a_1+(b+b_1)\uimm\]
+\end{definizionet}
+Dal punto di vista grafico la somma di due numeri complessi equivale alla somma grafica di due vettori tramite la regola del parallelogramma che ha per lati i due vettori come mostrato nella figura\nobs\vref{fig:sommaPianoComplesso}.
+
+La differenza tra due numeri complessi è più complessa dal punto di vista grafico. Si procede come nella figura\nobs\vref{fig:DifferenzaPianoComplesso}. \[ z=z_1-z_2=z_1+(-z_2)\]  Quindi dalla differenza si passa alla somma con l'opposto.
+\begin{figure}
+	\centering
+	\includestandalone[width=.6\textwidth]{terzo/complessi/complessi1}
+	\caption{Somma nel piano complesso}
+	\label{fig:sommaPianoComplesso}
+\end{figure}
+\begin{esempiot}{Somma numeri complessi}{}
+Sommiamo $z=3-2\uimm$ e $z_1=4+5\uimm$
+\end{esempiot}
+	\[z+z_1=3-2\uimm +4+5\uimm=3+4+(-2+5)\uimm=7+3\uimm\]
+
+Lo zero\index{Numero!Complesso!Zero} dei numeri complessi ha la seguente forma
+\[0=0+0\uimm\]
+La somma di un numero con il suo coniugato è un numero reale puro. \[z+\conj{z}=a+\uimm b+a-\uimm b=2a \] 
+La differenza di un numero con il suo coniugato è un numero immaginario puro. \[z-\conj{z}=a+\uimm b-a+\uimm b=2\uimm b \] 
+
+\subsection{Prodotto di numeri complessi}
+\begin{definizionet}{Prodotto fra numeri complessi}{}
+	Dati due numeri complessi\index{Numero!Complesso!Prodotto}  $z=a+b\uimm $ e  $z_1=a_1+b\uimm _1$ chiamo prodotto il numero \[z\cdot z_1=(a+b\uimm)(a_1+b_1\uimm)=a\cdot a_1-b\cdot b_1+(a\cdot b_1+a_1\cdot b)\uimm\]
+\end{definizionet}
+\begin{figure}
+	\centering
+	\includestandalone[width=.6\textwidth]{terzo/complessi/complessi2}
+	\caption{Differenza nel piano complesso}
+	\label{fig:DifferenzaPianoComplesso}
+\end{figure}
+\begin{esempiot}{Prodotto numeri complessi}{}
+	Moltiplicare $z=3+5\uimm $ e  $z_1=2+3\uimm1$ 
+\end{esempiot}	
+	 \[z\cdot z_1=(3+5\uimm)(2+3\uimm)= 6+9\uimm +10\uimm +15\uimm^2=6+9\uimm +10\uimm -15 =-9+19\uimm \]
+	nel calcolo bisogna ricordarsi che $\uimm^2=-1$
+\begin{esempiot}{Prodotto numeri complessi}{}
+	Moltiplicare $z=4-2\uimm $ e  $z_1=1+3\uimm1$  
+\end{esempiot}	
+	\[z\cdot z_1=(4-2\uimm)(1+3\uimm)= 4+12\uimm -2\uimm -6\uimm^2= 4+12\uimm -2\uimm +6=10+10\uimm \]
+	nel calcolo bisogna ricordarsi che $\uimm^2=-1$
+
+L'unità o l'elemento neutro\index{Numero!Complesso!Elemento neutro} del prodotto ha la forma\[z=1+0\uimm\] 
+Il prodotto fra due numeri coniugati\index{Numero!Complesso!Coniugato}  è un numero reale puro
+\[z\cdot z_1=(a+b\uimm)(a-b\uimm)=a\cdot a+b\cdot b+(a\cdot b-a\cdot b)\uimm=a^2+b^2\]
+Quindi per ottenere la moltiplicazione di due numeri complessi coniugati basta sommare il quadrato della parte reale con il quadrato della parte immaginaria.
+\begin{esempiot}{Prodotto di numeri complessi}{}
+	Per moltiplicare $z=4-2\uimm $ e\  $\overline{z}=4+2\uimm1$  
+\end{esempiot}	
+	\[z\cdot \overline{z}=(4-2\uimm)(4+2\uimm)= 16+4=20\]
+\subsection{Reciproco di un numero complesso}
+\begin{definizionet}{Reciproco}{}
+Il reciproco di un numero complesso $z$ è un numero che moltiplicato per questo da l'unità
+\[z\cdot z_1=1\]
+\end{definizionet}
+\subsection{Divisione fra numeri complessi}
+La divisione fra due numeri si può scrivere come il prodotto fra il primo e il reciproco del secondo, cioè \[z\div z_1=z\cdot\dfrac{1}{z_1}\] Resta da dare un significato a $\frac{1}{z_1}$
+\begin{definizionet}{}{}
+	Dato un numero complesso\index{Numero!Complesso!Reciproco} $z=a+b\uimm $ chiamo reciproco di $z$ il numero \[\dfrac{1}{z}=\dfrac{a-b\uimm}{a^2+b^2}=\dfrac{a}{a^2+b^2}-\dfrac{b}{a^2+b^2}\uimm\]
+\end{definizionet}
+\begin{esempiot}{Reciproco numero complesso}{}
+Calcolare il reciproco di $z=2+3\uimm$
+\end{esempiot}
+\[\dfrac{1}{z}=\dfrac{1}{2+3\uimm}\cdot\dfrac{2-3\uimm}{2-3\uimm}=\dfrac{2-3\uimm}{4+9}=\dfrac{2}{13}-\dfrac{3}{13}\uimm\]
+\begin{esempiot}{Reciproco numero complesso}{}
+	Calcolare il reciproco di $z=-6\uimm$
+\end{esempiot}
+	\[\dfrac{1}{z}=\dfrac{1}{-6\uimm}\cdot\dfrac{6\uimm}{6\uimm}=\dfrac{6\uimm}{36}=\dfrac{1}{6}\uimm\]
+A questo punto la divisione fra due numeri complessi non è difficile.
+\begin{esempiot}{Divisione}{}
+Dividere $z=2+3\uimm$ per $z_1=1-2\uimm$
+\end{esempiot}
+	\[ z:z_1=(2+3\uimm):(1-2\uimm)=(2+3\uimm)\cdot\dfrac{1}{1-2\uimm} =(2+3\uimm)\cdot\dfrac{1}{1-2\uimm}\cdot\dfrac{1+2\uimm}{1+2\uimm}=(2+3\uimm)\cdot\dfrac{1+2\uimm}{1+4}=\dfrac{2+4\uimm+3\uimm-6}{5}=\dfrac{-4+7\uimm}{5}=-\dfrac{4}{5}+\dfrac{7}{5}\uimm\]
+\begin{table}
+\centering
+\setlength{\extrarowheight}{8pt} 
+\begin{tabular}{lC}
+\toprule
+Unità immaginaria &\uimm^2=-1\\
+Numero complesso&z=a+\uimm b\\
+Parte reale di z&\Re(z)=a\\
+Parte immaginaria di z&\Im(z)=b\\
+Coniugato di un numero $z$&\conj{z}=a-\uimm b\\
+Uguaglianza fra numeri complessi&a+\uimm b=a_1+\uimm b_1\Leftrightarrow \begin{cases}a=a_1\\ b=b_1\end{cases}\\
+Somma&z+z'=a+\uimm b+a'\uimm b'=(a+a')+\left(b+b'\right)\uimm\\
+Elemento neutro somma&r=0+i0\\
+Prodotto&z\cdot z'=\left(a+\uimm b\right)\cdot\left(a'+\uimm b'\right)=(aa'-bb)'+\left(ab'+ba'\right)\uimm\\
+Elemento neutro prodotto&z=1+\uimm 0\\
+Somma fra due numeri coniugati&(a+\uimm b)+(a-\uimm b)=2a\\
+Prodotto fra due numeri coniugati&(a+\uimm b)\cdot(a-\uimm b)=a^2+b^2\\
+Divisione fra numeri complessi&(a+\uimm b):(c+\uimm d)=\frac{a+\uimm b}{c+\uimm d}=\frac{(a+\uimm b)\cdot(c-\uimm d)}{c^2+d^2}\\
+\bottomrule
+\end{tabular}
+\caption{Numeri complessi}
+\label{tab:numericomplessi}
+\end{table}
+\section{Algebra dei numeri complessi}
+\label{sec:AlgebraNumeriComplessi}
+Il seguente esempio lega la somma e le potenze di numeri complessi. In pratica basta considerare un numero complesso come un binomio. Questo è chiaro nell'esempio che segue.
+\begin{esempiot}{Semplificare espressione}{}
+Semplificare $(2+5\uimm)^2+(1+j)(1-j)+\uimm^2 $ 
+\end{esempiot}
+Possiamo procedere come segue.
+	\begin{NodesList} [margin=4cm]
+		\begin{align*}
+			(2+5\uimm)^2+(1+j)(1-j)+\uimm^2 \AddNode\\
+			4+25\uimm^2+20\uimm+1+1+\uimm^3\AddNode\\
+			\intertext{\hfil $\uimm^2=-1$}
+			\intertext{\hfil $\uimm^3=-\uimm$}
+			4-25+20\uimm+2-\uimm\AddNode\\
+			-19-19\uimm\AddNode
+		\end{align*}
+		\LinkNodes{Eseguo i prodotti}%
+		\LinkNodes{Semplifico}%
+		\LinkNodes{Ottengo}%
+	\end{NodesList}
+Possiamo avere somme prodotti potenze insieme. Gli esercizi vanno eseguiti seguendo la priorità delle operazioni. In quello che segue  prima si esegue la divisione, poi la potenza ed infine il prodotto e per terminare la somma. 
+\begin{esempiot}{Semplificare espressione}{}
+Semplificare $(2+3\uimm)\left(\dfrac{1-3\uimm}{2+4\uimm}\right)^2 $
+\end{esempiot}
+ Possiamo procedere come segue. In pratica
+	\begin{NodesList} [margin=4cm]
+		\begin{align*}
+			(2+3\uimm)\left(\dfrac{1-3\uimm}{2+4\uimm}\right)^2 \AddNode\\
+			(2+3\uimm)\left(\dfrac{1-3\uimm}{2+4\uimm}\cdot\dfrac{2-4\uimm}{2-4\uimm}\right)^2\AddNode\\
+			(2+3\uimm)\left(\dfrac{2-4\uimm-6\uimm-12}{4+16}\right)^2\AddNode\\
+			(2+3\uimm)\left(\dfrac{-10-10\uimm}{20}\right)^2\AddNode\\
+			(2+3\uimm)\left(\dfrac{(-1-1\uimm)}{2}\right)^2\AddNode\\
+			(2+3\uimm)\dfrac{(-1-1\uimm)(-1-1\uimm)}{4}\AddNode\\
+			(2+3\uimm)\dfrac{(1+\uimm+\uimm-1)}{4}\AddNode\\
+			%x=2\AddNode\\
+			(2+3\uimm)\dfrac{\uimm}{2}\AddNode\\
+			\dfrac{2\uimm+3\uimm^2}{2}\AddNode\\
+			\dfrac{2\uimm-3}{2}\AddNode
+		\end{align*}
+		\LinkNodes{Prima eseguo la divisione}%
+		\LinkNodes{Moltiplico}%
+		\LinkNodes{Sommo}%
+		\LinkNodes{Semplifico}%
+		\LinkNodes{Quadrato}%
+		\LinkNodes{Semplifico}%
+		\LinkNodes{Semplifico}%
+		\LinkNodes{semplifico}%
+		\LinkNodes{Ottengo}%
+	\end{NodesList}
+\bassapriorita{Forma goniometrica dei numeri complessi}
+\section{Coordinate polari}
+\begin{definizionet}{Coordinate polari}{}
+Un sistema di coordinate polari individua la posizione di un punto $P$ nel piano, tramite una coppia $(\rho;\theta)$.  Il primo numero è la distanza (modulo) dal punto detto polo e da un angolo detto argomento o fase.
+\end{definizionet}
+\begin{figure} %[htbp]
+	\centering
+\includestandalone[width=.6\textwidth]{terzo/complessi/polar-plot}
+	\caption{Coordinate polari}
+	\label{fig:coordinatepolari}
+\end{figure}
+La figura\nobs\vref{fig:coordinatepolari} mostra un sistema di riferimento polare\index{Coordinate polari}. Punti che sono alla stessa distanza dal centro si trovano sulla medesima circonferenza. 
+
+Per rappresentare un numero complesso $z=a+\uimm b$ tramite un sistema di coordinate polari bisogna trasformare la coppia $(a;b)$
+nella coppia $(\rho;\theta)$.
+\begin{align*}
+&\rho=\sqrt{a^2+b^2}\\
+&\theta=\begin{cases}
+\arctan{\dfrac{b}{a}}&\text{se $a>0$ e $b\geq 0$ }\\
+&\\
+\arctan{\dfrac{b}{a}}+\pi&\text{se $a>0$ e $b< 0$ }\\
+&\\
+\arctan{\dfrac{b}{a}}-\pi&\text{se $a<0$ e $b< 0$ }\\
+&\\
++\dfrac{\pi}{2}&\text{se $a=0$ e $b> 0$ }\\
+&\\
+-\dfrac{\pi}{2}&\text{se $a=0$ e $b< 0$ }\\
+\end{cases}
+\end{align*} 
+\subsection{Moltiplicazione}
+Il prodotto di due numeri complessi in coordinate polari ha le seguenti proprietà  con $z_1,z_2,w\in \C$ 
+\begin{align*}
+&\abs{w}=\abs{z_1\cdot z_2}=\abs{z_1}\cdot\abs{z_2}\\
+&\arg(z_1\cdot z_2)=\arg{z_1}+\arg{z_2}
+\end{align*} 
+\subsection{Divisione}
+La divisione fra numeri complessi in coordinate polari ha le seguenti proprietà con $z_1,z_2,w\in \C$ 
+\begin{align*}
+&\abs{w}=\dfrac{\abs{z_1}}{\abs{z_2}}\\
+&\arg(w)=\arg (z_1)-\arg (z_2)
+\end{align*}
+\bassapriorita{esempi numerici operazioni numeri complessi in coordinate polari}

@@ -1,0 +1,111 @@
+\chapter{Notazione scientifica}
+\section{Definizioni}
+\begin{definizionet}{Notazione scientifica}{}
+	Un numero è scritto in notazione scientifica\index{Notazione scientifica!Definizione} se è scritto nella forma
+	\[\text{numero}\times 10^{\text{esponente}} \]
+	dove
+	\begin{description}
+		\item[numero] è un numero compreso tra \num{1} compreso e \num{10} escluso e non termina per zero.
+		\item[esponente] un qualunque numero intero positivo o negativo
+	\end{description}
+\end{definizionet}
+\begin{osservazionet}{Numeri in notazione scientifica}{}
+	I seguenti numeri sono in notazione scientifica \numlist{3.45d-4;1.124d+6;6.23d+7;2.54d-7}
+\end{osservazionet}
+\begin{osservazionet}{Numeri non in notazione scientifica}{}
+	I seguenti numeri non sono in notazione scientifica \numlist{34.5d-4;6.20d+7;0.254d-7}
+	il primo ha il numero maggiore di 10. Il secondo il numero termina per zero. Il terzo il numero è minore di uno. 
+\end{osservazionet}
+\begin{esempiot}{Notazione scientifica}{}	
+\begin{center}
+		 \begin{tabular}{S S}
+		\toprule
+		\textbf{Normale} & \textbf{Notazione scientifica} \\
+		\midrule
+		124 & 1.24e+2 \\
+	 1230 & 1.23e+3 \\
+0.245 & 2.45e-1 \\
+		0.0043 & 4.3d-3 \\
+	 100000000 & 1.0d8\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+\end{esempiot}
+\begin{esempiot}{Notazione scientifica numero intero}{NSesempio1}
+	Per scrivere \num{1532} in notazione scientifica, osserviamo che il numero è di quattro cifre. La virgola, posta per convenzione dopo la cifra due, va spostata tra la cifra uno e cinque cioè verso sinistra di tre posti. Quindi\[\num{1532}=\num[scientific-notation=true]{1532} \]
+\end{esempiot}
+\begin{esempiot}{Notazione scientifica numero intero}{NSesempio2}
+	\num{15270} numero intero. La virgola va spostata  verso sinistra di quattro posti. Quindi\[\num{15270}=\num[scientific-notation=true]{15270}\] Lo zero non va considerato.
+\end{esempiot}
+\begin{esempiot}{Notazione scientifica numero decimale}{NSesempio3}
+	\num{723.57} numero decimale. La virgola va spostata  verso sinistra di due posti. Quindi\[\num{723.57}=\num[scientific-notation=true]{723.57}\]
+\end{esempiot}
+\begin{esempiot}{Notazione scientifica numero decimale}{NSesempio4}
+	\num{0.027} Numero decimale. La virgola va sposta dopo la prima cifra non  zero partendo da sinistra. La virgola si posiziona tra le cifre due e sette quindi si sposta verso destra di due posti, l'esponente è negativo.  Quindi\[\num{0.027}=\num[scientific-notation=true]{0.027}\]
+\end{esempiot}
+\begin{definizionet}{Ordine di grandezza}{}
+	L'esponente della potenza del dieci viene chiamato ordine di grandezza\index{Notazione scientifica!Ordine di grandezza}.
+\end{definizionet}
+\section{Operazioni in notazione scientifica}
+\subsection{Somma differenza}
+Se i numeri hanno lo stesso ordine di grandezza si procede come nel seguente esempio
+\begin{esempiot}{Somma in notazione scientifica stesso ordine}{NSesempio5}
+	Per sommare \num{1.24e3} con \num{3.35e3} si procede come segue
+	\begin{align*}
+	&\num{1.24e3}+\num{3.35e3}=
+	\intertext{Si raccoglie \num{e3} e si ottinene}
+	&=(\num{1.24}+\num{3.35})\num{e3}\\
+	&=\num{4.59e3}
+	\end{align*}
+\end{esempiot}
+Se gli ordini di grandezza sono diversi il procedimento è lievemente diverso
+\begin{esempiot}{Somma in notazione scientifica ordine diverso}{NSesempio6}
+	Per sommare \num{3.578e5} con \num{2.415e7} si procede come segue
+	\begin{align*}
+	&\num{3.578e5} + \num{2.415e7}=
+	\intertext{Prima si riduce allo stesso ordine}
+	&=\num{3.578e5} + \num{241.5e5}
+	\intertext{Si raccoglie \num{e5} e si ottinene}
+	&=(\num{3.578}+\num{241.5})\cdot\num{e5}\\
+	&=\num{245.078e5}
+	\intertext{correggiamo il numero e otteniamo}
+	&=\num{2.45078e7}
+	\end{align*}
+\end{esempiot}
+\subsection{Moltiplicazione divisione}
+Nella moltiplicazione e nella divisione di due numeri non viene fatta la distinzione fra ordini di grandezza.
+\begin{esempiot}{Moltiplicazione}{NSesempio6}
+Per moltiplicare \num{3.157e5} con \num{7.12e3} si procede come segue
+\begin{align*}
+&\num{3.157e5} \cdot\num{7.12e3}=
+\intertext{raggruppando}
+&=(\num{3.157}\cdot\num{7.12})\cdot\num{e5}\cdot\num{e3}\\
+&=\num{22.47784e8}
+\intertext{correggiamo il numero e otteniamo}
+&=\num{2.247784e9}
+\end{align*}	
+\end{esempiot}
+\begin{esempiot}{Moltiplicazione}{NSesempio7}
+	Per dividere \num{3.5e5} con \num{4.2e7} si procede come segue
+	\begin{align*}
+	&\dfrac{\num{3.5e5}}{\num{4.2e7}}=
+	\intertext{raggruppando}
+	&=\dfrac{\num{3.5}}{\num{4.2}}\cdot\dfrac{\num{e5}}{\num{e7}}=\\
+	&=\num{0.8333e-2}
+	\intertext{correggiamo il numero e otteniamo}
+	&=\num{8.333e-3}
+	\end{align*}	
+\end{esempiot}
+\subsection{Potenze}
+La potenza di un numero scritto in notazione scientifica si ottiene applicando la potenza a ciascuna delle sue parti.
+ \begin{esempiot}{Potenza}{NSesempio8}
+ 	Per calcolare $(\num{7.38e4})^3$ si procede come segue
+ 	\begin{align*}
+ 	&(\num{7.38e4})^3=
+ 	\intertext{raggruppando}
+ 	&=(\num{7.38})^3\cdot(\num{e4})^3\\
+ 	&=\num{401.947272e12}
+ 	\intertext{correggiamo il numero e otteniamo}
+ 	&=\num{4.01947272e14}
+ 	\end{align*}	
+ \end{esempiot}

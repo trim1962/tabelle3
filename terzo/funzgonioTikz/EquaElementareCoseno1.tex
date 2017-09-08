@@ -1,0 +1,52 @@
+\documentclass{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+
+%\usetikzlibrary{...}
+\begin{document}
+		\begin{tikzpicture}[>=triangle 45]
+		% draw the coordinates
+		\pgfmathsetmacro{\raggio}{4};
+		\pgfmathsetmacro{\pangolo}{40};
+		\pgfmathsetmacro{\sangolo}{{-\pangolo}};
+		\pgfmathsetmacro{\mraggio}{\raggio/3};
+		\pgfmathsetmacro{\sraggio}{1.9*\raggio};
+		% draw the unit circle
+		\draw[->] (0,-\raggio-\mraggio) -- (0,\raggio+\mraggio) node[above,fill=white] {$y$};
+		\draw[->] (-\raggio-\mraggio,0) -- (\raggio+\mraggio,0) node[right,fill=white] {$x$};
+		\draw[thick] (0,0) circle(\raggio);
+		\coordinate [label= below left:$O$] (OO)at(0,0);
+		\coordinate (P)  at ({\raggio*cos(\pangolo},{\raggio*sin(\pangolo});
+		\coordinate (Pr)  at ({\mraggio+\raggio*cos(\pangolo},{\raggio*sin(\pangolo});
+		\coordinate (PX)  at ({\raggio*cos(\pangolo},0);
+		\coordinate (PY)  at (0,{\raggio*sin(\pangolo});
+		\coordinate (Q)  at ({\raggio*cos(\sangolo},{\raggio*sin(\sangolo});
+		\coordinate (Qr)  at ({-\mraggio+\raggio*cos(\sangolo},{\raggio*sin(\sangolo});
+		\coordinate (QX)  at ({\raggio*cos(\sangolo},0);
+		\coordinate (QY)  at (0,{\raggio*sin(\sangolo});
+		\coordinate (M)  at (0,{\raggio*sin(\sangolo});
+		\node at (PX) [label=above right:$m$]{};
+		%\node at (Q) [label=left:$Q$]{};
+		\fill [color=black] (OO) circle (1pt);
+		\fill [color=black] (P) circle (1pt);
+		\fill [color=black] (PX) circle (1pt);
+		%\fill [color=black] (PY) circle (1.5pt);
+		%\fill [color=black] (M) circle (1.5pt);
+		\fill [color=black] (Q) circle (1pt);
+		\fill [color=black] (QX) circle (1pt);
+		%\fill [color=black] (QY) circle (1.5pt);
+		%\draw[->] {(\sraggio/2.5},0 ) arc (0:\pangolo:\sraggio/2.5) node[above] {$\arco$};
+		%\draw(Pr)--(Qr);
+		%\draw(P)--(PY);% node[midway,above] {$ cos(\alpha)$};
+		%\draw(Q)--(QY);% node[midway,above] {$cos(ang{180}-\alpha)$};
+		\draw(P)--(Q);% node[midway,above,right] {$sen(\alpha)$};
+		%\draw(Q)--(QX);%node[midway,below,left] {$sen(ang{180}-\alpha)$};
+		\draw [->] (0:\sraggio/4) arc (0:\sangolo:\sraggio/4) ;
+		\draw (\sangolo/2:\sraggio/4) node[ right]  {$-\alpha$};
+		\draw [->] (0:\sraggio/4) arc (0:\pangolo:\sraggio/4) ;
+		
+		\draw (\pangolo/2:\sraggio/4) node[ right]  {$+\alpha$};
+		\draw(OO)--(P);
+		\draw(OO)--(Q);
+		\end{tikzpicture}
+	\end{document}

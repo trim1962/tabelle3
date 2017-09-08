@@ -1,0 +1,36 @@
+% Tikz File 'mytikz.tex'
+\documentclass{standalone}
+%\input{../../Mod_base/grafica}
+\input{../Mod_base/grafica}
+\begin{document}
+\begin{tikzpicture}
+\tikzstyle{every node}=[font=\large]
+\pgfmathsetmacro{\moltiplicatore}{1};
+\pgfmathsetmacro{\latoa}{3};
+\pgfmathsetmacro{\latob}{4};
+\pgfmathsetmacro{\latoc}{5};
+\pgfmathsetmacro{\latoam}{\latoa*\moltiplicatore};
+\pgfmathsetmacro{\latobm}{\latob*\moltiplicatore};
+\pgfmathsetmacro{\latocm}{\latoc*\moltiplicatore};
+\pgfmathsetmacro{\latocq}{\latocm*\latocm};
+
+
+\tkzDefPoint(0,0){A}
+\tkzDefPoint(\latobm,0){B}
+\tkzDefPoint(0,\latocm){C}
+\tkzMarkAngle[size=2cm](A,C,B)
+\tkzLabelAngle[pos=2.5](A,C,B){$\gamma$}
+\tkzLabelSegment[right,rotate=-53,yshift=0.5cm](C,B){Ipotenusa}
+\tkzLabelSegment[left,rotate=-90,yshift=-0.5cm](C,A){Cateto}
+\tkzLabelSegment[left,rotate=-90,yshift=-1.0cm](C,A){adiacente}
+\tkzLabelSegment[below,yshift=-1.0cm](B,A){opposto}
+\tkzLabelSegment[below,yshift=-0.5cm](B,A){Cateto}
+\tkzDrawPoints(A,B,C)
+\tkzLabelPoints[above,font=\large](C)
+\tkzLabelPoints[font=\large](B)
+\tkzLabelPoints[below left,font=\large](A)
+\tkzDrawSegment(A,B)
+\tkzDrawSegment(A,C)
+\tkzDrawSegment(C,B)
+\end{tikzpicture}
+\end{document}

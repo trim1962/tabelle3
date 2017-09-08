@@ -1,0 +1,40 @@
+\documentclass[preview=true]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\input{../Mod_base/matematica}
+\input{../../Mod_base/unita_misura}
+%\usetikzlibrary{...}
+\begin{document}
+	
+\begin{tikzpicture}[>=triangle 45]
+\draw[->,color=black] (-0.5,0) -- (7,0);
+%\foreach \x in {,1,2,3,4,5,6,7}
+%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+\draw[color=black] (6.85,0.09) node [anchor=south west] { t};
+\draw[->,color=black] (0,-6) -- (0,6);
+%\foreach \y in {-6,-4,-2,2,4,6}
+%\draw[shift={(0,\y)},color=black] (-2pt,0pt);
+\draw[color=black] (0.06,5.5) node [anchor=west] { y};
+%\clip(-0.5,-6) rectangle (7,6);
+\draw (2.45,2.58) node[anchor=north west] {$y=A\cos\omega t$};
+\draw [dash pattern=on 6pt off 6pt] (3.14,0)-- (3.14,-5);
+\draw (-0.13,-0.08) node[anchor=north west] {\textbf{0}};
+\draw (1.47,0.08) node[anchor=north west] {$\mathbf{\dfrac{T}{4}}$};
+\draw plot[raw gnuplot, id=func0] function{set samples 100; set xrange [0.0:6.28]; plot 5*cos(x)};
+\draw (3.05,0.08) node[anchor=north west] {$\mathbf{\dfrac{T}{2}}$};
+\draw (4.55,0.08) node[anchor=north west] {$\mathbf{\dfrac{3}{4}T}$};
+\draw (6.25,0.08) node[anchor=north west] {$\mathbf{T}$};
+\draw (0,-5)-- (3.14,-5);
+\draw (0.51,5.2) node[anchor=north west] {$\mathbf{A}$};
+\draw (0.49,-4.04) node[anchor=north west] {$\mathbf{-A}$};
+\draw [dash pattern=on 6pt off 6pt] (6.28,5)-- (6.28,0);
+\fill [color=black] (1.57,0) circle (1.5pt);
+\fill [color=black] (3.14,0) circle (1.5pt);
+\fill [color=black] (3.14,-5) circle (1.5pt);
+\fill [color=black] (0,5) circle (1.5pt);
+\fill [color=black] (0,-5) circle (1.5pt);
+\fill [color=black] (6.28,0) circle (1.5pt);
+\fill [color=black] (6.28,0) circle (1.5pt);
+\fill [color=black] (6.28,5) circle (1.5pt);
+\end{tikzpicture}
+\end{document}

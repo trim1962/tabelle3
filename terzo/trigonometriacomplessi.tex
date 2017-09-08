@@ -1,0 +1,143 @@
+\chapter{Coordinate polari}
+\section{Definizioni}
+\label{Cha:CoordinatePolariTrig}
+\begin{figure} %[htbp]
+	\centering
+	\includestandalone[width=.6\textwidth]{terzo/polari/polari1}
+	\caption{Sistema di riferimento polare}\label{fig:coodpolarpolari}
+\end{figure}
+\begin{definizionet}{Coordinate polari}{}
+Dato un polo\index{Polo} $P$ e un semiretta di origine $P$ chiamata asse polare\index{Asse polare}, diremo coordinate polari\index{Coordinate!polari} la coppia ordinata $(r,\theta)$, dove $r$ è la distanza dal polo $P$ del punto $A$ e $\theta$ è l'ampiezza dell'angolo, misurato in senso antiorario, formato dall'asse polare e la semiretta che passa per il polo e il punto come nella~\vref{fig:coodpolarpolari}. Il numero $r$ si chiama modulo del punto\index{Coordinate!polari!modulo} $A$, e l'angolo $\theta$ ($\theta\in[0,2\pi[$) argomento\index{Coordinate!polari!argomento} di $A$. 
+\end{definizionet}
+\section{Da cartesiano a polare}
+La figura~\vref{fig:cartpolar} soprappone un sistema di riferimento cartesiano a uno polare. Vi è il problema di convertire le coordinate di un punto dalla forma cartesiana alla forma polare. Quindi 
+\[A(x,y)\mapsto A(r,\theta) \]
+Dal teorema di Pitagora \[r=\sqrt{x^2+y^2} \]
+Se $\theta\in[0,2\pi[$
+\[\theta=\begin{cases}
+\arctan(\dfrac{y}{x})&\text{se}\ x>0 \ \text{e} \ y\geq0\\[8pt]
+\arctan(\dfrac{y}{x})+2\pi&\text{se}\ x>0 \ \text{e} \ y<0\\[8pt]
+\arctan(\dfrac{y}{x})+\pi&\text{se}\ x<0\\[8pt]
+\dfrac{\pi}{2}&\text{se}\ x=0 \ \text{e} \ y>0\\[8pt]
+\dfrac{3}{2}\pi&\text{se}\ x=0 \ \text{e} \ y<0
+\end{cases} 
+\] 
+Se $\theta\in]-\pi,\pi]$
+\[\theta=\begin{cases}
+\arctan(\dfrac{y}{x})&\text{se}\ x>0 \\[8pt]
+\arctan(\dfrac{y}{x})+\pi&\text{se}\ x<0 \ \text{e} \ y\geq0\\[8pt]
+\arctan(\dfrac{y}{x})-\pi&\text{se}\ x<0\ \text{e} \ y<0\\[8pt]
+\dfrac{\pi}{2}&\text{se}\ x=0 \ \text{e} \ y>0\\[8pt]
+-\dfrac{\pi}{2}&\text{se}\ x=0 \ \text{e} \ y<0
+\end{cases} 
+\]
+\begin{figure} %[htbp]
+	\centering
+	\includestandalone[width=.6\textwidth]{terzo/polari/polari2}
+	\caption{Cartesiano -- polare}\label{fig:cartpolar}
+\end{figure}
+\begin{esempiot}{}{} Consideriamo il punto A di coordinate cartesiane $A(2,5)$. Determinare le coordinate in forma polare di $A$ con $\theta\in[0,2\pi[$
+	\begin{align*}
+	r=&\sqrt{x^2+y^2}\\
+	=&\sqrt{2^2+5^2}\\
+	=&\sqrt{4+25}\\
+	=&\sqrt{29}
+	\end{align*}
+	\begin{align*}
+	\theta=&\arctan\left(\dfrac{x}{y}\right)\\
+		 =&\arctan\left(\dfrac{5}{2}\right)\\
+	=&1.19029
+	\end{align*}
+	\[A(\sqrt{29},1.19029) \]
+\end{esempiot}
+\begin{esempiot}{}{} Consideriamo il punto A di coordinate cartesiane $A(-2,5)$. Determinare le coordinate in forma polare di $A$ con $\theta\in[0,2\pi[$
+	\begin{align*}
+	r=&\sqrt{x^2+y^2}\\
+	=&\sqrt{(-2)^2+5^2}\\
+	=&\sqrt{4+25}\\
+	=&\sqrt{29}
+	\end{align*}
+	\begin{align*}
+	\theta=&\arctan\left(\dfrac{x}{y}\right)+\pi\\
+	=&\arctan\left(-\dfrac{5}{2}\right)+pi\\
+	=&1.95130
+	\end{align*}
+	\[A(\sqrt{29},1.95130) \]
+\end{esempiot}
+\begin{esempiot}{}{} Consideriamo il punto A di coordinate cartesiane $A(-2,-5)$. Determinare le coordinate in forma polare di $A$ con $\theta\in[0,2\pi[$
+	\begin{align*}
+	r=&\sqrt{x^2+y^2}\\
+	=&\sqrt{(-2)^2+(-5)^2}\\
+	=&\sqrt{4+25}\\
+	=&\sqrt{29}
+	\end{align*}
+	\begin{align*}
+	\theta=&\arctan\left(\dfrac{x}{y}\right)+\pi\\
+	=&\arctan\left(\dfrac{5}{2}\right)+pi\\
+	=&4.33188
+	\end{align*}
+\[A(\sqrt{29},4.33188) \]
+\end{esempiot}
+\begin{esempiot}{}{} Consideriamo il punto A di coordinate cartesiane $A(2,-5)$. Determinare le coordinate in forma polare di $A$ con $\theta\in[0,2\pi[$
+	\begin{align*}
+	r=&\sqrt{x^2+y^2}\\
+	=&\sqrt{2^2+(-5)^2}\\
+	=&\sqrt{4+25}\\
+	=&\sqrt{29}
+	\end{align*}
+	\begin{align*}
+	\theta=&\arctan\left(\dfrac{x}{y}\right)+2\pi\\
+	=&\arctan\left(-\dfrac{5}{2}\right)+2pi\\
+	=&5.09290
+	\end{align*}
+\end{esempiot}
+\begin{esempiot}{}{} Consideriamo il punto A di coordinate cartesiane $A(2,0)$. Determinare le coordinate in forma polare di $A$ con $\theta\in[0,2\pi[$
+	\begin{align*}
+	r=&\sqrt{x^2+y^2}\\
+	=&\sqrt{2^2}\\
+	=&\sqrt{4}\\
+	=&2
+	\end{align*}
+	\begin{align*}
+	\theta=&\arctan\left(\dfrac{x}{y}\right)\\
+	=&\arctan\left(-\dfrac{0}{2}\right)\\
+	=&0
+	\end{align*}
+\end{esempiot}
+\begin{esempiot}{}{} Consideriamo il punto A di coordinate cartesiane $A(-2,0)$. Determinare le coordinate in forma polare di $A$ con $\theta\in[0,2\pi[$
+	\begin{align*}
+	r=&\sqrt{x^2+y^2}\\
+	=&\sqrt{(-2)^2}\\
+	=&\sqrt{4}\\
+	=&2
+	\end{align*}
+	\begin{align*}
+	\theta=&\arctan\left(\dfrac{x}{y}\right)\\
+	=&\pi\\
+	\end{align*}
+\end{esempiot}
+\section{Da Polare a cartesiano}
+Se $A(r,\theta)$ allora le coordinate cartesiane di $A$ sono\[\begin{cases}
+x=r\sin\theta\\
+y=r\cos\theta 
+\end{cases} \]
+\begin{esempiot}{}{} Consideriamo il punto A di coordinate polari\index{Coordinate!polari} $A(2,\dfrac{\pi}{4})$, quali sono le sue coordinate scritte in forma cartesiana?.
+	\begin{align*}
+	x=&2\sin\dfrac{\pi}{4}\\
+	y=&2\cos\dfrac{\pi}{4}\\
+	x=&2\dfrac{\sqrt{2}}{2}\\
+	y=&2\dfrac{\sqrt{2}}{2}\\
+	x=&\sqrt{2}\\
+	y=&\sqrt{2}
+	\end{align*}
+	\[A(\sqrt{2},\sqrt{2}) \]
+\end{esempiot}
+\begin{esempiot}{}{} Consideriamo il punto A di coordinate polari\index{Coordinate!polari} $A(5,\dfrac{5}{6})\pi$, quali sono le sue coordinate scritte in forma cartesiana?.
+	\begin{align*}
+	x=&5\sin\left(\dfrac{5}{6}\right)\pi\\
+	y=&5\cos\left(\dfrac{5}{6}\right)\pi\\
+	x=&-5\dfrac{\sqrt{3}}{2}\\
+	y=&5\dfrac{1}{2}\\
+		\end{align*}
+	\[A(-5\dfrac{\sqrt{3}}{2},\dfrac{5}{2}) \]
+\end{esempiot}

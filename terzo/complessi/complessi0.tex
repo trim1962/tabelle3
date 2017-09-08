@@ -1,0 +1,24 @@
+\documentclass{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/matematica}
+\begin{document}
+\begin{tikzpicture} %[scale=0.7]
+\tkzInit[xmin=-5,xmax=5,ymin=-3,ymax=3]
+\tkzDrawX[noticks,label=$\Re$]
+\tkzDrawY[noticks,label=$\Im$]
+\tkzDefPoint(0,0){O} \tkzDefPoint(3,2){A}
+\tkzDefPoint[label= right:$Coniugato$](3,-2){B} \tkzDefPoint[label= left:$Opposto$](-3,-2){C}  \tkzDefPoint(1,0){D}
+\tkzPointShowCoord[xlabel=$a$,ylabel=$b$,%
+ystyle={left=7pt},xstyle={below left=5pt}](A)
+\tkzPointShowCoord[ylabel=$-b$,%
+ystyle={below left=7pt}](B)
+\tkzPointShowCoord[xlabel=$-a$,%
+xstyle={above=2pt}](C)
+\tkzDrawVectors(O,A O,B O,C) 
+\tkzLabelSegment[above=3pt](O,A){$z$}
+\tkzLabelSegment[above=3pt](O,B){$\conj{z}$}
+\tkzLabelSegment[above=3pt](O,C){$-z$}
+\tkzMarkAngle[size=1.8cm,=->](D,O,A)
+\tkzLabelAngle[pos = 1.5,above=3pt](B,O,A){$\theta$}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,27 @@
+\documentclass[preview=true]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\input{impostazioni/impostazioniTikz}
+\begin{document}
+  \begin{tikzpicture}
+    \node[main node] (1) {Angolo};
+    \node[main verb] (2) [right =of 1]  {\'{e}};
+  
+   \node[main node] (3) [above right=of 2]  {Concavo};
+   \node[main node] (4) [below right=of 2]  {Convesso};
+   \node[main verb] (5) [below =of 1]  {\'{e}};
+   \node[main node] (6) [below right=of 5]  {Negativo};
+\node[main node] (7) [below left=of 5]  {Positivo};
+    \node[main verb] (8) [below =of 6]  {ha};
+\node[main node] (9) [below=of 8]  {Verso orario};
+    \node[main verb] (10) [below =of 7]  {ha};
+\node[main node] (11) [below=of 10]  {Verso antiorario};
+\node[main verb] (12) [above =of 1]  {\'{e}};
+\node[main node] (13) [above =of 12]  {una parte di piano};
+\node[main verb] (14) [right =of 13]  {compresa};
+\node[main node] (15) [right =of 14]  {fra due semirette};
+\foreach \x /\y in{1/2,2/3,2/4,1/5,5/6,5/7,6/8,8/9,7/10,10/11,1/12,12/13,13/14,14/15}
+  \path[linea] (\x) edge node {} (\y);
+%  
+\end{tikzpicture}
+\end{document}

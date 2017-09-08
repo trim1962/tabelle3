@@ -1,0 +1,36 @@
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz}
+\usetikzlibrary{calc}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle
+ 45,x=1.0cm,y=1.0cm]
+\tikzset{
+	mydot/.style={
+		fill,
+		circle,
+		inner sep=1.5pt
+	}
+}
+\clip(-2.8,-1.0) rectangle (4.5,2.5);
+ \coordinate (A) at (-2,2);
+  \coordinate (P) at (0,0);
+   \coordinate (C) at (4,0);
+  \coordinate (D) at ($(P)!8mm!(P)$);
+\draw [->] (P) -- (0.:0.6) arc (0.:135.:0.6);
+ \draw(P)--(A);
+\draw[|<->|] ($(P)!5mm!90:(A)$)--node[fill=white] {$r$} ($(A)!5mm!-90:(P)$);
+
+\draw [->] (P)-- (C);
+\draw (D) node {$\theta$};
+\begin{scriptsize}
+\node[mydot,label={above left:$A$}] at (A) {};
+\node[label={below left:asse polare}] at (C) {};
+%\draw (3,-0.2) node {Asse polare};
+\node[mydot,label={below right:$P$ Polo}] at (P) {};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,45 @@
+\documentclass[border=20pt,tightpage]{standalone} 
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\pgfkeys{/pgfplots/Axis Style/.style={
+		grid,
+		% width=13.5cm, height=5cm,
+		xlabel={$t$},
+		ylabel={$y$},
+		xlabel style={below left},
+		ylabel style={below left},
+		axis x line=center, 
+		axis y line=middle, 
+		samples=100,
+		ymin=-3, ymax=3,
+		xmin=0, xmax=3.5,
+		domain=0:pi
+	}}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}
+[
+    Axis Style,
+    xtick={
+    	0, 0.785, 1.57, 3.14,2.355,6.28
+    },
+    xticklabels={
+    	$0$, $\frac{T}{4}$,  $\frac{T}{2}$,
+    	$T$, $\frac{3T}{4}$, $T$
+    },
+     ytick={
+     	-2,-1,0,1,2
+     },
+     yticklabels={
+     $-R$,$-1$,$0$,$+1$,$+R$
+     },
+     legend entries={{$y=R\sin\omega t$},{$y=R\sin(\omega t +\pi$}} 
+]
+
+\addplot [mark=none, thick, blue] {2*sin(deg(2*x))};
+\addplot [mark=none,  dashed, red] {2*sin(deg(2*x+180))};
+\end{axis}
+\end{tikzpicture}
+
+\end{document}

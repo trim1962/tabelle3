@@ -1,0 +1,42 @@
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz}
+\usetikzlibrary{calc}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle
+ 45,x=1.0cm,y=1.0cm]
+\tikzset{
+	mydot/.style={
+		fill,
+		circle,
+		inner sep=1.0pt
+	}
+}
+\clip(-1,-1.0) rectangle (4.5,4);
+ \coordinate (A) at (2,3);
+ \coordinate (AX) at (2,0);
+  \coordinate (P) at (0,0);
+   \coordinate (C) at (3.5,0);
+  \coordinate (D) at (.7,.4);
+  \coordinate (E) at (0,3.5);
+\draw [->] (P) -- (0.:0.6) arc (0.:55.:0.6);
+ \draw(P)--(A);
+\draw[|<->|,inner sep=1.5pt] ($(P)!2mm!90:(A)$)--node[fill=white] {$r$} ($(A)!2mm!-90:(P)$);
+
+\draw [->] (P)-- (C);
+\draw [->] (P)-- (E);
+
+\draw (D) node {$\theta$};
+\begin{scriptsize}
+\draw  (A)-- (AX)node [midway, above right ]{$y$};
+\draw  (P)-- (AX)node [midway, below  ]{$x$};
+\node[mydot,label={above right:$A$}] at (A) {};
+\node[mydot,label={below:$O$}] at (P) {};
+\node[mydot,label={below:$H$}] at (AX) {};
+%\node[mydot,label={below right:$P$ Polo}] at (P) {};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

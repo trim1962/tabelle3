@@ -35,10 +35,10 @@
 %           & #4 & {}\mapsto{} & #5
 %  \end{array}}
 \input{../Mod_base/tcolorboxgest}
-\input{../Mod_base/glossario}
-\newglossary[slg]{symbolslist}{sym}{sbl}{Elenco di simboli}
-
-\makeglossaries
+%\input{../Mod_base/glossario}
+%\newglossary[slg]{symbolslist}{sym}{sbl}{Elenco di simboli}
+%
+%\makeglossaries
 
 %\setglossarystyle{tree}
 
@@ -55,9 +55,9 @@
 %\loadglsentries[acronym]{glossario/simboli1}
 %}
 %\opt{terzo}{
-\loadglsentries{glossario/glossari3}
-\loadglsentries[altacronym]{glossario/acronimi1}
-\loadglsentries[acronym]{glossario/simboli1}
+% 10/12/2017 :: 16:38:15 :: \loadglsentries{glossario/glossari3}
+% 2/12/2017 :: 9:30:51 :: \loadglsentries[altacronym]{glossario/acronimi1}
+% 2/12/2017 :: 9:30:43 :: \loadglsentries[acronym]{glossario/simboli1}
 %}
 %\opt{quarto}{
 %\loadglsentries{glossario/glossari4}
@@ -87,7 +87,7 @@
 
 
 % % % % % % % % % % % % % % % % % braille
-\usepackage[puttinydots]{braille}
+% 10/12/2017 :: 16:38:06 :: \usepackage[puttinydots]{braille}
 
 %\newcommand{\mytable}[1]{%
 %	\enskip\begin{tabular}[t]{r|l} 
@@ -120,6 +120,16 @@
 \input{../Mod_base/indice}
 \listfiles
 \input{../Mod_base/utili}
+\usepackage{tkz-berge}
+\newcommand{\polylogo}[1]{
+	\begin{center}
+		\begin{tikzpicture}
+		\renewcommand*{\VertexBallColor}{green!50!black}
+		\GraphInit[vstyle=Art]
+		\grComplete[RA=5]{#1}
+		\end{tikzpicture}
+	\end{center}
+}
  \begin{document}
 \frontmatter
 \begin{titlepage}
@@ -128,8 +138,8 @@
 		
 		
 		% Upper part of the page
-			%\includestandalone{../Mod_base/Lgrande2}\\[1cm]    
-			
+		%\includestandalone{../Mod_base/Lgrande2}\\[1cm]    
+		
 		\includegraphics{../Mod_base/Lgrande2}\\[1cm]    
 		\textsc{\LARGE Claudio Duchi}\\[1.5cm]
 		
@@ -139,19 +149,11 @@
 		% Title
 		\HRule \\[0.4cm]
 		{ \huge \bfseries Appunti di matematica}\\[0.4cm]
-%		\opt{prima}{{\bfseries PRIMO}\\[0.4cm]}
-%		\opt{secondo}{{\bfseries SECONDO}\\[0.4cm]}
-		{\bfseries TERZO}\\[0.4cm]
-%		\opt{quarto}{{\bfseries QUARTO}\\[0.4cm]}
-%		\opt{extra}{{\bfseries EXTRA}\\[0.4cm]}
-%		\opt{grafici}{{\bfseries GRAFICI}\\[0.4cm]}
-%	\opt{glossario}{{\bfseries GLOSSARIO}\\[0.4cm]}
-		\HRule \\[1.5cm]
+		{\bfseries Terzo}\\[0.4cm]
 		\vfill
-		
 		% Bottom of the page
+		\polylogo{15}		
 		{\large $-$\DTMnow$-$}
-		
 	\end{center}
 	
 \end{titlepage}
@@ -176,8 +178,8 @@
 \addcontentsline{toc}{section}{Esempi}
 \lstlistoflistings{}
 \tcblistof[\section*]{thm}{Esempi}
-\addcontentsline{toc}{section}{Contro esempi}
-\tcblistof[\section*]{cthm}{Contro esempi}
+%\addcontentsline{toc}{section}{Contro esempi}
+%\tcblistof[\section*]{cthm}{Contro esempi}
 %}
 \mainmatter%
 %\opt{prima}{\input{primo/prima}}
@@ -186,8 +188,8 @@
 %\opt{quarto}{\input{quarto/quarto}}
 %\opt{extra}{\input{extra/extra}}
 %\opt{grafici}{\input{grafici/grafici}}
-\glsaddall
-\printglossaries
+% 10/12/2017 :: 16:41:10 :: \glsaddall
+% 10/12/2017 :: 16:41:04 :: \printglossaries
 \addcontentsline{toc}{chapter}{\indexname}
 \input{../Mod_base/MezziUsati}
 \printindex

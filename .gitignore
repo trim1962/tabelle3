@@ -20,3 +20,6 @@
 *.thm
 *.toc
 *.jpg
+*.bbl
+*.blg
+*.out

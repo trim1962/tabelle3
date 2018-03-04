@@ -6,7 +6,7 @@
 Un angolo\index{Angolo} è la parte di piano compreso fra due semirette dette lati. I lati hanno in comune l'origine chiamata vertice.
 \end{definizionet}
 
-Le  semirette formano due angoli  uno convesso\index{Angolo!convesso} l'altro concavo\index{Angolo!concavo} come nella figura\nobs\vref{fig:angconconvposoneg}. 
+Le  semirette formano due angoli:  uno convesso\index{Angolo!convesso} l'altro concavo\index{Angolo!concavo} come nella figura\nobs\vref{fig:angconconvposoneg}. 
 \begin{figure} %[htbp]
 	\centering
 \includestandalone[width=.6\textwidth]{terzo/funzgonioTikz/angoliconcaviconvessi}
@@ -133,7 +133,7 @@ Quanto corrisponde in gradi un radiante
 \begin{definizionet}{Circonferenza goniometrica}{}
 	Dato un sistema di riferimento cartesiano ortogonale, una circonferenza goniometrica\index{Circonferenza!goniometrica} è una circonferenza con centro nell'origine e raggio uguale a uno. 
 \end{definizionet}
- La circonferenza incontra gli assi in quattro punti. $A(1,0)$, $B(0,1)$, $C(-1,0)$ e $D(-1,0)$. Costruiamo un angolo  $\alpha$  in modo che il suo vertice coincida con il centro della circonferenza. L'angolo incontra la circonferenza nei punti $A$ e $P$ come nella  figura\nobs\vref{fig:circonferenzagonimetricagonio}. 
+ La circonferenza incontra gli assi in quattro punti. $A(1,0)$, $B(0,1)$, $C(-1,0)$ e $D(-1,0)$. Costruiamo un angolo  $\alpha$  in modo che il suo vertice coincida con il centro della circonferenza e un lato coincida con la semiretta positiva dell'asse $x$. L'angolo incontra la circonferenza nei punti $A$ e $P$ come nella  figura\nobs\vref{fig:circonferenzagonimetricagonio}. 
 \subsection{Coseno}
 \label{sec:cosenogonio}
 \begin{figure}
@@ -155,11 +155,11 @@ Data una circonferenza goniometrica\nobs\vref{sub:cosenodef}, disegniamo un ango
 \end{definizionet}
 \subsection{Andamento coseno}
 \label{sec:andamentocoseno}
-Al variare dell'ampiezza dell'angolo varia anche il valore del coseno\index{Funzione!Coseno}, consideriamo la figura\nobs\vref{fig:AndamentoCoseno1}. Supponiamo di far variare l'angolo $\alpha$ da zero a centottanta gradi, quindi che $\ang{0}\leq\alpha\leq\ang{180}$ o se utilizziamo i radianti $0\leq\alpha\leq\pi$. 
+Al variare dell'ampiezza dell'angolo varia anche il valore del coseno\index{Funzione!Coseno}, consideriamo la figura\nobs\vref{fig:AndamentoCoseno1}. Supponiamo di far variare l'angolo $\alpha$ da zero a $\pi$, quindi che $\ang{0}\leq\alpha\leq\ang{180}$ o se utilizziamo i radianti $\num{0}\leq\alpha\leq\pi$. 
 \begin{description}
 	\item[$\alpha_0$] L'angolo ha ampiezza zero. La verticale del punto $P_0$ all'asse $x$ lo incontra in $px_0$. In questo caso il coseno di $\alpha$ cioè $\cos\alpha_0$ vale uno.
-	\item [$\alpha_1$] l'angolo è compreso fra zero e novanta gradi, incontra la circonferenza nel punto $P_1$. La sua verticale incontra l'asse delle ascisse nel punto $px_1$. Il coseno dell'angolo $\alpha_1$ è un numero positivo minore di uno.
-	\item [$\alpha_2$] L'angolo  è retto. La proiezione del punto $P_2$ incontra l'asse $x$ nell'origine. In questo caso l'ascissa è $x_2$ è   nulla e $\cos\alpha_2$ è zero. 
+	\item [$\alpha_1$] l'angolo è compreso fra zero e novanta gradi quindi fra zero e $\dfrac{\pi}{2} $,il raggio incontra la circonferenza nel punto $P_1$. Il punto ha ascissa positiva quindi il coseno dell'angolo $\alpha_1$ è un numero positivo minore di uno.
+	\item [$\alpha_2$] L'angolo  è retto. In questo caso l'ascissa è $x_2$ è   nulla e $\cos\alpha_2$ è zero. 
 	\item [$\alpha_3$]  L'angolo è ottuso. La proiezione del punto $P_3$ incontra  l'asse $x$ nel semiasse negativo. Quindi $\cos\alpha_2$ è negativo.
 	\item [$\alpha_4$] L'angolo  è  piatto. Il  $P_4$ incontra l'asse $x$ nel punto $(-1;0)$. In questo  $\cos\alpha_4$ vale meno uno.
 \end{description}
@@ -172,12 +172,12 @@ Al variare dell'ampiezza dell'angolo varia anche il valore del coseno\index{Funz
 Analogo discorso per angoli di ampiezza  maggiore di un angolo  piatto come nella figura~\vref{fig:AndamentoCoseno2}.
 \begin{description}
 	\item [$\alpha_4$] L'angolo è piatto. Il  $P_4$ incontra l'asse $x$ nel punto $(-1;0)$. In questo  $\cos\alpha_4$ vale meno uno.
-	\item [$\alpha_5$] L'angolo è compreso tra \ang{180} e \ang{270}. La proiezione del punto $P_5$ cade sul semiasse negativo delle ascisse. Quindi $\cos\alpha_2$ è negativo.
-	\item [$\alpha_6$] L'angolo è di duecentosettanta gradi. Il punto ha ascissa zero quindi  $\cos\alpha_6=0$.
-	\item [$\alpha_7$] L'angolo è compreso tra \ang{270} e \ang{360}. La proiezione del punto $P_7$ cade sul semiasse positivo delle ascisse. Quindi $\cos\alpha_7$ è positivo.
-	\item [$\alpha_8$] L'angolo è di trecentosessanta gradi. Il punto ha ascissa uno quindi  $\cos\alpha_8=1$.
+	\item [$\alpha_5$] L'angolo è compreso tra \ang{180} e \ang{270} cioè fra $\pi$ e $\dfrac{3}{2}\pi$. L'ascissa del punto  $P_5$ è negativa. Quindi $\cos\alpha_2$ è negativo.
+	\item [$\alpha_6$] L'angolo è di duecentosettanta gradi $\dfrac{3}{2}\pi$. Il punto ha ascissa zero quindi  $\cos\alpha_6=0$.
+	\item [$\alpha_7$] L'angolo è compreso tra \ang{270} e \ang{360} quindi compreso tra $\dfrac{3}{2}\pi$ e $\pi$ radianti. Il punto $P_7$ ha ascissa positiva quindi $\cos\alpha_7$ è positivo.
+	\item [$\alpha_8$] L'angolo è di trecentosessanta gradi o $2\pi$ radianti. Il punto ha ascissa uno quindi  $\cos\alpha_8=1$.
 \end{description}
-Per angoli superiori a \ang{360} otteniamo gli stessi casi illustrati in precedenza. 
+Per angoli superiori ad un angolo giro otteniamo gli stessi precedenti risultati. 
 Possiamo quindi dire che il coseno
 \begin{enumerate}
 	\item è limitato e varia fra $-1$ e $+1$.
@@ -211,27 +211,27 @@ Possiamo quindi dire che il coseno
 	\label{tab:funseno}
 \end{figure}
 \begin{definizionet}{Seno}{}
-	Data una circonferenza goniometrica\nobs\vref{sub:senodef}, disegniamo un angolo con centro nell'origine e con un lato coincidente con l'asse delle ascisse.  Chiamiamo  $\alpha$ la sua ampiezza. L'altro lato dell'angolo incontra la circonferenza in un punto $P$.  Diremo seno\index{Funzione!Seno!definizione} dell'angolo $\alpha$ e lo indichiamo con $\sin\alpha$ l'ordinata $OQ$  del punto $P$
+	Data una circonferenza goniometrica\nobs\vref{sub:senodef}, disegniamo un angolo con centro nell'origine e con un lato coincidente con l'asse delle ascisse.  Chiamiamo  $\alpha$ la sua ampiezza. L'altro lato dell'angolo incontra la circonferenza in un punto $P$.  Diremo seno\index{Funzione!Seno!definizione} dell'angolo $\alpha$ e lo indichiamo con $\sin\alpha$, l'ordinata del punto $P$
 \end{definizionet}
 \subsection{Andamento seno}
 \label{subs:AndamentoSeno}
 Al variare dell'angolo varia anche il valore del seno\index{Funzione!Seno}, consideriamo la figura\nobs\vref{fig:AndamentoSeno1}. Supponiamo di far variare l'angolo $\alpha$ da zero a centottanta gradi, quindi che $\ang{0}\leq\alpha\leq\ang{180}$ o se utilizziamo i radianti $0\leq\alpha\leq\pi$. 
 \begin{description}
-	\item[$\alpha_0$] L'angolo ha ampiezza zero. La verticale del punto $P_0$  incontra l'asse delle ordinate in $py_0$. In questo caso il seno di $\alpha$ cioè $\sin\alpha_0$ vale zero.
-	\item [$\alpha_1$] l'angolo è compreso fra zero e novanta gradi, incontra la circonferenza nel punto $P_1$. La sua verticale incontra l'asse delle ordinate nel punto $py_1$. Il seno dell'angolo $\alpha_1$ è un numero positivo minore di uno.
-	\item [$\alpha_2$] L'angolo  è retto. L'ordinata del punto $P_2$ è uno. In questo caso  è   $\sin\alpha_2$ è uno. 
-	\item [$\alpha_3$]  L'angolo è ottuso. La perpendicolare del punto $P_3$ incontra  l'asse $y$ nel semiasse positivo. Quindi $\sin\alpha_2$ è maggiore di zero.
+	\item[$\alpha_0$] L'angolo ha ampiezza zero. L'ordinata del punto è zero quindi il seno di $\alpha$ cioè $\sin\alpha_0$ vale zero.
+	\item [$\alpha_1$] l'angolo è compreso fra zero e novanta gradi  quindi fra zero e $\dfrac{\pi}{2} $,il raggio incontra la circonferenza nel punto $P_1$. Questo punto ha ordinata positiva. Il seno dell'angolo $\alpha_1$ è un numero positivo minore di uno.
+	\item [$\alpha_2$] L'angolo è retto. L'ordinata del punto $P_2$ è uno. In questo caso  è   $\sin\alpha_2$ è uno. 
+	\item [$\alpha_3$]  L'angolo è ottuso. Il punto $P_3$ ha ordinata positiva quindi $\sin\alpha_2$ è maggiore di zero.
 	\item [$\alpha_4$] L'angolo  è  piatto. Il  $P_4$ incontra l'asse $y$ nel punto $(-1;0)$. In questo  $\sin\alpha_4$ vale zero.
 \end{description}
 Analogo discorso per angoli di ampiezza  maggiore di un angolo  piatto come nella figura~\vref{fig:AndamentoSeno2}.
 \begin{description}
 	\item [$\alpha_4$] L'angolo è piatto. Il punto  $P_4$ ha coordinate  $(-1;0)$. In questo  $\sin\alpha_4$ vale zero.
-	\item [$\alpha_5$] L'angolo è compreso tra \ang{180} e \ang{270}. La proiezione del punto $P_5$ cade sul semiasse negativo delle ordinate. Quindi $\sin\alpha_2$ è negativo.
-	\item [$\alpha_6$] L'angolo è di duecentosettanta gradi. Il punto ha ordinata uno quindi  $\sin\alpha_6=1$.
-	\item [$\alpha_7$] L'angolo è compreso tra \ang{270} e \ang{360}. La proiezione del punto $P_7$ cade sul semiasse negativo delle ordinate. Quindi $\sin\alpha_7$ è negativo.
-	\item [$\alpha_8$] L'angolo è di trecentosessanta gradi. Il punto ha ordinata zero quindi  $\sin\alpha_8=0$.
+	\item [$\alpha_5$] L'angolo è compreso tra \ang{180} e \ang{270} cioè compreso tra $\pi$ e $\dfrac{3}{2}\pi$. L'ordinata del punto $P_5$ è negativa quindi $\sin\alpha_2$ è negativo.
+	\item [$\alpha_6$] L'angolo è la somma di tre angoli retti. Il punto ha ordinata uno quindi  $\sin\alpha_6=1$.
+	\item [$\alpha_7$] L'angolo è compreso tra \ang{270} e \ang{360} compreso tra $\dfrac{3}{2}\pi$ e $2\pi$. L'ordinata  del punto $P_7$ è negativa quindi $\sin\alpha_7$ è negativo.
+	\item [$\alpha_8$] L'angolo è di trecentosessanta gradi $2\pi$. Il punto ha ordinata zero quindi  $\sin\alpha_8=0$.
 \end{description}
-Per angoli superiori a \ang{360} otteniamo gli stessi casi illustrati in precedenza. 
+Per angoli superiori a \ang{360} o $2\pi$ otteniamo gli stessi risultati  precedenti. 
 Possiamo quindi dire che il seno
 \begin{enumerate}
 	\item è limitato e varia fra $-1$ e $+1$.
@@ -289,21 +289,21 @@ Possiamo quindi dire che il seno
 \label{sec:AndamentoTangente}
 Al variare dell'angolo varia anche il valore della tangente\index{Funzione!Tangente}, consideriamo la figura\nobs\vref{fig:AndamentoTangente1}. Supponiamo di far variare l'angolo $\alpha$ da zero a centottanta gradi, quindi che $\ang{0}\leq\alpha\leq\ang{180}$ o se utilizziamo i radianti $0\leq\alpha\leq\pi$. 
 \begin{description}
-	\item[$\alpha_0$] L'angolo ha ampiezza zero. Il raggio incontra la retta tangente in  $T_0$. In questo caso  tangente  dell'angolo $\alpha$ cioè $\tan\alpha_0$ vale zero.
-	\item [$\alpha_1$] l'angolo è compreso fra zero e novanta gradi, il prolungamento del raggio  incontra la retta nel punto $T_1$. La tangente di $\alpha_1$ è un numero positivo.
-	\item [$\alpha_2$] L'angolo  è retto. In questo caso il prolungamento del raggio non incontra la parallela all'asse $y$.In questo    $\tan\alpha_2$ non esiste. 
+	\item[$\alpha_0$] L'angolo ha ampiezza zero. Il raggio incontra la retta tangente in  $T_0$. In questo caso  la tangente  dell'angolo $\alpha$  vale zero.
+	\item [$\alpha_1$] l'angolo è compreso fra zero e novanta gradi quindi tra zero e $\dfrac{\pi}{2}$, il prolungamento del raggio  incontra la retta nel punto $T_1$. La tangente di $\alpha_1$ è un numero positivo.
+	\item [$\alpha_2$] L'angolo  è retto. In questo caso il prolungamento del raggio non incontra la parallela all'asse $y$. In questo    $\tan\alpha_2$ non esiste. 
 	\item [$\alpha_3$]  L'angolo è ottuso. Il prolungamento del raggio incontra le retta in $T_3$  con valori dell'ordinata negativi. Quindi $\tan\alpha_2$ è negativo.
 	\item [$\alpha_4$] L'angolo  è  piatto. Il  prolungamento incontra la retta tangente  nel punto $(-1;0)$. In questo  $\tan\alpha_4$ vale zero.
 \end{description}
 Analogo discorso per angoli di ampiezza  maggiore di un angolo  piatto come nella figura~\vref{fig:AndamentoTangente2}.
 \begin{description}
 	\item [$\alpha_4$] L'angolo è piatto. Incontra l'asse delle ordinate nel punto $(-1;0)$. In questo  $\tan\alpha_4$ vale zero.
-	\item [$\alpha_5$] L'angolo è compreso tra \ang{180} e \ang{270}. Il prolungamento del raggio incontra la retta tangente  nel primo quadrante. Quindi $\tan\alpha_5$ è positivo.
-	\item [$\alpha_6$] L'angolo è di duecentosettanta gradi. Il prolungamento del raggio non incontra la retta  tangente. In questo caso  $\tan\alpha_6$ non esiste. 
-	\item [$\alpha_7$] L'angolo è compreso tra \ang{180} e \ang{360}. Il prolungamento del raggio incontra la retta tangente nel quarto quadrante. Quindi $\tan\alpha_7$ è negativo.
+	\item [$\alpha_5$] L'angolo è compreso tra \ang{180} e \ang{270} cioè fra $\pi$ e $\dfrac{3}{2}\pi$. Il prolungamento del raggio incontra la retta tangente  nel primo quadrante. Quindi $\tan\alpha_5$ è positivo.
+	\item [$\alpha_6$] L'angolo è uguale a tre angoli retti. Il prolungamento del raggio non incontra la retta  tangente. In questo caso  $\tan\alpha_6$ non esiste. 
+	\item [$\alpha_7$] L'angolo è compreso tra \ang{180} e \ang{360} quindi fra $\dfrac{3}{2}\pi$ e $2\pi$. Il prolungamento del raggio incontra la retta tangente nel quarto quadrante. Quindi $\tan\alpha_7$ è negativa.
 	\item [$\alpha_8$] L'angolo è di trecentosessanta gradi. Il punto ha ordinata zero quindi  $\tan\alpha_8=0$.
 \end{description}
-Per angoli superiori a \ang{360} otteniamo gli stessi casi illustrati in precedenza. 
+Per angoli superiori a \ang{360}, $2\pi$ otteniamo gli stessi casi illustrati in precedenza. 
 Possiamo quindi dire che la tangente:
 \begin{enumerate}
 	\item è illimitata.
@@ -445,7 +445,7 @@ Dato un angolo $\alpha$ allora vale quanto segue:
 \caption{Relazione fondamentale goniometria}\label{fig:relFondGonio}
 \end{figure}
 \begin{proof}
-	Consideriamo la figura\nobs\vref{fig:relFondGonio} per il triangolo POH vale il teorema di Pitagora\index{Teorema!Pitagora} \[a^2=b^2+c^2\] Dato che la circonferenza è una circonferenza goniometrica
+	Consideriamo la figura\nobs\vref{fig:relFondGonio} per il triangolo POH vale il teorema di Pitagora\index{Teorema!Pitagora} \[a^2=b^2+c^2\] Dato che la circonferenza è una circonferenza goniometrica.
 	\begin{align*}
 	a&=1\\
 	b&=\cos\alpha\\
@@ -461,7 +461,7 @@ Dalla relazione\nobs\vref{eqn:RelazioneFondamentaleTrigonometria1} è possibile 
 &\sin^{2}\alpha={}1-\cos^{2}\alpha \\
 &\sin\alpha={}\pm\sqrt{1-\cos^{2}\alpha}
 \end{align*}
-Nella sezione\nobs\vref{sec:EsempiGoniometria} vi sono esempi per l'uso di queste formule. 
+
 \begin{esempiot}{Trovare il valore del coseno di un angolo noto il seno}{}
 Trovare il valore del coseno di un angolo noto il seno. Per esempio poniamo 
 \end{esempiot}

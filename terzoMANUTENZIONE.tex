@@ -8,7 +8,7 @@
 \input{../Mod_base/grafica}
 %\input{../Mod_base/rifIndici}
 \input{../Mod_base/stand_class}
-
+\usepackage{qrcode}
 \input{../Mod_base/matematica}
 \input{../Mod_base/tabelle}
 \DeclareCaptionFormat{grafico}{\textbf{Grafico \thefigure}#2#3}
@@ -78,8 +78,8 @@
 
 \newcommand{\tabincludegraphics}[2][]{%
   $\vcenter{\hbox{\includegraphics[#1]{#2}}}$}
-\newcommand{\tabincludestandalone}[2][]{%
-	$\vcenter{\hbox{\includestandalone[#1]{#2}}}$}
+%\newcommand{\tabincludestandalone}[2][]{%
+%	$\vcenter{\hbox{\includestandalone[#1]{#2}}}$}
 
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}

@@ -1,0 +1,33 @@
+\documentclass[10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{plotmarks}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{axis}[
+x=1.0cm,y=1.0cm,
+axis lines=middle,
+ymajorgrids=false,
+xmajorgrids=false,
+xmin=-5.0,
+xmax=5.0,
+ymin=-0.6,
+ymax=3.4,
+xtick={-5.0,-4.0,...,5.0},
+yticklabels=\empty,
+ytick=\empty]
+\clip(-5.,-1.0) rectangle (5.,3.18);
+
+\draw[domain=-5.00:5.00] plot[smooth]({\x},{rad(90-atan(\x))}); 
+\draw(-5.0,3.14)--(5.0,3.14);
+
+\draw (0.25,3.0)node {$\pi$};
+\draw (-0.2,-0.3)node {$0$};
+\end{axis}
+\end{tikzpicture}
+\end{document}

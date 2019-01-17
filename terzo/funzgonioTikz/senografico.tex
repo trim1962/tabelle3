@@ -1,8 +1,11 @@
-\documentclass[preview=true]{standalone}
-\input{../Mod_base/grafica}
-\input{../Mod_base/base}
-
-%\usetikzlibrary{...}
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows,calc}
+\pagestyle{empty}
+\usepackage{siunitx}
 \begin{document}
 	\begin{tikzpicture}[>=triangle  45]
 	\tikzset{samples=600}
@@ -15,7 +18,7 @@
 	\node (C )at (0,\a)[above right] {$1$};
 	\node (D )at (0,-\a)[above right] {$-1$};
 	\draw[->] (\Xm,0) -- (\XM,0) node[above] {$\alpha$} ;
-	\draw[->] (0,-\a-1) -- (0,\a+1) node[above] {$\sen\alpha$} ;;
+	\draw[->] (0,-\a-1) -- (0,\a+1) node[above] {$\sin\alpha$} ;;
 	\draw (\Xm,\a) -- (\XM,\a) ;
 	\draw (\Xm,-\a) -- (\XM,-\a) ;
 	\draw [thick, domain=\Xm:\XM] plot  (\x,{\a*sin(\x r)});  

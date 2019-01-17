@@ -1,8 +1,11 @@
-\documentclass[preview=true]{standalone}
-\input{../Mod_base/grafica}
-\input{../Mod_base/base}
-
-%\usetikzlibrary{...}
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows,calc}
+\pagestyle{empty}
+\usepackage{siunitx}
 \begin{document}
 	
 
@@ -17,7 +20,7 @@
 		\coordinate[label=above:$P$] (P) at ({\raggio*cos(\angolo)},{\raggio*sin(\angolo)});
 		\coordinate(Q) at (\raggio,0);
 		\coordinate[label=above right:$T$] (T) at (\raggio,{\raggio*tan(\angolo )});
-		\coordinate[label=right:$\tg\alpha$] (M)at ($(T)!0.5!(Q)$);
+		\coordinate[label=right:$\tan\alpha$] (M)at ($(T)!0.5!(Q)$);
 		\draw[->] (-\raggio-1,0) -- (\raggio+1,0) node[above] {$x$} ;
 		\draw[->] (0,-\raggio-1) -- (0,\raggio+1) node[above] {$y$} ;
 		\draw (\raggio,-\raggio-1) -- (\raggio,\raggio+1) ;

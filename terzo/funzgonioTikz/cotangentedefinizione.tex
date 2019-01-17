@@ -1,10 +1,13 @@
-\documentclass[preview=true]{standalone}
-\input{../Mod_base/grafica}
-\input{../Mod_base/base}
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows,calc,positioning,shapes.symbols,shapes.geometric,shapes.misc}
+\pagestyle{empty}
+\usepackage{siunitx}
 
-%\usetikzlibrary{...}
 \begin{document}
-	
 
 			\begin{tikzpicture}[>=triangle  45]
 			\pgfmathsetmacro{\raggio}{4};
@@ -17,7 +20,7 @@
 			\coordinate[label=above:$P$] (P) at ({\raggio*cos(\angolo)},{\raggio*sin(\angolo)});
 			\coordinate(Q) at (0,\raggio);
 			\coordinate[label=above right:$C$] (T) at ({\raggio*1/tan(\angolo )},\raggio);
-			\coordinate[label=above:$\cotg\alpha$] (M)at ($(T)!0.5!(Q)$);
+			\coordinate[label=above:$\cot\alpha$] (M)at ($(T)!0.5!(Q)$);
 			\draw[->] (-\raggio-1,0) -- (\raggio+1,0) node[above] {$x$} ;
 			\draw[->] (0,-\raggio-1) -- (0,\raggio+1) node[above] {$y$} ;
 			\draw (-\raggio-1,\raggio) -- (\raggio+1,\raggio) ;

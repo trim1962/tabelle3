@@ -14,7 +14,7 @@ Le  semirette formano due angoli:  uno convesso\index{Angolo!convesso} l'altro c
 \end{figure}
 \begin{figure} %[htbp]
 	\centering
-\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angolinotevoli}
+\includestandalone[width=0.9\textwidth]{terzo/funzgonioTikz/angolinotevoli}
 	\caption{Angoli notevoli}\label{fig:Angolorettoposneggonio}
 \end{figure}
 \begin{figure}
@@ -22,7 +22,7 @@ Le  semirette formano due angoli:  uno convesso\index{Angolo!convesso} l'altro c
 %\includestandalone[width=\textwidth]{terzo/funzgonioTikz/mappagomiometricaangolo}
 	\caption{Mappa goniometria l'angolo}\label{fig:MappaGonometria1}
 \end{figure}
-\begin{definizionet}{Angoli Positivi e Negativi}{}
+\begin{definizionet}{Angoli positivi e negativi}{}
 	Fissato un lato, l'angolo è  positivo\index{Angolo!positivo}  se per costruirlo ruoteremo l'altra semiretta in senso antiorario.  Un angolo è negativo\index{Angolo!negativo} se ruoteremo l'altro lato in senso orario come nella figura\nobs\vref{fig:angconconvposoneg}. 
 \end{definizionet}
 \begin{definizionet}{Angolo giro}{}
@@ -387,27 +387,33 @@ Una funzione goniometrica inversa associa ad un valore numerico un angolo.
 \begin{figure}
 	\begin{subfigure}[b]{.5\linewidth}
 		\centering
-	\includestandalone[width=8.5cm]{terzo/funzgonioTikz/acrsengrafico}
+	\includestandalone[width=4.5cm]{terzo/funzgonioTikz/acrsengrafico2}
 		\caption{Grafico di $\arcsin x$}\label{fig:ArcSenGrafico}
 	\end{subfigure}%
 	\begin{subfigure}[b]{.5\linewidth}
 		\centering
-	\includestandalone[width=8.5cm]{terzo/funzgonioTikz/acrcosengrafico}
+	\includestandalone[width=4.5cm]{terzo/funzgonioTikz/acrcosengrafico2}
 		\caption{Grafico di $\arccos x$}\label{fig:ArcCosenGrafico}
 	\end{subfigure}
 		\begin{subfigure}[b]{\linewidth}
 			\centering
-	\includestandalone[width=8.5cm]{terzo/funzgonioTikz/arcotangente}
+	\includestandalone{terzo/funzgonioTikz/arcotangente2}
 		\caption{Grafico di $\arctan x$}\label{fig:ArcTangenteGrafico}
 		\end{subfigure}
+		\begin{subfigure}[b]{\linewidth}
+		\centering
+		\includestandalone{terzo/funzgonioTikz/arcocotangente2}
+		\caption{Grafico di $\arccotg x$}\label{fig:ArcCotangenteGrafico}
+	\end{subfigure}
 			\caption{Funzioni inverse}\label{tab:funzinverse_1}
 \end{figure}
 \subsection{Arcoseno}\index{Funzione!Arcocoseno!definizione}
-La funzione inversa $y=\arcsin x$ associa ad un valore numerico compreso fra$[-1,+1]$ un angolo compreso in $[-\dfrac{\pi}{2},\dfrac{\pi}{2}]$. Il grafico\nobs\vref{fig:ArcSenGrafico} 
+La funzione inversa $y=\arcsin x$ associa ad un valore numerico compreso fra$[-1,+1]$ un angolo compreso in  $-\frac{\pi}{2}\leq y\leq\frac{\pi}{2}$ . Il grafico\nobs\vref{fig:ArcSenGrafico} 
 \subsection{Arcoseno}\index{Funzione!Arcoseno!definizione}
-La funzione inversa del coseno è l'arcocoseno, è definita  in $[-1,+1]$ e ha come valori in uscita angoli in $[0,\pi]$ come appare dal grafico\nobs\vref{fig:ArcCosenGrafico} 
+La funzione inversa del coseno è l'arcocoseno $y=\arccos x$ , è definita  in $[-1,+1]$ e ha come valori in uscita angoli in  $0\leq y\leq\pi$ come appare dal grafico\nobs\vref{fig:ArcCosenGrafico} 
 \subsection{Arcotangente}\index{Funzione!Arcotangente!definizione}
-\altapriorita{Inserire definizione arcotangente}
+%\altapriorita{Inserire definizione arcotangente}
+La funzione inversa della tangente è l'arcotangente $y=\arctan x$, è definita in$\R$ e ha come valori in uscita gli angoli $-\frac{\pi}{2}<y<\frac{\pi}{2}$ come appare dal grafico\nobs\vref{fig:ArcTangenteGrafico}
 \section{Relazioni fondamentali}
 \label{sec:RelazioniFondamentali}
 \begin{table} %[tbp]
@@ -528,16 +534,54 @@ Analogo ragionamento vale per il coseno basta guardare la figura\nobs\vref{fig:s
 	Dato un angolo $\alpha$ allora vale quanto segue:
 \begin{align}
 \tan\alpha=&{}\dfrac{\sin\alpha}{\cos\alpha}&\alpha&{}\neq\dfrac{\pi}{2}+k\pi\label{equ:tangente1}\\
-\cot\alpha=&{}\dfrac{\cos\alpha}{\sin\alpha}={}\dfrac{1}{\tan\alpha}& \alpha&{}\neq\pi\label{equ:cotangente1}
+\cot\alpha=&{}\dfrac{\cos\alpha}{\sin\alpha}={}\dfrac{1}{\tan\alpha}& \alpha&{}\neq k\pi\label{equ:cotangente1}
 \end{align}
 \end{definizionet}
+\begin{teoremat}{Seno e coseno da tangente cotangente}
 Dalle formule\nobs\vrefrange{equ:tangente1}{equ:cotangente1} è possibile ottenere le seguenti relazioni
 \begin{align*}
-\cos^{2}\alpha=&{}\dfrac{1}{1+{\tan}^{2}\alpha} &\alpha&{}\neq\dfrac{\pi}{2}+k\pi\\
-\cos\alpha=&{}\pm\dfrac{1}{\sqrt{1+{\tan}^{2}\alpha}} &\alpha{}&\neq\dfrac{\pi}{2}+k\pi\\
-\sin^{2}\alpha=&{}\dfrac{\tan^{2}\alpha}{1+\tan^{2}\alpha}&\alpha{}&\neq\dfrac{\pi}{2}+k\pi\\
-\sin\alpha=&{}\pm\dfrac{\tan\alpha}{\sqrt{1+\tan^{2}\alpha}}&\alpha{}&\neq\dfrac{\pi}{2}+k\pi
+&\cos^{2}\alpha={}\dfrac{1}{1+{\tan}^{2}\alpha} &\alpha&{}\neq\dfrac{\pi}{2}+k\pi\\
+&\cos\alpha={}\pm\dfrac{1}{\sqrt{1+{\tan}^{2}\alpha}} &\alpha{}&\neq\dfrac{\pi}{2}+k\pi\\
+&\sin^{2}\alpha={}\dfrac{\tan^{2}\alpha}{1+\tan^{2}\alpha}&\alpha{}&\neq\dfrac{\pi}{2}+k\pi\\
+&\sin\alpha={}\pm\dfrac{\tan\alpha}{\sqrt{1+\tan^{2}\alpha}}&\alpha{}&\neq\dfrac{\pi}{2}+k\pi\\
+&\sin^{2}\alpha={}\dfrac{1}{1+{\cot}^{2}\alpha} &\alpha&{}\neq& k\pi\\
+&\sin\alpha={}\pm\dfrac{1}{\sqrt{1+{\cot}^{2}\alpha}} &\alpha{}&\alpha&{}\neq& k\pi\\
+&\cos^{2}\alpha={}\dfrac{\cot^{2}\alpha}{1+\cot^{2}\alpha}&\alpha{}&\alpha&{}\neq& k\pi\\
+&\cos\alpha={}\pm\dfrac{\cot\alpha}{\sqrt{1+\cot^{2}\alpha}}&\alpha{}&\alpha&{}\neq&k\pi\\
 \end{align*}
+\end{teoremat}
+\begin{proof}
+	Partendo dalla relazione fondamentale della goniometria
+\begin{align*}
+\cos^2\alpha+\sin^2\alpha=&1
+\intertext{divididendo l'uguaglienza per $\cos^2\alpha$ otteniamo:}
+\dfrac{\cos^2\alpha}{\cos^2\alpha}+\dfrac{\sin^2\alpha}{\cos^2\alpha}=&\dfrac{1}{\cos^2\alpha}&\alpha\neq\dfrac{\pi}{2}+k\pi\\
+1+\tan^2\alpha=&\dfrac{1}{\cos^2\alpha}\\
+\cos^2\alpha=&\dfrac{1}{1+\tan^2\alpha}
+\intertext{da cui}
+\cos\alpha=&\pm\dfrac{1}{\sqrt{1+\tan^2\alpha}}
+\intertext{ma}
+\sin\alpha=&\tan\alpha\cos\alpha
+\intertext{quindi}
+\sin\alpha=&\pm\tan\alpha\dfrac{1}{\sqrt{1+\tan^2\alpha}}\\
+\sin\alpha=&\pm\dfrac{\tan\alpha}{\sqrt{1+\tan^2\alpha}}
+\end{align*}
+Ripartendo dalla relazione fondamentale della goniometria
+\begin{align*}
+\sin^2\alpha+\cos^2\alpha=&1
+\intertext{divididendo l'uguaglienza per $\sin^2\alpha$ otteniamo:}
+\dfrac{\sin^2\alpha}{\sin^2\alpha}+\dfrac{\cos^2\alpha}{\sin^2\alpha}=&\dfrac{1}{\sin^2\alpha}&\alpha\neq k\pi\\
+1+\cot^2\alpha=&\dfrac{1}{\sin^2\alpha}\\
+\sin^2\alpha=&\dfrac{1}{1+\cot^2\alpha}
+\intertext{da cui}
+\sin\alpha=&\pm\dfrac{1}{\sqrt{1+\cot^2\alpha}}
+\intertext{ma}
+\cos\alpha=&\cot\alpha\sin\alpha
+\intertext{quindi}
+\cos\alpha=&\pm\cot\alpha\dfrac{1}{\sqrt{1+\cot^2\alpha}}\\
+\cos\alpha=&\pm\dfrac{\cos\alpha}{\sqrt{1+\cot^2\alpha}}
+\end{align*}
+\end{proof}
 \begin{esempiot}{Trovare le funzioni nota una}{}
 Supponiamo di conoscere un valore di $\tan\alpha$
 \begin{align*}

@@ -407,13 +407,18 @@ Una funzione goniometrica inversa associa ad un valore numerico un angolo.
 	\end{subfigure}
 			\caption{Funzioni inverse}\label{tab:funzinverse_1}
 \end{figure}
-\subsection{Arcoseno}\index{Funzione!Arcocoseno!definizione}
-La funzione inversa $y=\arcsin x$ associa ad un valore numerico compreso fra$[-1,+1]$ un angolo compreso in  $-\frac{\pi}{2}\leq y\leq\frac{\pi}{2}$ . Il grafico\nobs\vref{fig:ArcSenGrafico} 
-\subsection{Arcoseno}\index{Funzione!Arcoseno!definizione}
-La funzione inversa del coseno è l'arcocoseno $y=\arccos x$ , è definita  in $[-1,+1]$ e ha come valori in uscita angoli in  $0\leq y\leq\pi$ come appare dal grafico\nobs\vref{fig:ArcCosenGrafico} 
-\subsection{Arcotangente}\index{Funzione!Arcotangente!definizione}
-%\altapriorita{Inserire definizione arcotangente}
+\begin{definizionet}{Arcoseno}{}\index{Funzione!Arcocoseno!definizione}
+	La funzione inversa $y=\arcsin x$ associa ad un valore numerico compreso fra$[-1,+1]$ un angolo compreso in  $-\frac{\pi}{2}\leq y\leq\frac{\pi}{2}$ . Il grafico\nobs\vref{fig:ArcSenGrafico} 
+\end{definizionet}
+\begin{definizionet}{Arcoseno}{}\index{Funzione!Arcoseno!definizione}
+	La funzione inversa del coseno è l'arcocoseno $y=\arccos x$ , è definita  in $[-1,+1]$ e ha come valori in uscita angoli in  $0\leq y\leq\pi$ come appare dal grafico\nobs\vref{fig:ArcCosenGrafico} 
+\end{definizionet}
+\begin{definizionet}{Arcotangente}{}\index{Funzione!Arcotangente!definizione}
 La funzione inversa della tangente è l'arcotangente $y=\arctan x$, è definita in$\R$ e ha come valori in uscita gli angoli $-\frac{\pi}{2}<y<\frac{\pi}{2}$ come appare dal grafico\nobs\vref{fig:ArcTangenteGrafico}
+\end{definizionet}
+\begin{definizionet}{Arcocotangente}{}\index{Funzione!Arcocotangente!definizione}
+	La funzione inversa della cotangente è l'arcotangente $y=\arccotg x$, è definita in$\R$ e ha come valori in uscita gli angoli $0<y<\pi$ come appare dal grafico\nobs\vref{fig:ArcCotangenteGrafico}
+\end{definizionet}
 \section{Relazioni fondamentali}
 \label{sec:RelazioniFondamentali}
 \begin{table} %[tbp]
@@ -424,9 +429,9 @@ La funzione inversa della tangente è l'arcotangente $y=\arctan x$, è definita 
 	%\backslashbox{Ottengo}{Noto} & $\sin\alpha$ &$\cos\alpha$&$\tan\alpha$ &$\cot\alpha$ & \multirow{2}{1cm}{$\sin\alpha$ $\cos\alpha$} \\[.5cm]
 	& $\sin\alpha$ &$\cos\alpha$&$\tan\alpha$ &$\cot\alpha$ & $\sin\alpha$, $\cos\alpha$ \\[.6cm]
 	\midrule
-	$\cos\alpha={}$& $\pm\sqrt{1-\sin^2\alpha}$ & &$\pm\dfrac{1}{\sqrt{1+\tan^2\alpha}}$ & & \\ [.6cm]
+	$\cos\alpha={}$& $\pm\sqrt{1-\sin^2\alpha}$ & &$\pm\dfrac{1}{\sqrt{1+\tan^2\alpha}}$ &$\pm\dfrac{\cot\alpha}{\sqrt{1+\cot^2\alpha}}$ & \\ [.6cm]
 	%\hline
-	$\sin\alpha={}$& & $\pm\sqrt{1-\cos^2\alpha}$ &$\pm\dfrac{\tan\alpha}{\sqrt{1+\tan^2\alpha}}$ & & \\ [.6cm]
+	$\sin\alpha={}$& & $\pm\sqrt{1-\cos^2\alpha}$ &$\pm\dfrac{\tan\alpha}{\sqrt{1+\tan^2\alpha}}$ &$\pm\dfrac{1}{\sqrt{1+\cot^2\alpha}}$ & \\ [.6cm]
 	%\hline
 	$\tan\alpha={}$& & & & $\dfrac{1}{\cot\alpha}$ &$\dfrac{\sin\alpha}{\cos\alpha}$\\ [.6cm]
 	%\hline
@@ -534,7 +539,8 @@ Analogo ragionamento vale per il coseno basta guardare la figura\nobs\vref{fig:s
 	Dato un angolo $\alpha$ allora vale quanto segue:
 \begin{align}
 \tan\alpha=&{}\dfrac{\sin\alpha}{\cos\alpha}&\alpha&{}\neq\dfrac{\pi}{2}+k\pi\label{equ:tangente1}\\
-\cot\alpha=&{}\dfrac{\cos\alpha}{\sin\alpha}={}\dfrac{1}{\tan\alpha}& \alpha&{}\neq k\pi\label{equ:cotangente1}
+\cot\alpha=&{}\dfrac{\cos\alpha}{\sin\alpha}& \alpha&{}\neq k\pi\label{equ:cotangente1}\\
+\cot\alpha\tan\alpha=&{}1&\alpha&{}\neq k\pi\quad\alpha{}\neq\dfrac{\pi}{2}+k\pi
 \end{align}
 \end{definizionet}
 \begin{teoremat}{Seno e coseno da tangente cotangente}
@@ -544,10 +550,10 @@ Dalle formule\nobs\vrefrange{equ:tangente1}{equ:cotangente1} è possibile ottene
 &\cos\alpha={}\pm\dfrac{1}{\sqrt{1+{\tan}^{2}\alpha}} &\alpha{}&\neq\dfrac{\pi}{2}+k\pi\\
 &\sin^{2}\alpha={}\dfrac{\tan^{2}\alpha}{1+\tan^{2}\alpha}&\alpha{}&\neq\dfrac{\pi}{2}+k\pi\\
 &\sin\alpha={}\pm\dfrac{\tan\alpha}{\sqrt{1+\tan^{2}\alpha}}&\alpha{}&\neq\dfrac{\pi}{2}+k\pi\\
-&\sin^{2}\alpha={}\dfrac{1}{1+{\cot}^{2}\alpha} &\alpha&{}\neq& k\pi\\
-&\sin\alpha={}\pm\dfrac{1}{\sqrt{1+{\cot}^{2}\alpha}} &\alpha{}&\alpha&{}\neq& k\pi\\
-&\cos^{2}\alpha={}\dfrac{\cot^{2}\alpha}{1+\cot^{2}\alpha}&\alpha{}&\alpha&{}\neq& k\pi\\
-&\cos\alpha={}\pm\dfrac{\cot\alpha}{\sqrt{1+\cot^{2}\alpha}}&\alpha{}&\alpha&{}\neq&k\pi\\
+&\sin^{2}\alpha={}\dfrac{1}{1+{\cot}^{2}\alpha} &\alpha{}&\neq k\pi\\
+&\sin\alpha={}\pm\dfrac{1}{\sqrt{1+{\cot}^{2}\alpha}} &\alpha{}&\neq k\pi\\
+&\cos^{2}\alpha={}\dfrac{\cot^{2}\alpha}{1+\cot^{2}\alpha}&\alpha{}&\neq k\pi\\
+&\cos\alpha={}\pm\dfrac{\cot\alpha}{\sqrt{1+\cot^{2}\alpha}}&\alpha{}&\neq k\pi\\
 \end{align*}
 \end{teoremat}
 \begin{proof}

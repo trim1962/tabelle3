@@ -407,11 +407,11 @@ Una funzione goniometrica inversa associa ad un valore numerico un angolo.
 	\end{subfigure}
 			\caption{Funzioni inverse}\label{tab:funzinverse_1}
 \end{figure}
-\begin{definizionet}{Arcoseno}{}\index{Funzione!Arcocoseno!definizione}
+\begin{definizionet}{Arcoseno}{}\index{Funzione!Arcoseno!definizione}
 	La funzione inversa $y=\arcsin x$ associa ad un valore numerico compreso fra$[-1,+1]$ un angolo compreso in  $-\frac{\pi}{2}\leq y\leq\frac{\pi}{2}$ . Il grafico\nobs\vref{fig:ArcSenGrafico} 
 \end{definizionet}
-\begin{definizionet}{Arcoseno}{}\index{Funzione!Arcoseno!definizione}
-	La funzione inversa del coseno è l'arcocoseno $y=\arccos x$ , è definita  in $[-1,+1]$ e ha come valori in uscita angoli in  $0\leq y\leq\pi$ come appare dal grafico\nobs\vref{fig:ArcCosenGrafico} 
+\begin{definizionet}{Arcocoseno}{}\index{Funzione!Arcocoseno!definizione}
+	La funzione inversa del coseno è l'arcocoseno $y=\arccos x$, è definita  in $[-1,+1]$ e ha come valori in uscita angoli in  $0\leq y\leq\pi$ come appare dal grafico\nobs\vref{fig:ArcCosenGrafico} 
 \end{definizionet}
 \begin{definizionet}{Arcotangente}{}\index{Funzione!Arcotangente!definizione}
 La funzione inversa della tangente è l'arcotangente $y=\arctan x$, è definita in$\R$ e ha come valori in uscita gli angoli $-\frac{\pi}{2}<y<\frac{\pi}{2}$ come appare dal grafico\nobs\vref{fig:ArcTangenteGrafico}
@@ -429,13 +429,13 @@ La funzione inversa della tangente è l'arcotangente $y=\arctan x$, è definita 
 	%\backslashbox{Ottengo}{Noto} & $\sin\alpha$ &$\cos\alpha$&$\tan\alpha$ &$\cot\alpha$ & \multirow{2}{1cm}{$\sin\alpha$ $\cos\alpha$} \\[.5cm]
 	& $\sin\alpha$ &$\cos\alpha$&$\tan\alpha$ &$\cot\alpha$ & $\sin\alpha$, $\cos\alpha$ \\[.6cm]
 	\midrule
-	$\cos\alpha={}$& $\pm\sqrt{1-\sin^2\alpha}$ & &$\pm\dfrac{1}{\sqrt{1+\tan^2\alpha}}$ &$\pm\dfrac{\cot\alpha}{\sqrt{1+\cot^2\alpha}}$ & \\ [.6cm]
+	$\sin\alpha={}$&$\sin\alpha$ & $\pm\sqrt{1-\cos^2\alpha}$ &$\pm\dfrac{\tan\alpha}{\sqrt{1+\tan^2\alpha}}$ &$\pm\dfrac{1}{\sqrt{1+\cot^2\alpha}}$ & \\ [.6cm]
+	$\cos\alpha={}$& $\pm\sqrt{1-\sin^2\alpha}$ &$\cos\alpha$ & $\pm\dfrac{1}{\sqrt{1+\tan^2\alpha}}$ &$\pm\dfrac{\cot\alpha}{\sqrt{1+\cot^2\alpha}}$ & \\ [.6cm]
 	%\hline
-	$\sin\alpha={}$& & $\pm\sqrt{1-\cos^2\alpha}$ &$\pm\dfrac{\tan\alpha}{\sqrt{1+\tan^2\alpha}}$ &$\pm\dfrac{1}{\sqrt{1+\cot^2\alpha}}$ & \\ [.6cm]
 	%\hline
-	$\tan\alpha={}$& & & & $\dfrac{1}{\cot\alpha}$ &$\dfrac{\sin\alpha}{\cos\alpha}$\\ [.6cm]
+	$\tan\alpha={}$&$\pm\dfrac{\sin\alpha}{\sqrt{1-\sin^2\alpha}}$ &$\pm\dfrac{\sqrt{1-\cos^2\alpha}}{\cos\alpha}$&$\tan\alpha$ & $\dfrac{1}{\cot\alpha}$ &$\dfrac{\sin\alpha}{\cos\alpha}$\\ [.6cm]
 	%\hline
-	$\cot\alpha={}$& & &$\dfrac{1}{\tan\alpha}$ & &$\dfrac{\cos\alpha}{\sin\alpha}$\\[.6cm] 
+	$\cot\alpha={}$&$\pm\dfrac{\sqrt{1-\sin^2\alpha}}{\sin\alpha}$ &$\pm\dfrac{cos\alpha}{\sqrt{1-\cos^2\alpha}}$ &$\dfrac{1}{\tan\alpha}$ &$\cot\alpha$ &$\dfrac{\cos\alpha}{\sin\alpha}$\\[.6cm] 
 	\bottomrule
 	\end{tabular}
 	\caption{Seno Coseno Tangente Cotangente}
@@ -585,7 +585,7 @@ Ripartendo dalla relazione fondamentale della goniometria
 \cos\alpha=&\cot\alpha\sin\alpha
 \intertext{quindi}
 \cos\alpha=&\pm\cot\alpha\dfrac{1}{\sqrt{1+\cot^2\alpha}}\\
-\cos\alpha=&\pm\dfrac{\cos\alpha}{\sqrt{1+\cot^2\alpha}}
+\cos\alpha=&\pm\dfrac{\cot\alpha}{\sqrt{1+\cot^2\alpha}}
 \end{align*}
 \end{proof}
 \begin{esempiot}{Trovare le funzioni nota una}{}

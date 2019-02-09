@@ -1,14 +1,18 @@
 \chapter{Funzione sinusoidale}
-\section{Definizioni}
 \label{cha:FunzioneSinusoidale}
+\section{Funzioni periodiche}
+\begin{definizionet}{Funzione periodica}{}
+Una funzione $f$ si dice periodica di periodo $T\neq0$ se solo se \[\forall x f(x+T)=f(x)\]
+\end{definizionet}\index{Funzione!periodica}
+\section{Definizioni}
+
 \begin{definizionet}{Funzione sinusoidale}{}
-	Chiamo funzione sinusoidale una funzione del tipo:
+	Diciamo funzione sinusoidale una funzione del tipo:
 	\[ y=R\sin(\omega t+\phi)\]
 	\begin{itemize}
 		\item $R$ è l'ampiezza positiva
 		\item $\omega$ è la pulsazione positiva
 		\item $\phi$ è lo sfasamento $-\pi\leq\phi\leq\pi$
-		
 	\end{itemize}
 \end{definizionet}
 \begin{osservazionet}{Periodicità}{}
@@ -17,12 +21,15 @@
 infatti\[ y=R\sin[\omega(t+T)+\phi]=R\sin[\omega(t+\dfrac{2\pi}{\omega})+\phi]=R\sin(\omega
 t+2\pi+\phi)=R\sin(\omega
 t+\phi)\]
-Datato che il seno ha periodo \[2\pi\]
+Datato che il seno ha periodo $2\pi$
 \begin{definizionet}{Frequenza}{}
 	Se $T$ indica il periodo allora  $f=\dfrac{1}{T}$ è la frequenza.
 \end{definizionet}
+\begin{teoremat}{Periodo}{}
+	Se una funzione $f$ è periodica di periodo $T$ allora $f(ax+b)$ $a>0$ è una funzione periodica di periodo $\dfrac{T}{a}$
+\end{teoremat}
 \section{Andamento funzione sinusoidale}
-Considero la funzione sinusoidale\[y=R\sin\omega t\] Dato che la funzione è periodica, ne traccio il grafico nell'intervallo \[[0\leq t\leq T]\] come nella figura\nobs\vref{fig:FunzioneSinusoidale1}
+Consideriamo la funzione sinusoidale\[y=R\sin\omega t\] Dato che la funzione è periodica, ne tracciamo il grafico nell'intervallo \[[0\leq t\leq T]\] come nella figura\nobs\vref{fig:FunzioneSinusoidale1}
 
 La funzione assume il suo massimo valore $R$ per $t=\dfrac{T}{4}$ mentre il suo valore minimo è per $t=\dfrac{3}{4}T$. Questo si può velocemente verificare osservando che $\sin x=1$ quando $x=\dfrac{\pi}{2}$ quindi 
 \begin{align*}

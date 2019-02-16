@@ -9,7 +9,7 @@
 
 \begin{document}
 	
-\begin{tikzpicture}[>=triangle  45] %, x=0.8cm,y=0.8cm]
+\begin{tikzpicture}[>=triangle 45] %, x=0.8cm,y=0.8cm]
 % draw the coordinates
 \pgfmathsetmacro{\raggio}{4};
 \pgfmathsetmacro{\mraggio}{\raggio/3};
@@ -20,9 +20,9 @@
 \draw[->] (-\raggio-\mraggio,0) -- (\raggio+\mraggio,0) node[right] {$x$};
 \draw[thick] (0,0) circle(\raggio);
 %\draw (-\raggio-\qraggio-0.2,0) node[above=1pt] {$(-1,0)$}
-%(\raggio+\qraggio,0)  node[above=1pt] {$(1,0)$}
+%(\raggio+\qraggio,0) node[above=1pt] {$(1,0)$}
 %(0,-\raggio-\qraggio-0.2) node[fill=white] {$(0,-1)$}
-%(0,\raggio+\qraggio+0.2)  node[fill=white] {$(0,1)$};
+%(0,\raggio+\qraggio+0.2) node[fill=white] {$(0,1)$};
 \node(OO)at(0,0) [label= below right:$O$] {};
 \foreach \x in {180,240,270,300,360}{
 	% lines from center to point
@@ -34,7 +34,7 @@
 	\draw(\x:\raggio)--($((-1,0)!(\x:\raggio)!(1,0)$);
 	\filldraw[black] ($((-1,0)!(\x:\raggio)!(1,0)$) circle(2pt);
 }
-\foreach \x/ \y/\arco  in {
+\foreach \x/ \y/\arco in {
 	180/2.5/{\alpha_5},
 	240/3/{\alpha_6},
 	270/4/{\alpha_7},
@@ -48,16 +48,16 @@
 	%330/12,
 	%360/13
 }
-\draw[->] (\sraggio/\y,0 ) arc (0:\x:\sraggio/\y) node[above  =-20pt] {$\arco$};
+\draw[->] (\sraggio/\y,0 ) arc (0:\x:\sraggio/\y) node[above =-20pt] {$\arco$};
 
 \foreach \x/ \y in {
-	180/ px_5,	
+	180/ p_{5x},%	
 	%30/px_1,	
-	240/px_6,
-	270/px_7,
-	300/px_8,
+	240/p_{6x},%
+	270/p_{7x},%
+	300/p_{8x},%
 	%150/px_5,
-	360/px_9	 %,
+	360/p_{9x}%,
 	%210/8,
 	%240/9,
 	%270/10,
@@ -81,6 +81,6 @@
 	%330/12,
 	%360/13
 }
-\draw ( \x:\raggio) node[above  =-21pt] {$\y$};
+\draw ( \x:\raggio) node[above =-21pt] {$\y$};
 \end{tikzpicture}
 \end{document}

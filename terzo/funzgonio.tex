@@ -131,9 +131,9 @@ Quanto corrisponde in gradi un radiante?
 \section{Funzioni goniometriche}
 \label{sec:FunzioniGoniometriche}
 \begin{definizionet}{Circonferenza goniometrica}{}
-	Dato un sistema di riferimento cartesiano ortogonale, una circonferenza goniometrica\index{Circonferenza!goniometrica} è una circonferenza con centro nell'origine e raggio uguale a uno. 
+	Dato un sistema di riferimento cartesiano ortogonale, una circonferenza goniometrica\index{Circonferenza!goniometrica} è una circonferenza con centro nell'origine degli assi e raggio uguale a uno. 
 \end{definizionet}
- La circonferenza incontra gli assi in quattro punti. $A(1,0)$, $B(0,1)$, $C(-1,0)$ e $D(-1,0)$. Costruiamo un angolo $\alpha$ in modo che il suo vertice coincida con il centro della circonferenza e un lato coincida con la semiretta positiva dell'asse $x$. L'angolo incontra la circonferenza nei punti $A$ e $P$ come nella\nobs\vref{fig:circonferenzagonimetricagonio}. 
+ La circonferenza goniometrica incontra gli assi in quattro punti. $A(1,0)$, $B(0,1)$, $C(-1,0)$ e $D(-1,0)$. Costruiamo un angolo $\alpha$ in modo che il suo vertice coincida con il centro della circonferenza e un lato sia la semiretta positiva dell'asse $x$. L'angolo incontra la circonferenza nei punti $A$ e $P$ come nella\nobs\vref{fig:circonferenzagonimetricagonio}. 
 \subsection{Coseno}
 \label{sec:cosenogonio}
 \begin{figure}
@@ -662,7 +662,7 @@ Supponiamo di conoscere un valore di $\tan\alpha$
  		\caption{Angoli opposti}\label{fig:angoliopposti}
  	\end{subfigure}
 \caption{Angoli associati}
-	\label{fig:angoliassociatii}
+	\label{fig:angoliassociati}
 \end{figure}
 Sono angoli la cui somma\index{Angoli!Somma!$\ang{180}$} come gli angoli $\ang{180}$, $\alpha$, $\ang{180}-\alpha$ la figura corrispondente è la\nobs\vref{fig:AngoliAssociatisupplementari}
 Per questi angoli valgono le seguenti relazioni
@@ -843,7 +843,7 @@ Le equazioni goniometriche elementari\index{Equazione!elementare!seno} sono equa
 	\end{subfigure}
 	\captionof{figure}{Equazioni Elementari}\label{fig:EquaElementareSenoCoseno2}
 \end{figure}
-Il seno di un angolo è una funzione limitata con valori compresi tra meno uno ed uno $(1\leq\sin x\leq 1)$ quindi l'equazione è impossibile per valori di $m$ esterni a tale intervallo. Abbiamo vari casi:
+Il seno di un angolo è una funzione limitata con valori  tra meno uno ed uno compresi $(1\leq\sin x\leq 1)$ quindi l'equazione è impossibile per valori di $m$ esterni a tale intervallo. Abbiamo vari casi:
 \begin{description}
 	\item[$0<m<1$] In questo caso le soluzioni sono due come nella\nobs\vref{fig:EquaElementareSeno1} $x=\alpha+k\ang{360}$ e $x=\ang{180}-\alpha+k\ang{360}$
 	\item [$m=+1$] Guardando la\nobs\vref{fig:EquaElementareSeno2} la soluzione è unica, $x=\ang{90}+k\ang{360}$
@@ -911,10 +911,10 @@ Risolvere l'equazione $ \sin(x+\ang{30})=\dfrac{\sqrt{2}}{2}$
 \begin{align*}
 \sin(x+\ang{30})&=\dfrac{\sqrt{2}}{2}
 \intertext{Trovo la prima soluzione}
-x+\ang{30}&=3x+\ang{45}+k\ang{360}\\
+x+\ang{30}&=\ang{45}+k\ang{360}\\
 x&=\ang{45}-\ang{30}+k\ang{360}\\
 x&=\ang{15}+k\ang{360}
-\intertext{La soluziione associata è}
+\intertext{La soluzione associata è}
 x+\ang{30}&=\ang{180}-\ang{45}+k\ang{360}\\
 x&=\ang{180}-\ang{45}-\ang{30}+k\ang{360}\\
 x&=\ang{105}+k\ang{360}
@@ -931,7 +931,7 @@ Risolvere l'equazione $\sin(4x+\ang{20})=\sin(3x+\ang{30})$
 4x+\ang{20}&=3x+\ang{30}+k\ang{360}\\
 4x-3x&=\ang{30}-\ang{20}+k\ang{360}\\
 x&=\ang{10}+k\ang{360}
-\intertext{La soluziione associata è}
+\intertext{La soluzione associata è}
 4x+\ang{20}&=\ang{180}-(3x+\ang{30})+k\ang{360}\\
 4x+\ang{20}&=\ang{180}-3x-\ang{30}+k\ang{360}\\
 4x-3x&=\ang{180}-\ang{20}-\ang{30}+k\ang{360}\\
@@ -954,7 +954,7 @@ Equazione &Soluzione & Soluzione & Trasformazione \\
 \end{array}
 \] 
 \caption{Equazioni elementari in seno}
-\label{tab:EquazioniElementariInSeno}
+\label{tab:EquazioniElementarinSeno}
 \end{table}
 L'esempio che segue è quasi analogo al precedente, bisogna prima procedere ad una trasformazione del secondo membro utilizzando gli angoli associati\nobs\vref{sub:Dif180}. 
 \begin{esempiot}{Equazione goniometrica}{}
@@ -972,7 +972,7 @@ Risolvere l'equazione $ \sin(3x-\ang{10})=-\sin(5x+\ang{40})$
 3x-5x&=\ang{10}+\ang{180}+\ang{40}+k\ang{360}\\
 -2x&=\ang{230}+k\ang{360}\\
 x&=-\ang{115}+k\ang{180}
-\intertext{La soluziione associata è}
+\intertext{La soluzione associata è}
 3x-\ang{10}&=\ang{180}-(\ang{180}+5x+\ang{40})+k\ang{360}\\
 3x-\ang{10}&=-5x-\ang{40}+k\ang{360}\\
 3x+5x&=\ang{10}-\ang{40}+k\ang{360}\\
@@ -1049,7 +1049,7 @@ Risolvere l'equazione $\cos(5x+\ang{40})=\cos(2x+\ang{30})$
 5x-2x&=\ang{30}-\ang{40} +k\ang{360}\\
 3x&=-\ang{10} +k\ang{360}\\
 x&=-\dfrac{\ang{10}}{3} +k\ang{120}
-\intertext{La soluziione associata è}
+\intertext{La soluzione associata è}
 5x+\ang{40}&=-(2x+\ang{30})+k\ang{360}\\
 5x+\ang{40}&=-2x-\ang{30}+k\ang{360}\\
 5x+2x&=-\ang{30}-\ang{40}+k\ang{360}\\
@@ -1087,7 +1087,7 @@ Risolvere l'equazione $\cos(3x-\ang{40})=-\cos(5x-\ang{20})$
 3x+5x&=\ang{180}-5x+\ang{20}+\ang{40}+k\ang{360}\\
 8x&=\ang{240}+k\ang{360}\\
 x&=\ang{30}+k\ang{45}
-\intertext{La soluziione associata è}
+\intertext{La soluzione associata è}
 3x-\ang{40}&=-(\ang{180}-(5x-\ang{20}))+k\ang{360}\\
 3x-\ang{40}&=-\ang{180}+5x-\ang{20}+k\ang{360}\\
 3x-5x&=-\ang{180}-\ang{20}+\ang{40}+k\ang{360}\\

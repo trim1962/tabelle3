@@ -490,7 +490,7 @@ Dato un angolo $\alpha$ allora vale quanto segue:
 \caption{Relazione fondamentale goniometria}\label{fig:relFondGonio}
 \end{figure}
 \begin{proof}
-	Consideriamo la\nobs\vref{fig:relFondGonio} per il triangolo POH vale il teorema di Pitagora\index{Teorema!Pitagora} \[b^2+c^2=a^2\] Dato che la circonferenza è una circonferenza goniometrica.
+	Consideriamo la\nobs\vref{fig:relFondGonio} per il triangolo $POH$ vale il teorema di Pitagora\index{Teorema!Pitagora} \[b^2+c^2=a^2\] Dato che la circonferenza è una circonferenza goniometrica.
 	\begin{align*}
 	a&=1\\
 	b&=\cos\alpha\\
@@ -948,8 +948,8 @@ Equazione &Soluzione & Soluzione & Trasformazione \\
 \midrule
 \sin\alpha=\sin\beta & \alpha=\beta+k\ang{360} & \alpha=\ang{180}-\beta+k\ang{360} &\\
 \midrule
-\sin\alpha=-\sin\beta&&&\sin(-\beta)=-\sin\beta\\
-& \alpha=-\beta+k\ang{360} & \alpha=\ang{180}+\beta+k\ang{360} &\\
+\sin\alpha=-\sin\beta&\alpha=-\beta+k\ang{360}&\alpha=\ang{180}+\beta+k\ang{360}&-\sin\beta=\sin(-\beta)\\
+%&  &  &\\
 \bottomrule
 \end{array}
 \] 
@@ -1067,8 +1067,8 @@ Equazione &Soluzione & Soluzione & Trasformazione \\
 \midrule
 \cos\alpha=\cos\beta & \alpha=\beta+k\ang{360} & \alpha=-\beta+k\ang{360} &\\
 \midrule
-\cos\alpha=-\cos\beta&&&\cos(\ang{180}-\beta)=-\cos\beta\\
-& \alpha=\ang{180}-\beta+k\ang{360} & \alpha=\ang{180}+\beta+k\ang{360} &\\
+\cos\alpha=-\cos\beta&\alpha=\ang{180}-\beta+k\ang{360}&\alpha=\ang{180}+\beta+k\ang{360}&-\cos\beta=\cos(\ang{180}-\beta)\\
+%&  &  &\\
 \bottomrule
 \end{array}
 \] 
@@ -1150,13 +1150,13 @@ x&\neq\ang{120}+k\ang{180}
 \toprule
 Equazione &Esistenza & Soluzione & Trasformazione \\ 
 \midrule
-\tan\alpha=\tan\beta &\alpha\neq\ang{90}+k\ang{180} & &\\
+\tan\alpha=\tan\beta &\alpha\neq\ang{90}+k\ang{180} &\alpha=\beta+k\ang{180} &\\
 & \beta\neq\ang{90}+k\ang{180}& &\\
-&&\alpha=\beta+k\ang{180} &\\
+%&& &\\
 \midrule
-\tan\alpha=-\tan\beta & \alpha\neq\ang{90}+k\ang{180} & &\tan(\ang{180}-\beta)=-\tan(\beta)\\
+\tan\alpha=-\tan\beta & \alpha\neq\ang{90}+k\ang{180} &\alpha=\ang{180}-\beta+k\ang{180} &-\tan(\beta)=\tan(\ang{180}-\beta)\\
 & \beta\neq\ang{90}+k\ang{180}& &\\
-&&\alpha=\ang{180}-\beta+k\ang{180} &\\
+%&& &\\
 \bottomrule
 \end{array}
 \] 
@@ -1171,9 +1171,10 @@ Equazione &Esistenza & Soluzione & Trasformazione \\
 5x-\ang{210}=&\ang{90}+k\ang{180}\\
 5x=&\ang{90}+\ang{210}+k\ang{180}\\
 x=&\ang{60}+k\ang{36}\\
-x\neq\ang{60}+k\ang{36}\\
+x\neq&\ang{60}+k\ang{36}\\
+\intertext{Risolviamo la soluzione}
 \tan y=&\sqrt{3}\\
-y=\ang{60}+k\ang{180}\\
+y=&\ang{60}+k\ang{180}\\
 5x-\ang{210}=&\ang{60}+k\ang{180}\\
 5x=&\ang{210}+\ang{60}+k\ang{180}\\
 5x=&\ang{270}+k\ang{180}\\
@@ -1183,3 +1184,35 @@ x=&\ang{54}+k\ang{36}\\
 %%% mode: latex
 %%% TeX-master: t
 %%% End:
+\begin{table}
+	\centering
+	\begin{tabular}{CLLL}
+	\toprule
+		 \multicolumn{1}{c}{Tipo} & \multicolumn{1}{c}{Equazione} & \multicolumn{2}{c}{Soluzioni} \\ 
+		\midrule
+		1&\sin\alpha=\sin\beta  &\alpha=\beta+k\ang{360}  & \alpha=\ang{180}-\beta+k\ang{360} \\ 
+		2&\cos\alpha=\cos\beta  &\alpha=\beta+k\ang{360}  & \alpha=-\beta+k\ang{360} \\ 
+		3&\tan\alpha=\tan\beta&\alpha=\beta+k\ang{180}  &\\
+	4&\cot\alpha=\cot\beta&\alpha=\beta+k\ang{180}  &\\
+\bottomrule
+	\end{tabular} 
+	\caption{Equazioni goniometriche elementari}\label{tab:Equazionigoniometricheelementari}
+\end{table}
+\begin{table}
+	\centering
+	\begin{tabular}{LLC}
+		\toprule
+		\multicolumn{1}{c}{Equazione} & \multicolumn{1}{c}{Trasformazione} & \multicolumn{1}{c}{Tipo}\\
+		\sin\alpha=-\sin\beta &\sin\alpha=\sin(-\beta)&1\\ 
+		\cos\alpha=-\cos\beta &\cos\alpha=\cos(\ang{180}-\beta)&2\\
+		\tan\alpha=-\tan\beta &\tan\alpha=\tan(-\beta)&3\\
+		\cot\alpha=-\cot\beta &\cot\alpha=\cot(-\beta)&4\\  
+		\sin\alpha=\cos\beta &\sin\alpha=\sin(\ang{90}-\beta)&1\\
+	  	\sin\alpha=\cos\beta &\cos(\ang{90}-\alpha)=\cos(\beta)&2\\
+	  	\sin\alpha=-\cos\beta &-\sin(-\alpha)=-\cos\beta\quad\sin(-\alpha)=\sin(\ang{90}-\beta)&1\\
+		\midrule
+	
+		\bottomrule
+	\end{tabular} 
+	\caption{Trasformazione equazioni goniometriche}\label{tab:Trasformazioneequazionigoniometriche}
+\end{table}

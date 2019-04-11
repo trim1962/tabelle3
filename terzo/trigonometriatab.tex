@@ -6,7 +6,7 @@
 	\caption{Triangolo rettangolo}
 	\label{fig:triangolopitagorico1}
 \end{figure}
-\section{I triangoli rettangoli}
+\section{I triangoli}
 \begin{table}
 \centering
 \begin{tabular}{CCC}
@@ -18,9 +18,9 @@ b=a\sin\beta &  & c=a\sin\gamma \tabularnewline\tabularnewline
 c=a\cos\beta &  & b=a\cos\gamma \tabularnewline\tabularnewline
 b=c\tan\beta &  & c=b\tan\gamma \tabularnewline\tabularnewline
 A=\dfrac{1}{2}ac\sin\beta &  & A=\dfrac{1}{2}ab\sin\gamma \tabularnewline\tabularnewline
-\multicolumn{3}{C}{\beta+\gamma=\ang{90}} \tabularnewline\tabularnewline 
-\multicolumn{3}{C}{2P=a+b+c} \tabularnewline\tabularnewline
-%&&\\
+%\multicolumn{3}{C}{\beta+\gamma=\ang{90}} \tabularnewline\tabularnewline 
+%\multicolumn{3}{C}{2P=a+b+c} \tabularnewline\tabularnewline
+%%&&\\
 \midrule
 \multicolumn{3}{c}{TRIANGOLI QUALUNQUE} \tabularnewline
 \midrule\tabularnewline
@@ -35,9 +35,8 @@ A=\dfrac{1}{2}bc\sin\alpha & A=\dfrac{1}{2}ac\sin\beta & A=\dfrac{1}{2}ab\sin\ga
 \caption{I triangoli}
 \end{table}
 
-Iniziamo con un po di notazione. I punti si indicano con le lettere maiuscole, la lunghezza dei segmenti con le  minuscole.  L'ampiezza degli angoli con le lettere greche. All'angolo di maggiore  ampiezza corrisponde la lettera $A$. Per rimanenti partendo da $A$ e muovendosi in senso antiorario, si assegnano gli altri vertici. Al vertice $A$ corrisponde l'angolo $\alpha$. Opposto ad $A$ vi è il lato $a$. Un triangolo rettangolo è formato da due lati chiamati cateti\index{Triangolo!rettangolo!cateto} e un lato chiamato ipotenusa. L'ipotenusa\index{Triangolo!rettangolo!ipotenusa} è il lato di lunghezza maggiore. 
-
-I lati di un triangolo sono classificati, rispetto ad un angolo, come opposti o adiacenti. Guardando la figura\nobs\vref{fig:triangolooppostoadiacente}, vediamo che rispetto all'angolo $\gamma$ il cateto\index{Cateto!opposto}\index{Cateto!adiacente} $AC$ è adiacente perché lato dell'angolo, mentre $AB$ è opposto\index{Angolo!opposto}\index{Angolo!adiacente}  non facendo parte dell'angolo. 
+Iniziamo con un po' di notazione. I punti si indicano con le lettere maiuscole, la lunghezza dei segmenti con le  minuscole.  L'ampiezza degli angoli con le lettere greche. All'angolo di maggiore  ampiezza corrisponde lo spigolo $A$. Per rimanenti partendo da $A$ e muovendosi in senso antiorario, si assegnano le lettere gli altri vertici. Al vertice $A$ corrisponde l'angolo $\alpha$ allo spigolo $B$ $\beta$ e a $C$ $\gamma$ . Opposto ad $A$ vi è il lato $a$, gli altri a seguire.
+I lati di un triangolo sono classificati, rispetto ad un angolo, come opposti o adiacenti. Guardando la figura\nobs\vref{fig:triangolooppostoadiacente}, vediamo che rispetto all'angolo $\gamma$ il lato $AC$ è adiacente perché lato dell'angolo, mentre $AB$ è opposto\index{Angolo!opposto}\index{Angolo!adiacente}  non facendo parte dell'angolo. 
  
  La figura\nobs\vref{fig:triangolopitagorico1} mostra come devono essere assegnati i nomi.
  
@@ -48,6 +47,17 @@ I lati di un triangolo sono classificati, rispetto ad un angolo, come opposti o 
 	\caption{Elementi di un triangolo rettangolo}
 	\label{fig:triangolooppostoadiacente}
 \end{figure}
+\section{Triangoli rettangoli}
+ Un triangolo rettangolo è formato da due lati chiamati cateti\index{Triangolo!rettangolo!cateto} e il lato maggiore è chiamato ipotenusa\index{Triangolo!rettangolo!ipotenusa}. Avremo:\begin{align*}
+ \alpha=&{}\ang{90}&&&\alpha=&{}\frac{\pi}{2}\\
+ \beta+\gamma=&{}\ang{90}&&&\beta+\gamma=&{}\frac{\pi}{2}\\
+ &&A={}&\frac{bc}{2}\\
+ &&a^2={}&b^2+c^2\\
+  &&a={}&\sqrt{b^2+c^2}\\
+  &&b={}&\sqrt{a^2-c^2}\\
+  &&c={}&\sqrt{a^2-b^2}\\
+  &&2P=&a+b+c
+ \end{align*}
 \subsection{Relazioni fondamentali}
 \begin{teoremat}{}{}
 Consideriamo la figura\nobs\vref{fig:triangolopitagorico1}. Valgono le seguenti relazioni fra i cateti gli angoli e l'ipotenusa

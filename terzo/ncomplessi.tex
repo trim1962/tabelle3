@@ -3,7 +3,7 @@
 \section{Definizioni e vocabolario}
 \label{sec:NumCompDefinizioniVocabolario}
 \begin{definizionet}{Unità immaginaria}{}
-	Chiamo unità immaginaria\index{Unità!Immaginaria} $\uimm$ il simbolo definito da \[\uimm^2=-1\]  
+	diciamo unità immaginaria\index{Unità!immaginaria} $\uimm$ il simbolo definito da \[\uimm^2=-1\]  
 \end{definizionet}
 L'unità immaginaria permette di dare un senso alle radici di numeri negativi. Per esempio \[\sqrt{-2}=\sqrt{-1}\sqrt{2}=\sqrt{\uimm^2}\sqrt{2}=\pm\uimm\sqrt{2}\]
 \begin{cesempiot}{Unità immaginaria}{}
@@ -11,7 +11,7 @@ Attenzione all'uso dell'unità immaginaria
 \[-1=\uimm\cdot\uimm=\sqrt{-1}\cdot\sqrt{-1}=\sqrt{(-1)\cdot(-1)}=\sqrt{1}=1 \]L'errore nasce dall'aver accettato come valida $\sqrt{a}\cdot\sqrt{b}=\sqrt{ab}$ che è definita solo per $a\geq 0$ e $b\geq 0$
 \end{cesempiot}
 \subsection{Potenze dell'unità immaginaria}
-Per la potenza immaginaria\index{Unità!Immaginaria!Potenza} abbiamo:
+Per la potenza immaginaria\index{Unità!immaginaria!potenza} abbiamo:
 \begin{align*}
 	&\uimm^0=1\\
 	&\uimm^1=\uimm\\
@@ -23,27 +23,27 @@ Per la potenza immaginaria\index{Unità!Immaginaria!Potenza} abbiamo:
 \end{align*}
 L'esempio precedente ha un'interpretazione geometrica. Le potenze dell'unità sono rotazioni  con  centro nell'origine come appare evidente dalla figura~\vref{fig:nuncomplPianoComplesso}.
 \begin{definizionet}{Numero complesso}{}
-	 Un numero complesso\index{Numero!Complesso} è \[z=a+\uimm b\] $a$ è chiamata parte reale \[\Re\left(z\right)=a\]
+	 Un numero complesso\index{Numero!complesso}  \[z=a+\uimm b\] $a$ è chiamata parte reale \[\Re\left(z\right)=a\]
 	$b$ viene detta  parte immaginaria\[\Im\left(z\right)=b \] 
 \end{definizionet}
 \begin{esempiot}{Numero complesso}{}
 Il numero \[z=-2+3\uimm \] è un numero complesso che ha per parte reale \[\Re(z)=-2\]  e per parte immaginaria \[\Im(z)=3\]
 \end{esempiot}
 \begin{definizionet}{Complesso coniugato}{}
-	Dato un numero complesso $z=a+b\uimm$, il coniugato\index{Numero!Complesso!Coniugato} è  il numero $\conj{z}=a-b\uimm$
+	Dato un numero complesso $z=a+b\uimm$, il coniugato\index{Numero!complesso!coniugato} è  il numero $\conj{z}=a-b\uimm$
 \end{definizionet}
 \begin{esempiot}{Coniugato}{}
 Se $z=3+2\uimm$ il coniugato è $\conj{z}=3-2\uimm$ 
 \end{esempiot}
 \begin{definizionet}{Numero opposto}{}
-Dato un numero complesso $z=a+b\uimm$, è opposto\index{Numero!Complesso!Oppoto} è il numero $-z=-a-b\uimm$
+Dato un numero complesso $z=a+b\uimm$,  opposto\index{Numero!complesso!oppoto}è  il numero $-z=-a-b\uimm$
 \end{definizionet}
 \begin{definizionet}{Modulo}{}
-Dato un numero  complesso $z=a+b\uimm$, il modulo\index{Numero!Complesso!Modulo} è il numero $\abs{z}=\sqrt{a^2+b^2}$
+Dato un numero  complesso $z=a+b\uimm$, il modulo\index{Numero!complesso!modulo} è il numero $\abs{z}=\sqrt{a^2+b^2}$
 \end{definizionet}
 \section{Piano complesso}
-Un numero complesso $z=a+b\uimm$ è una coppia di numeri $(a;b)$. A questa coppia di punti corrisponde un punto del piano chiamato piano di  Argand-Gauss. 
-Nel piano di Argand-Gauss l'asse delle $x$ viene chiamato asse reale $\Re$ mentre l'asse delle $y$ è chiamato asse immaginario $\Im$.
+Un numero complesso $z=a+b\uimm$ è una coppia di numeri $(a;b)$. A questa coppia di punti corrisponde un punto del piano chiamato piano di  Argand-Gauss\index{Argand-Gauss!piano}. 
+Nel piano di Argand-Gauss l'asse delle $x$ viene chiamato asse reale $\Re$ mentre l'asse delle $y$ è chiamato asse immaginario $\Im$.\par
 Al numero complesso corrisponde il vettore applicato all'origine ed estremità in $(a;b)$. Nella figura\nobs\vref{fig:pianonumcomplesso} sono rappresentati tre numeri complessi $z$, $\conj{z}$ e $-z$. Ad ogni vettore è associato un angolo $\theta$ che forma con l'asse reale chiamato fase. 
 \begin{figure}
 	\centering
@@ -61,7 +61,7 @@ Al numero complesso corrisponde il vettore applicato all'origine ed estremità i
 \label{sec:NumCompOperazioni}
 \subsection{Somma e differenza di numeri complessi}
 \begin{definizionet}{Somma di numeri e differenza di complessi}{}
-Dati due numeri complessi\index{Numero!Complesso!Somma}  $z=a+\uimm b$ e  $z_1=a_1+\uimm b_1$ la loro somma è il numero \[z+z_1=a+a_1+(b+b_1)\uimm\]
+Dati due numeri complessi\index{Numero!complesso!somma}  $z=a+\uimm b$ e  $z_1=a_1+\uimm b_1$ la loro somma è il numero \[z+z_1=a+a_1+(b+b_1)\uimm\]
 \end{definizionet}
 Dal punto di vista grafico la somma di due numeri complessi equivale alla somma grafica di due vettori tramite la regola del parallelogramma che ha per lati i due vettori come mostrato nella figura\nobs\vref{fig:sommaPianoComplesso}.
 
@@ -77,14 +77,14 @@ Sommiamo $z=3-2\uimm$ e $z_1=4+5\uimm$
 \end{esempiot}
 	\[z+z_1=3-2\uimm +4+5\uimm=3+4+(-2+5)\uimm=7+3\uimm\]
 
-Lo zero\index{Numero!Complesso!Zero} dei numeri complessi ha la seguente forma
+Lo zero\index{Numero!complesso!zero} dei numeri complessi ha la seguente forma
 \[0=0+0\uimm\]
 La somma di un numero con il suo coniugato è un numero reale puro. \[z+\conj{z}=a+\uimm b+a-\uimm b=2a \] 
 La differenza di un numero con il suo coniugato è un numero immaginario puro. \[z-\conj{z}=a+\uimm b-a+\uimm b=2\uimm b \] 
 
 \subsection{Prodotto di numeri complessi}
 \begin{definizionet}{Prodotto fra numeri complessi}{}
-	Dati due numeri complessi\index{Numero!Complesso!Prodotto}  $z=a+b\uimm $ e  $z_1=a_1+b\uimm _1$ chiamo prodotto il numero \[z\cdot z_1=(a+b\uimm)(a_1+b_1\uimm)=a\cdot a_1-b\cdot b_1+(a\cdot b_1+a_1\cdot b)\uimm\]
+	Dati due numeri complessi\index{Numero!complesso!prodotto}  $z=a+b\uimm $ e  $z_1=a_1+b\uimm _1$ diciamo prodotto il numero \[z\cdot z_1=(a+b\uimm)(a_1+b_1\uimm)=a\cdot a_1-b\cdot b_1+(a\cdot b_1+a_1\cdot b)\uimm\]
 \end{definizionet}
 \begin{figure}
 	\centering
@@ -103,8 +103,8 @@ La differenza di un numero con il suo coniugato è un numero immaginario puro. \
 	\[z\cdot z_1=(4-2\uimm)(1+3\uimm)= 4+12\uimm -2\uimm -6\uimm^2= 4+12\uimm -2\uimm +6=10+10\uimm \]
 	nel calcolo bisogna ricordarsi che $\uimm^2=-1$
 
-L'unità o l'elemento neutro\index{Numero!Complesso!Elemento neutro} del prodotto ha la forma\[z=1+0\uimm\] 
-Il prodotto fra due numeri coniugati\index{Numero!Complesso!Coniugato}  è un numero reale puro
+L'unità o l'elemento neutro\index{Numero!complesso!elemento neutro} del prodotto ha la forma\[z=1+0\uimm\] 
+Il prodotto fra due numeri coniugati\index{Numero!complesso!coniugato}  è un numero reale puro
 \[z\cdot z_1=(a+b\uimm)(a-b\uimm)=a\cdot a+b\cdot b+(a\cdot b-a\cdot b)\uimm=a^2+b^2\]
 Quindi per ottenere la moltiplicazione di due numeri complessi coniugati basta sommare il quadrato della parte reale con il quadrato della parte immaginaria.
 \begin{esempiot}{Prodotto di numeri complessi}{}
@@ -119,7 +119,7 @@ Il reciproco di un numero complesso $z$ è un numero che moltiplicato per questo
 \subsection{Divisione fra numeri complessi}
 La divisione fra due numeri si può scrivere come il prodotto fra il primo e il reciproco del secondo, cioè \[z\div z_1=z\cdot\dfrac{1}{z_1}\] Resta da dare un significato a $\frac{1}{z_1}$
 \begin{definizionet}{}{}
-	Dato un numero complesso\index{Numero!Complesso!Reciproco} $z=a+b\uimm $ chiamo reciproco di $z$ il numero \[\dfrac{1}{z}=\dfrac{a-b\uimm}{a^2+b^2}=\dfrac{a}{a^2+b^2}-\dfrac{b}{a^2+b^2}\uimm\]
+	Dato un numero complesso\index{Numero!complesso!reciproco} $z=a+b\uimm $ diciamo reciproco di $z$ il numero \[\dfrac{1}{z}=\dfrac{a-b\uimm}{a^2+b^2}=\dfrac{a}{a^2+b^2}-\dfrac{b}{a^2+b^2}\uimm\]
 \end{definizionet}
 \begin{esempiot}{Reciproco numero complesso}{}
 Calcolare il reciproco di $z=2+3\uimm$
@@ -215,44 +215,44 @@ Semplificare $(2+3\uimm)\left(\dfrac{1-3\uimm}{2+4\uimm}\right)^2 $
 		\LinkNodes{semplifico}%
 		\LinkNodes{Ottengo}%
 	\end{NodesList}
-\section{Coordinate polari}
-\begin{definizionet}{Coordinate polari}{}
-Un sistema di coordinate polari individua la posizione di un punto $P$ nel piano, tramite una coppia $(\rho;\theta)$.  Il primo numero è la distanza (modulo) dal punto detto polo e da un angolo detto argomento o fase.
-\end{definizionet}
-\begin{figure} %[htbp]
-	\centering
-\includestandalone[width=.6\textwidth]{terzo/complessi/polar-plot}
-	\caption{Coordinate polari}
-	\label{fig:coordinatepolari}
-\end{figure}
-La figura\nobs\vref{fig:coordinatepolari} mostra un sistema di riferimento polare\index{Coordinate!polari}. I punti che sono alla stessa distanza dal centro si trovano sulla medesima circonferenza. 
-
-Per rappresentare un numero complesso $z=a+\uimm b$ tramite un sistema di coordinate polari occorre trasformare la coppia $(a;b)$
-nella coppia $(\rho;\theta)$.
-\begin{align*}
-&\rho=\sqrt{a^2+b^2}\\
-&\theta=\begin{cases}
-\arctan{\dfrac{b}{a}}&\text{se $a>0$ e $b\geq 0$ }\\
-&\\
-\arctan{\dfrac{b}{a}}+\pi&\text{se $a>0$ e $b< 0$ }\\
-&\\
-\arctan{\dfrac{b}{a}}-\pi&\text{se $a<0$ e $b< 0$ }\\
-&\\
-+\dfrac{\pi}{2}&\text{se $a=0$ e $b> 0$ }\\
-&\\
--\dfrac{\pi}{2}&\text{se $a=0$ e $b< 0$ }\\
-\end{cases}
-\end{align*} 
-\subsection{Moltiplicazione}
-Il prodotto di due numeri complessi in coordinate polari ha le seguenti proprietà  con $z_1,z_2,w\in \Co$ 
-\begin{align*}
-&\abs{w}=\abs{z_1\cdot z_2}=\abs{z_1}\cdot\abs{z_2}\\
-&\arg(z_1\cdot z_2)=\arg{z_1}+\arg{z_2}
-\end{align*} 
-\subsection{Divisione}
-La divisione fra numeri complessi in coordinate polari ha le seguenti proprietà con $z_1,z_2,w\in \Co$ 
-\begin{align*}
-&\abs{w}=\dfrac{\abs{z_1}}{\abs{z_2}}\\
-&\arg(w)=\arg (z_1)-\arg (z_2)
-\end{align*}
-\bassapriorita{esempi numerici operazioni numeri complessi in coordinate polari}
+%\section{Coordinate polari}
+%\begin{definizionet}{Coordinate polari}{}
+%Un sistema di coordinate polari individua la posizione di un punto $P$ nel piano, tramite una coppia $(\rho;\theta)$.  Il primo numero è la distanza (modulo) dal punto detto polo e da un angolo detto argomento o fase.
+%\end{definizionet}
+%\begin{figure} %[htbp]
+%	\centering
+%\includestandalone[width=.6\textwidth]{terzo/complessi/polar-plot}
+%	\caption{Coordinate polari}
+%	\label{fig:coordinatepolari}
+%\end{figure}
+%La figura\nobs\vref{fig:coordinatepolari} mostra un sistema di riferimento polare\index{Coordinate!polari}. I punti che sono alla stessa distanza dal centro si trovano sulla medesima circonferenza. 
+%
+%Per rappresentare un numero complesso $z=a+\uimm b$ tramite un sistema di coordinate polari occorre trasformare la coppia $(a;b)$
+%nella coppia $(\rho;\theta)$.
+%\begin{align*}
+%&\rho=\sqrt{a^2+b^2}\\
+%&\theta=\begin{cases}
+%\arctan{\dfrac{b}{a}}&\text{se $a>0$ e $b\geq 0$ }\\
+%&\\
+%\arctan{\dfrac{b}{a}}+\pi&\text{se $a>0$ e $b< 0$ }\\
+%&\\
+%\arctan{\dfrac{b}{a}}-\pi&\text{se $a<0$ e $b< 0$ }\\
+%&\\
+%+\dfrac{\pi}{2}&\text{se $a=0$ e $b> 0$ }\\
+%&\\
+%-\dfrac{\pi}{2}&\text{se $a=0$ e $b< 0$ }\\
+%\end{cases}
+%\end{align*} 
+%\subsection{Moltiplicazione}
+%Il prodotto di due numeri complessi in coordinate polari ha le seguenti proprietà  con $z_1,z_2,w\in \Co$ 
+%\begin{align*}
+%&\abs{w}=\abs{z_1\cdot z_2}=\abs{z_1}\cdot\abs{z_2}\\
+%&\arg(z_1\cdot z_2)=\arg{z_1}+\arg{z_2}
+%\end{align*} 
+%\subsection{Divisione}
+%La divisione fra numeri complessi in coordinate polari ha le seguenti proprietà con $z_1,z_2,w\in \Co$ 
+%\begin{align*}
+%&\abs{w}=\dfrac{\abs{z_1}}{\abs{z_2}}\\
+%&\arg(w)=\arg (z_1)-\arg (z_2)
+%\end{align*}
+%\bassapriorita{esempi numerici operazioni numeri complessi in coordinate polari}

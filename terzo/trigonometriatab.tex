@@ -35,8 +35,9 @@
 \end{table}
 \section{I triangoli}
 Iniziamo con un po' di notazione. I punti si indicano con le  maiuscole, la lunghezza dei segmenti con le  minuscole,  l'ampiezza degli angoli con le lettere greche. All'angolo di maggiore  ampiezza corrisponde lo spigolo $A$. Per rimanenti partendo da $A$ e muovendosi in senso antiorario, si assegnano le lettere gli altri vertici. Al vertice $A$ corrisponde l'angolo di ampiezza $\alpha$, allo spigolo $B$ $\beta$ e a $C$ $\gamma$. Opposto ad $A$ vi è il lato $a$, gli altri lati a seguire.\par 
-I lati di un triangolo sono classificati, rispetto a un angolo, come opposti o adiacenti. Guardando la figura\nobs\vref{fig:triangolooppostoadiacente}, diciamo che rispetto all'angolo $\gamma$, il segmento $AC$ è adiacente perché appartiene a un  lato dell'angolo. Il segmento  $AB$ è opposto a$\gamma$\index{Angolo!opposto}\index{Angolo!adiacente} perché  non appartiene ai lati  dell'angolo.\par
-  La figura\nobs\vref{fig:triangolopitagorico1} mostra come devono essere assegnati i nomi.
+I lati di un triangolo sono classificati, rispetto a un angolo, come opposti,  adiacenti. Guardando la figura\nobs\vref{fig:triangolooppostoadiacente}, diciamo che rispetto all'angolo $\gamma$, il segmento $AC$ è adiacente perché appartiene a un  lato dell'angolo.\par  Il segmento  $AB$ è opposto a$\gamma$\index{Angolo!opposto}\index{Angolo!adiacente} perché  non appartiene ai lati  dell'angolo.\par
+Un angolo è compreso fra due segmenti se i due segmenti appartengono ai lati dell'angolo. Quindi $\alpha$ è compreso tra i lati $AB$ e $AC$\par 
+ La figura\nobs\vref{fig:triangolopitagorico1} mostra come devono essere assegnati i nomi.
 La somma degli angoli interni\index{Angoli!interni!somma} di un triangolo è un angolo piatto. Quindi \[\alpha+\beta+\gamma=\ang{180}\]. 
 \begin{figure}
 	\centering
@@ -53,7 +54,7 @@ La somma degli angoli interni\index{Angoli!interni!somma} di un triangolo è un 
 	\end{align*}
 \end{teoremat}	
 \section{Triangoli rettangoli}
- Un triangolo rettangolo è formato da due lati chiamati cateti\index{Triangolo!rettangolo!cateto} e da un lato, il maggiore che è detto ipotenusa\index{Triangolo!rettangolo!ipotenusa}.\par Avremo:\begin{align*}
+ Un triangolo rettangolo è formato da due lati chiamati cateti\index{Triangolo!rettangolo!cateto} e da un lato, il maggiore, che è detto ipotenusa\index{Triangolo!rettangolo!ipotenusa}.\par Avremo:\begin{align*}
  \alpha=&{}\ang{90}&&&\alpha=&{}\frac{\pi}{2}\\
  \beta+\gamma=&{}\ang{90}&&&\beta+\gamma=&{}\frac{\pi}{2}\\
  &&A={}&\frac{bc}{2}\\
@@ -67,35 +68,35 @@ La somma degli angoli interni\index{Angoli!interni!somma} di un triangolo è un 
 \begin{teoremat}{}{}
 Consideriamo la figura\nobs\vref{fig:triangolopitagorico1}. Valgono le seguenti relazioni fra i cateti gli angoli e l'ipotenusa
 \begin{align*}
-c&=a\sin\gamma&b&=a\cos\gamma\\
-b&=a\sin\beta&c&=a\cos\beta
+c=&a\sin\gamma&b=&a\cos\gamma\\
+b=&a\sin\beta&c=&a\cos\beta
 \end{align*}
 \end{teoremat}
 \noindent Quindi:\par
-Un cateto è uguale  al prodotto dell'ipotenusa per il seno dell'angolo opposto\par 
-\noindent oppure\par 
+Un cateto è uguale  al prodotto dell'ipotenusa per il seno dell'angolo opposto.\par 
+\noindent Oppure:\par 
 Un cateto è uguale al prodotto dell'ipotenusa per il coseno dell'angolo adiacente.\par
 \noindent Valgono le seguenti relazioni
 \begin{align*}
-\dfrac{c}{a}&=\sin\gamma&\dfrac{b}{a}&=\cos\gamma\\
-\dfrac{b}{a}&=\sin\beta&\dfrac{c}{a}&=\cos\beta
+\dfrac{c}{a}=&\sin\gamma&\dfrac{b}{a}=&\cos\gamma\\
+\dfrac{b}{a}=&\sin\beta&\dfrac{c}{a}=&\cos\beta
 \end{align*}
 \noindent Quindi:\par
-Il rapporto fra  cateto e l'ipotenusa è uguale al seno dell'angolo opposto\par
-\noindent altrimenti:\par
+Il rapporto fra  cateto e l'ipotenusa è uguale al seno dell'angolo opposto.\par
+\noindent Altrimenti:\par
 Il rapporto fra  cateto e l'ipotenusa è uguale al coseno dell'angolo adiacente.\par 
 \noindent Dalle relazioni di partenza si ottiene:
 \[\dfrac{b}{sen\beta}=\dfrac{b}{\cos\gamma}=\dfrac{c}{\sin\gamma}=\dfrac{c}{cos\beta}=a \]
 \begin{teoremat}{}{}
 Dividendo fra loro le relazioni di partenza otteniamo
 \begin{align*}
-b&=c\tan\beta&c&=b\tan\gamma\\
-b&=c\cot\gamma&c&=b\cot\beta
+b=&c\tan\beta&c=&b\tan\gamma\\
+b=&c\cot\gamma&c=&b\cot\beta
 \end{align*}
 \end{teoremat}
 \noindent Quindi:\par
-Un cateto è uguale all'altro cateto per la tangente dell'angolo opposto\par \noindent altrimenti:\par 
-Un cateto è uguale all'altro cateto per la tangente dell'angolo adiacente\par
+Un cateto è uguale all'altro cateto per la tangente dell'angolo opposto.\par \noindent Altrimenti:\par 
+Un cateto è uguale all'altro cateto per la tangente dell'angolo adiacente.\par
 \begin{align*}
 \frac{b}{c}=&\tan\beta=\cot\gamma\\
 \frac{c}{b}=&\tan\gamma=\cot\beta
@@ -111,99 +112,114 @@ La risoluzione di un triangolo consiste nel trovare tutti i suoi elementi conosc
 I vari casi sono illustrati in seguito. 
 %Ricordiamo che in un triangolo rettangolo vale il teorema di Pitagora.\index{Teorema!Pitagora} Quindi, facendo riferimento alla figura\nobs\vref{fig:TeoremaPitagora_1}:
 %\begin{align*}
-%a^2&=b^2+c^2\\
-%a{}&=\sqrt{b^2+c^2}\\
-%b^2&=a^2-c^2\\
-%b{}&=\sqrt{a^2-c^2}\\
-%c^2&=a^2-b^2\\
-%c{}&=\sqrt{a^2-b^2}\\
+%a^2=&b^2+c^2\\
+%a{}=&\sqrt{b^2+c^2}\\
+%b^2=&a^2-c^2\\
+%b{}=&\sqrt{a^2-c^2}\\
+%c^2=&a^2-b^2\\
+%c{}=&\sqrt{a^2-b^2}\\
 %\end{align*}
-\begin{figure}
-	\centering
-	\includestandalone{terzo/trigonometria/pitagora_1}
-	\caption{Teorema di Pitagora}
-	\label{fig:TeoremaPitagora_1}
-\end{figure}
+
 %Inoltre dato che la somma degli angoli interni di un triangolo è 
 %$\ang{180}$ la somma dei due angoli acuti è di $\ang{90}$. quindi
 %\[\beta+\gamma=\ang{90}\]
 \subsection{Angolo acuto e ipotenusa noti}
 Risolviamo questo caso, conosciamo, come nella figura\nobs\vref{fig:risTriangRett_1}, l'ipotenusa $a$ e un angolo acuto, per esempio\nobs$\gamma$.
 \begin{align*}
-\beta&=\ang{90}-\gamma&\beta&=\ang{90}-\gamma\\
-c&=a\sin\gamma&c&=a\cos\beta\\
-b&=a\cos\gamma&b&=a\cos\beta
+\beta=&\ang{90}-\gamma&\beta=&\ang{90}-\gamma\\
+c=&a\sin\gamma&c=&a\cos\beta\\
+b=&a\cos\gamma&b=&a\cos\beta
 \end{align*}
 \begin{esempiot}{Risolvere triangolo rettangolo}{}
 Trovare gli altri elementi di un triangolo sapendo che l'ipotenusa $a=3$ e l'angolo acuto $\gamma=\ang{30}$  Otteniamo quanto segue.
 \end{esempiot}
 \begin{align*}
-a&=3\\
-\gamma&=\ang{30}\\
-\beta&=\ang{90}-\ang{30}=\ang{60}\\
-c&=a\sin\gamma\\
-c&=3\sin\ang{30}=3\cdot\dfrac{1}{2}=\dfrac{3}{2}\\
-b&=a\cos\gamma\\
-b&=3\cos\ang{30}=3\cdot\dfrac{\sqrt{3}}{2}=\dfrac{3\sqrt{3}}{2}
+a=&3\\
+\gamma=&\ang{30}\\
+\beta=&\ang{90}-\ang{30}=\ang{60}\\
+c=&a\sin\gamma\\
+c=&3\sin\ang{30}=3\cdot\dfrac{1}{2}=\dfrac{3}{2}\\
+b=&a\cos\gamma\\
+b=&3\cos\ang{30}=3\cdot\dfrac{\sqrt{3}}{2}=\dfrac{3\sqrt{3}}{2}
 \end{align*}
 \begin{esempiot}{Numero complesso noto modulo e angolo }{}
 	Un numero complesso $z$ ha modulo $\abs{z}=5$ e l'angolo $\phi=\ang{30}$.  Determinare parte reale e parte complessa.
 \end{esempiot}
 \begin{align*}
-\abs{z}&=5\\
-\phi&=\ang{30}\\
-\Re\left(z\right)&=\abs{z}\cos\phi\\
-\Re\left(z\right)&=5\cos(\ang{30})=5\frac{\sqrt{3}}{2}\\
-\Im\left(z\right)&=\abs{z}\sin\phi\\
-\Im\left(z\right)&=5\sin(\ang{30})=5\dfrac{1}{2}=\dfrac{5}{2}\\
+\abs{z}=&5\\
+\phi=&\ang{30}\\
+\Re\left(z\right)=&\abs{z}\cos\phi\\
+\Re\left(z\right)=&5\cos(\ang{30})=5\frac{\sqrt{3}}{2}\\
+\Im\left(z\right)=&\abs{z}\sin\phi\\
+\Im\left(z\right)=&5\sin(\ang{30})=5\dfrac{1}{2}=\dfrac{5}{2}\\
 \end{align*}
+\begin{figure}
+	\centering
+	\includestandalone[scale=0.7]{terzo/trigonometria/pitagora_1}
+	\caption{Teorema di Pitagora}
+	\label{fig:TeoremaPitagora_1}
+\end{figure}
 \subsection{Angolo acuto e cateto noti}
 Risolviamo questo caso, conosciamo, come nella figura\nobs\vref{fig:risTriangRett_2}, un cateto $b$ e un angolo acuto, ad esempio $\gamma$.
 \begin{align*}
-\beta&=\ang{90}-\gamma&\beta&=\ang{90}-\gamma\\
-c&=b\tan\gamma&c&=a\cot\beta\\
-a&=\dfrac{b}{\sin\beta}&a&=\dfrac{b}{\cos\beta}
+\beta=&\ang{90}-\gamma&\beta=&\ang{90}-\gamma\\
+c=&b\tan\gamma&c=&a\cot\beta\\
+a=&\dfrac{b}{\sin\beta}&a=&\dfrac{b}{\cos\beta}
 \end{align*}
-
 \begin{esempiot}{Risolvere triangolo rettangolo}{}
 Trovare gli elementi ignoti di un triangolo rettangolo, sapendo che  il cateto $b=5$ e l'angolo $\gamma=\ang{60}$.
 \end{esempiot}
 \begin{align*}
-b&=5\\
-\gamma &=\ang{60}\\
-\beta&=\ang{90}-\ang{60}=\ang{30}\\
-c&=b\tan\gamma\\
-c&=5\tan\ang{60}=5\cdot\sqrt{5}=5\sqrt{3}\\
-a&=\dfrac{b}{\sin\beta}\\
-a&=\dfrac{5}{\sin\ang{30}}=\dfrac{5}{\dfrac{1}{2}}=10
+b=&5\\
+\gamma =&\ang{60}\\
+\beta=&\ang{90}-\ang{60}=\ang{30}\\
+c=&b\tan\gamma\\
+c=&5\tan\ang{60}=5\cdot\sqrt{5}=5\sqrt{3}\\
+a=&\dfrac{b}{\sin\beta}\\
+a=&\dfrac{5}{\sin\ang{30}}=\dfrac{5}{\dfrac{1}{2}}=10
+\end{align*}
+\begin{esempiot}{Parte reale e $\phi$ noti}{}
+La parte reale di un numero complesso è $\Re(z)=-3$. L'angolo $\phi=\ang{128}$. Trovare il modulo di $z$
+\end{esempiot}
+\begin{align*}
+\intertext{Abbiamo vari metodi}
+-3=&\abs{z}\cos(\ang{180}-\ang{128})\\
+3=&\abs{z}\cos(\ang{52})\\
+\abs{z}=&\dfrac{3}{\cos\ang{52}}\approx\num{4.8728}
+\intertext{Metodo indiretto}
+\Im(z)=&-3\tan(\ang{180}-\ang{128})\\
+=&3\tan(\ang{52})\\
+\approx&3.8399\\
+\abs{z}\approx&\sqrt{(-3)^2+(3.8399)^2}\\
+\approx&\num{4.8728}\\
 \end{align*}
 Una variante di quanto prima è quello che segue. Qui un angolo è noto tramite il valore di una funzione goniometrica.
 \begin{esempiot}{Trovare gli elementi ignoti di un triangolo rettangolo}{}
 Trovare gli elementi ignoti di un triangolo rettangolo, sapendo che  il cateto $b=4$ e l'angolo $\cos\gamma=\dfrac{4}{5}$.
 \end{esempiot}
 \begin{align*}
-\cos\gamma&=\dfrac{4}{5}\\
-b&=4
+\cos\gamma=&\dfrac{4}{5}\\
+b=&4
 \intertext{determiniamo l'ipotenusa $a$}
-b&=a\cos\gamma\\
-4&=a\dfrac{4}{5}\\
+b=&a\cos\gamma\\
+4=&a\dfrac{4}{5}\\
 \intertext{l'ipotenusa è:}
-a&=\dfrac{20}{4}=5\\
+a=&\dfrac{20}{4}=5\\
 \intertext{Per determinare il cateto $c$ ho bisogno di $\sin\gamma$}
-\sin\gamma&=\sqrt{1-\cos^2\gamma}\\
-&=\sqrt{1-\dfrac{16}{25}}\\
-&=\sqrt{\dfrac{25-16}{25}}\\
-&=\sqrt{\dfrac{9}{25}}=\dfrac{3}{5}\\
+\sin\gamma=&\sqrt{1-\cos^2\gamma}\\
+=&\sqrt{1-\dfrac{16}{25}}\\
+=&\sqrt{\dfrac{25-16}{25}}\\
+=&\sqrt{\dfrac{9}{25}}=\dfrac{3}{5}\\
 \intertext{ora possiamo trovare il cateto $c$}
-c&=a\sin\gamma\\
-c&=5\dfrac{3}{5}=3
+c=&a\sin\gamma\\
+c=&5\dfrac{3}{5}=3
 \end{align*}
 \begin{esempiot}{Numero complesso noto $\phi$ e parte reale}{}
 	Di un numero complesso $z$ sono noti la fase $\phi=\ang{150}$ e la parte reale $\Re(z)=-4$. Determinare il modulo di $z$ e la parte immaginaria $\Im(z)$ 
 \end{esempiot}
 \begin{align*}
 \phi=&\ang{150}\\
-\Re(z)=&=-4\\
+\Re(z)==&-4\\
 \Im(z)=&\R(z)\tan\phi\\
 \Im(z)=&-4\tan\ang{150}\\
 \Im(z)=&-4\left(-\dfrac{\sqrt{3}}{3}\right)\\=&\dfrac{4}{3}\sqrt{3}\\
@@ -214,40 +230,51 @@ c&=5\dfrac{3}{5}=3
 \subsection{Ipotenusa e cateto}
 Risolviamo questo caso, conosciamo, come nella figura\nobs\vref{fig:risTriangRett_3}, un cateto $b$ e l'ipotenusa $a$.
 \begin{align*}
-\beta&=\arcsin\dfrac{b}{a}&\gamma&=\arccos\dfrac{b}{a}\\
-\gamma&=\ang{90}-\beta&\beta&=\ang{90}-\gamma\\
-c&=a\cos\beta&c&a\sin\gamma
+\beta=&\arcsin\dfrac{b}{a}&\gamma=&\arccos\dfrac{b}{a}\\
+\gamma=&\ang{90}-\beta&\beta=&\ang{90}-\gamma\\
+c=&a\cos\beta&c&a\sin\gamma
 \end{align*}
 \begin{esempiot}{Risolvere triangolo rettangolo 1}{}
 Trovare gli elementi ignoti di un triangolo rettangolo sapendo che l'ipotenusa $a=2$  il cateto $b=\sqrt{5}$.
 \end{esempiot}
 \begin{align*}
-a&=\num{2}\\
-b&=\sqrt{\num{3}}\\
-\beta&=\arcsin\dfrac{b}{a}\\
-\beta&=\arcsin\dfrac{\sqrt{3}}{2}=\ang{60}\\
-\gamma&=\ang{90}-\ang{60}=\ang{30}\\
-c&=a\cos\beta\\
-c&=2\cos\ang{60}=2\cdot\dfrac{1}{2}=1
+a=&\num{2}\\
+b=&\sqrt{\num{3}}\\
+\beta=&\arcsin\dfrac{b}{a}\\
+\beta=&\arcsin\dfrac{\sqrt{3}}{2}=\ang{60}\\
+\gamma=&\ang{90}-\ang{60}=\ang{30}\\
+c=&a\cos\beta\\
+c=&2\cos\ang{60}=2\cdot\dfrac{1}{2}=1
 \end{align*} 
 \subsection{Cateti noti}
 Risolviamo questo caso, conosciamo, come nella figura\nobs\vref{fig:risTriangRett_4}, con i cateti $b$ e $c$ noti.
 \begin{align*}
-\gamma&=\arctan\dfrac{c}{b}&\beta&=\arctan\dfrac{b}{c}\\
-\beta&=\ang{90}-\gamma&\gamma&=\ang{90}-\beta\\
-a&=\dfrac{c}{\sin\gamma}&a&=\dfrac{c}{\cos\beta}
+\gamma=&\arctan\dfrac{c}{b}&\beta=&\arctan\dfrac{b}{c}\\
+\beta=&\ang{90}-\gamma&\gamma=&\ang{90}-\beta\\
+a=&\dfrac{c}{\sin\gamma}&a=&\dfrac{c}{\cos\beta}
 \end{align*}
 \begin{esempiot}{Risolvere triangolo rettangolo 2}{}
-Trovare gli elementi ignoti di un triangolo rettangolo sapendo che  il cateto $b=5$ e il lato $c=12$
+Dato il numero complesso $z=4+8\uimm$, trovarne il modulo e l'angolo $\phi$
 \end{esempiot}
 \begin{align*}
-b&=5\\
-c&=12\\
-\gamma&=\arctan\dfrac{c}{b}\\
-\gamma&=\arctan\dfrac{12}{5}\approxeq\ang{67.38}\\
-\beta&=\ang{90}-\gamma=\ang{67.38}\\
-a&=\dfrac{c}{\sin\gamma}\\
-a&=\dfrac{12}{\sin\ang{67.38}}\approxeq\dfrac{12}{\num{0.92}}\approxeq\num{13.0}
+\Re(z)=&4\\
+\Im(z)=&8\\
+\abs{z}=&\sqrt{4^2+8^2}=\sqrt{80}\\
+8=&4\tan\phi\\
+\tan\phi=&\dfrac{8}{4}=2\\
+\phi=&\arctan(2)\approxeq\ang{63.435}\\
+\end{align*}
+\begin{esempiot}{Numero complesso note parte reale e parte complessa}{}
+	Trovare gli elementi ignoti di un triangolo rettangolo sapendo che  il cateto $b=5$ e il lato $c=12$
+\end{esempiot}
+\begin{align*}
+b=&5\\
+c=&12\\
+\gamma=&\arctan\dfrac{c}{b}\\
+\gamma=&\arctan\dfrac{12}{5}\approxeq\ang{67.38}\\
+\beta=&\ang{90}-\gamma=\ang{67.38}\\
+a=&\dfrac{c}{\sin\gamma}\\
+a=&\dfrac{12}{\sin\ang{67.38}}\approxeq\dfrac{12}{\num{0.92}}\approxeq\num{13.0}
 \end{align*}
 \begin{figure}
 	\begin{subfigure}[b]{.5\linewidth}
@@ -298,15 +325,15 @@ Quindi in un triangolo qualunque il rapporto fra il lato e il seno dell'angolo o
 
 Possiamo riscrivere il teorema dei seni in questa maniera: 
 \begin{align*}
-a&=b\dfrac{\sin\alpha}{\sin\beta}& a&=c\dfrac{\sin\alpha}{\sin\gamma}\\
-b&=a\dfrac{\sin\beta}{\sin\beta}& b&=c\dfrac{\sin\beta}{\sin\gamma}\\
-c&=a\dfrac{\sin\gamma}{\sin\alpha}& c&=b\dfrac{\sin\gamma}{\sin\beta}
+a=&b\dfrac{\sin\alpha}{\sin\beta}& a=&c\dfrac{\sin\alpha}{\sin\gamma}\\
+b=&a\dfrac{\sin\beta}{\sin\beta}& b=&c\dfrac{\sin\beta}{\sin\gamma}\\
+c=&a\dfrac{\sin\gamma}{\sin\alpha}& c=&b\dfrac{\sin\gamma}{\sin\beta}
 \end{align*}
 o in questa
 \begin{align*}
-\sin\alpha&=\dfrac{a}{b}\sin\beta&\sin\alpha&=\dfrac{a}{c}\sin\gamma\\
-\sin\beta&=\dfrac{b}{a}\sin\alpha&\sin\beta&=\dfrac{b}{c}\sin\gamma\\
-\sin\gamma&=\dfrac{c}{a}\sin\alpha&\sin\gamma&=\dfrac{c}{b}\sin\beta\\
+\sin\alpha=&\dfrac{a}{b}\sin\beta&\sin\alpha=&\dfrac{a}{c}\sin\gamma\\
+\sin\beta=&\dfrac{b}{a}\sin\alpha&\sin\beta=&\dfrac{b}{c}\sin\gamma\\
+\sin\gamma=&\dfrac{c}{a}\sin\alpha&\sin\gamma=&\dfrac{c}{b}\sin\beta\\
 \end{align*}
 \subsection{Teorema di Carnot}
 \begin{figure}
@@ -317,21 +344,21 @@ o in questa
 \end{figure}
 Una versione più generale del teorema di Pitagora è il teorema di Carnot\index{Teorema!Carnot}. Partendo dalla figura\nobs\vref{fig:TeoremDiCarnot_1} avremo queste relazioni.
 \begin{align*}
-a^2&=b^2+c^2-2bc\cos\alpha\\
-b^2&=a^2+c^2-2ac\cos\beta\\
-c^2&=a^2+b^2-2ab\cos\gamma
+a^2=&b^2+c^2-2bc\cos\alpha\\
+b^2=&a^2+c^2-2ac\cos\beta\\
+c^2=&a^2+b^2-2ab\cos\gamma
 \end{align*}
 Possiamo scrivere le precedenti equazioni isolando i coseni cioè:
 \begin{align*}
-\cos\alpha&=\dfrac{b^2+c^2-a^2}{2bc}\\
-\cos\beta&=\dfrac{a^2+c^2-b^2}{2ac}\\
-\cos\gamma&=\dfrac{a^2+b^2-c^2}{2ab}\\
+\cos\alpha=&\dfrac{b^2+c^2-a^2}{2bc}\\
+\cos\beta=&\dfrac{a^2+c^2-b^2}{2ac}\\
+\cos\gamma=&\dfrac{a^2+b^2-c^2}{2ab}\\
 \end{align*}
 queste soluzioni possono servire per definire gli angoli del triangolo cioè:
 \begin{align*}
-\alpha&=\arccos(\dfrac{b^2+c^2-a^2}{2bc})\\
-\beta&=\arccos(\dfrac{a^2+c^2-b^2}{2ac})\\
-\gamma&=\arccos(\dfrac{a^2+b^2-c^2}{2ab})\\
+\alpha=&\arccos(\dfrac{b^2+c^2-a^2}{2bc})\\
+\beta=&\arccos(\dfrac{a^2+c^2-b^2}{2ac})\\
+\gamma=&\arccos(\dfrac{a^2+b^2-c^2}{2ab})\\
 \end{align*}
 \begin{figure}
 	\begin{subfigure}[b]{.5\linewidth}
@@ -365,16 +392,16 @@ queste soluzioni possono servire per definire gli angoli del triangolo cioè:
 \subsection{Un lato e due angoli}
 Se è noto il lato $c$ e gli angoli $\alpha$ e $\beta$ come nella figura\nobs\vref{fig:risTriangQqualunque_1} avremo:
 \begin{align*}
-\gamma&=\ang{180}-(\alpha+\beta)\\
-a&=c\dfrac{\sin\alpha}{\sin\gamma}\\
-b&=c\dfrac{\sin\beta}{\sin\gamma}\\
+\gamma=&\ang{180}-(\alpha+\beta)\\
+a=&c\dfrac{\sin\alpha}{\sin\gamma}\\
+b=&c\dfrac{\sin\beta}{\sin\gamma}\\
 \end{align*}
 \subsection{Due lati e l'angolo fra essi compreso} 
 In questo caso supponiamo noti i lati $b$ e $c$ e l'angolo $\alpha$ fra loro compreso, come nella figura\nobs\vref{fig:risTriangQqualunque_2} avremo:
 \begin{align*}
-a&=\sqrt{b^2+c^2-2bc\cos\alpha}\\
-\beta&=\arccos(\dfrac{a^2+c^2-b^2}{2ac})\\
-\gamma&=\arccos(\dfrac{a^2+b^2-c^2}{2ab})
+a=&\sqrt{b^2+c^2-2bc\cos\alpha}\\
+\beta=&\arccos(\dfrac{a^2+c^2-b^2}{2ac})\\
+\gamma=&\arccos(\dfrac{a^2+b^2-c^2}{2ab})
 \intertext{verificando che}
 \alpha+&\beta+\gamma=\ang{180}
 \end{align*}
@@ -382,16 +409,16 @@ a&=\sqrt{b^2+c^2-2bc\cos\alpha}\\
 In questo caso supponiamo noti i lati $b$ e $c$ e l'angolo $\beta$ fra loro non compreso, come nella figura\nobs\vref{fig:risTriangQqualunque_3} avremo:
 \begin{align*}
 \intertext{verificando le soluzioni}
-\gamma&=\arcsin(\dfrac{c}{b}{\sin\beta}) \\
-\alpha&=\ang{180}-(\beta+\gamma)\\
-a&=b\dfrac{\sin\alpha}{\sin\beta}
+\gamma=&\arcsin(\dfrac{c}{b}{\sin\beta}) \\
+\alpha=&\ang{180}-(\beta+\gamma)\\
+a=&b\dfrac{\sin\alpha}{\sin\beta}
 \end{align*}
 \subsection{Tre lati}
 In questo caso supponiamo noti i lati $a$ $b$ e $c$  come nella figura\nobs\vref{fig:risTriangQqualunque_4} avremo:
 \begin{align*}
-\alpha&=\arccos(\dfrac{b^2+c^2-a^2}{2bc})\\
-\beta&=\arccos(\dfrac{a^2+c^2-b^2}{2ac})\\
-\gamma&=\arccos(\dfrac{a^2+b^2-c^2}{2ab})\\
+\alpha=&\arccos(\dfrac{b^2+c^2-a^2}{2bc})\\
+\beta=&\arccos(\dfrac{a^2+c^2-b^2}{2ac})\\
+\gamma=&\arccos(\dfrac{a^2+b^2-c^2}{2ab})\\
 \end{align*}
 \chapter{Forma goniometrica dei numeri complessi}
 \begin{definizionet}{Forma goniometrica}{}

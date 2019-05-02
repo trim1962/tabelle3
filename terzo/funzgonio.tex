@@ -478,7 +478,7 @@ Arcocotangente&\R&0<y<\pi\\
 \renewcommand{\arraystretch}{1}
 \subsection{Seno e coseno}
 \label{sec:RelazioniFondamentaliSenoCoseno}
-\begin{teoremat}{Relazione fondamentale goniometria}{}\index{Relazione!fondamentale goniometria}\index{Funzione!Seno}\index{Funzione!Coseno}
+\begin{teoremat}{Relazione fondamentale goniometria}{}\index{Relazione!fondamentale!goniometria}\index{Funzione!Seno}\index{Funzione!Coseno}
 Dato un angolo $\alpha$ allora vale quanto segue:
 \begin{equation*}
 \cos^2\alpha+\sin^2\alpha=1\label{eqn:RelazioneFondamentaleTrigonometria1}
@@ -508,7 +508,7 @@ Dalla relazione\nobs\vref{eqn:RelazioneFondamentaleTrigonometria1} è possibile 
 \end{align*}
 \begin{esempiot}{Trovare il valore del coseno di un angolo noto il seno}{}
 Trovare il valore del coseno di un angolo noto il seno. Per esempio poniamo 
-\end{esempiot}
+\end{esempiot}\index{Coseno!noto!seno}
 \begin{align*}
 \sin\alpha&{}=\dfrac{3}{5}\\
 \cos\alpha&=\pm\sqrt{1-\sin^2\alpha}\\
@@ -570,7 +570,7 @@ Dalle formule\nobs\vrefrange{equ:tangente1}{equ:cotangente1} è possibile ottene
 &\cos^{2}\alpha={}\dfrac{\cot^{2}\alpha}{1+\cot^{2}\alpha}&\alpha{}&\neq k\pi\\
 &\cos\alpha={}\pm\dfrac{\cot\alpha}{\sqrt{1+\cot^{2}\alpha}}&\alpha{}&\neq k\pi\\
 \end{align*}
-\end{teoremat}
+\end{teoremat}\index{Seno!noto!tangente}\index{Coseno!noto!tangente}\index{Seno!noto!cotangente}\index{Coseno!noto!cotangente}
 \begin{proof}
 	Partendo dalla relazione fondamentale della goniometria
 \begin{align*}
@@ -615,7 +615,7 @@ Supponiamo di conoscere un valore di $\tan\alpha$
 \sin\alpha=&{}\pm\dfrac{\dfrac{3}{5}}{\sqrt{1+\left(\dfrac{3}{5}\right)^2}}\\
 \sin\alpha=&{}\pm\dfrac{\dfrac{3}{5}}{\dfrac{\sqrt{34}}{5}}=\pm\dfrac{3}{5}\cdot\dfrac{5}{\sqrt{34}}=\pm\dfrac{3}{\sqrt{34}}\cdot\dfrac{\sqrt{34}}{\sqrt{34}}=\pm\dfrac{3\sqrt{34}}{34}\simeq\num{5.145e-1}
 \end{align*}
-\end{esempiot}
+\end{esempiot}\index{Seno!noto!tangente}\index{Coseno!noto!tangente}
 \begin{figure}
 	\begin{subfigure}[b]{.5\linewidth}
 		\centering\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/SenoCosenoNototangente1}
@@ -637,7 +637,7 @@ Supponiamo di conoscere un valore di $\tan\alpha$
 \end{figure}
 \section{Angoli associati}
 \label{sec:goniometriaAngoliAssociati}
-\altapriorita{Inserire esempi}
+%\altapriorita{Inserire esempi}
 \subsection{Angoli supplementari}
 \begin{figure}
 	\centering
@@ -843,7 +843,7 @@ Le equazioni goniometriche elementari\index{Equazione!elementare!seno} sono equa
 	\end{subfigure}
 	\captionof{figure}{Equazioni Elementari}\label{fig:EquaElementareSenoCoseno2}
 \end{figure}
-Il seno di un angolo è una funzione limitata con valori  tra meno uno ed uno compresi $(1\leq\sin x\leq 1)$ quindi l'equazione è impossibile per valori di $m$ esterni a tale intervallo. Abbiamo vari casi:
+Il seno di un angolo è una funzione limitata che assume valori  tra meno uno ed uno compresi $(1\leq\sin x\leq 1)$ quindi l'equazione è impossibile per valori di $m$ esterni a tale intervallo. Abbiamo vari casi:
 \begin{description}
 	\item[$0<m<1$] In questo caso le soluzioni sono due come nella\nobs\vref{fig:EquaElementareSeno1} $x=\alpha+k\ang{360}$ e $x=\ang{180}-\alpha+k\ang{360}$
 	\item [$m=+1$] Guardando la\nobs\vref{fig:EquaElementareSeno2} la soluzione è unica, $x=\ang{90}+k\ang{360}$
@@ -956,7 +956,7 @@ Equazione &Soluzione & Soluzione & Trasformazione \\
 \caption{Equazioni elementari in seno}
 \label{tab:EquazioniElementarinSeno}
 \end{table}
-L'esempio che segue è quasi analogo al precedente, bisogna prima procedere ad una trasformazione del secondo membro utilizzando gli angoli associati\nobs\vref{sub:Dif180}. 
+L'esempio che segue è quasi analogo al precedente,  prima procedere trasformiamo il secondo membro utilizzando gli angoli associati\nobs\vref{sub:Dif180}. 
 \begin{esempiot}{Equazione goniometrica}{}
 Risolvere l'equazione $ \sin(3x-\ang{10})=-\sin(5x+\ang{40})$
 \end{esempiot}
@@ -982,7 +982,7 @@ x&=-\dfrac{\ang{30}}{8}+k\dfrac{\ang{360}}{8}
 x&=-\ang{115}+k\ang{180}\\
 x&=-\dfrac{\ang{30}}{8}+k\ang{45}
 \end{align*}
-Esempio uguale a precedente. Prima di risolvere l'equazione bisogna trasformare il secondo membro utilizzando\nobs\vref{sub:AngoliComp} 
+Esempio analogo al precedente. Prima di risolvere l'equazione bisogna trasformare il secondo membro utilizzando gli angoli complementari.\nobs\vref{sub:AngoliComp} 
 \begin{esempiot}{Equazione goniometrica}{}
 Risolvere l'equazione $\sin(2x+\ang{30})=\cos(x+\ang{40})\\$
 \end{esempiot}
@@ -1007,7 +1007,7 @@ x&=\dfrac{\ang{20}}{3}+k\ang{120}\\
 x&=\ang{100}+k\ang{360}
 	\end{align*}
 \subsection{Equazione elementare coseno}
-Il coseno di un angolo\index{Equazione!elementare!coseno} è una funzione limitata con valori compresi tra meno uno ed uno $(1\leq\cos x\leq 1)$ quindi l'equazione è impossibile per valori di $m$ esterni a tale intervallo. Abbiamo vari casi:
+Il coseno di un angolo\index{Equazione!elementare!coseno} è come il seno, una funzione limitata. Il coseno  assume valori compresi tra meno uno ed uno $(1\leq\cos x\leq 1)$. Quindi l'equazione è impossibile per valori di $m$ esterni a tale intervallo. Abbiamo vari casi:
 \begin{description}
 	\item[$0<m<1$] Le soluzioni sono due come dalla\nobs\vref{fig:EquaElementareCoseno1} $x=\alpha+k\ang{360}$ e $x=-\alpha+k\ang{360}$
 	\item [$m=+1$] La\nobs\vref{fig:EquaElementareCoseno2} mostra la soluzione che è $\alpha=0 + k\ang{360}$

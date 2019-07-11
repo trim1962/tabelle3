@@ -5,12 +5,11 @@
 % see http://www.tex.ac.uk/cgi-bin/texfaq2html?label=noroom
 \usepackage{base}
 \usepackage[big]{layaureo}
-\input{../Mod_base/grafica}
+\usepackage{grafica}
 %\input{../Mod_base/rifIndici}
-\input{../Mod_base/stand_class}
-\usepackage{qrcode}
-\input{../Mod_base/matematica}
-\input{../Mod_base/tabelle}
+\usepackage{stand_class}
+\usepackage{matematica}
+\usepackage{tabelle}
 \DeclareCaptionFormat{grafico}{\textbf{Grafico \thefigure}#2#3}
 \DeclareCaptionFormat{esempio}{\textbf{Esempio \thefigure}#2#3}
 \newcolumntype{L}{>{$\displaystyle}l<{$}}
@@ -26,10 +25,9 @@
 \newlength{\gnam}
 \usepackage{imakeidx}
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
-\input{../Mod_base/pagina}
-\input{../Mod_base/date}
-\input{../Mod_base/loghi}
-\input{../Mod_base/unita_misura}
+\usepackage{date}
+\usepackage{pagina}
+\usepackage{unita_misura}
 \usepackage[grumpy,mark,markifdirty,raisemark=0.95\paperheight]{gitinfo2}
 \usepackage[toc,page]{appendix}
 

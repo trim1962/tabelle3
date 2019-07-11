@@ -38,7 +38,7 @@
 \usepackage{hyperxmp}
 \usepackage[pdfpagelabels]{hyperref}
 \usepackage[italian,noabbrev]{cleveref}
-\input{../Mod_base/tcolorboxgest}
+\usepackage{tcolorboxgest}
 \title{Esercizi svolti terzo}
 \author{Claudio Duchi}
 \date{\datetime}
@@ -93,9 +93,9 @@
 	%\pagenumbering{arabic}
 }
 \makeatother
-\input{../Mod_base/indice}
-
-\input{../Mod_base/utili}
+\usepackage{indice}
+\usepackage{utili}
+\usepackage{copyright}
 \usepackage{tkz-berge}
 \newcommand{\polylogo}[1]{
 	\begin{center}
@@ -112,7 +112,7 @@
 \frontmatter
 \begin{titlepage}
 		\begin{center}
-	 	\input{../Mod_base/Lgrande}\\[1cm]
+	 	\includegraphics{../Mod_base/Lgrande}\\[1cm]
 	 \textsc{\LARGE Claudio Duchi}\\[1.5cm]
 	 \HRule \\[0.4cm]
 	 	{ \huge \bfseries APPUNTI DI MATEMATICA}\\[0.4cm]
@@ -124,7 +124,7 @@
 	\end{center}
 \end{titlepage}
 \setcounter{page}{2}
-\input{../Mod_base/copyright}
+\CDcopyright
 \tableofcontents 
 \listoftables
 \addcontentsline{toc}{chapter}{\listtablename}
@@ -147,11 +147,13 @@
 \mainmatter%
 \input{compilaDUE}
 \backmatter
-\begin{appendices}
-	\input{terzo/Tabelle_goniometriche}
-	\input{../Mod_base/MezziUsati}
-\end{appendices}
-
 \addcontentsline{toc}{chapter}{\indexname}
 \printindex
+\appendix
+	\input{terzo/Tabelle_goniometriche}
+\chapter{Mezzi usati}
+\CDMezziUsati
+
+
+
 \end{document}

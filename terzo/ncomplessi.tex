@@ -32,19 +32,41 @@ Il numero \[z=-2+3\uimm \] è un numero complesso che ha per parte reale \[\Re(z
 \begin{definizionet}{Complesso coniugato}{}
 	Dato un numero complesso $z=a+b\uimm$, il coniugato\index{Numero!complesso!coniugato} è  il numero $\conj{z}=a-b\uimm$
 \end{definizionet}
+Quindi un numero coniugato ha la stessa parte reale e parte immaginaria opposta.
 \begin{esempiot}{Coniugato}{}
 Se $z=3+2\uimm$ il coniugato è $\conj{z}=3-2\uimm$ 
 \end{esempiot}
 \begin{definizionet}{Numero opposto}{}
-Dato un numero complesso $z=a+b\uimm$,  opposto\index{Numero!complesso!oppoto}è  il numero $-z=-a-b\uimm$
+Dato un numero complesso $z=a+b\uimm$,  opposto\index{Numero!complesso!oppoto} 
+è  il numero $-z=-a-b\uimm$
 \end{definizionet}
+Un numero complesso opposto è un numero che ha parte reale e parte complessa 
+opposta.
+\begin{esempiot}{Opposto}{}
+	Se $z=-5+2\uimm$ il suo opposto è $z=5-2\uimm$
+\end{esempiot}
 \begin{definizionet}{Modulo}{}
 Dato un numero  complesso $z=a+b\uimm$, il modulo\index{Numero!complesso!modulo} è il numero $\abs{z}=\sqrt{a^2+b^2}$
 \end{definizionet}
+\begin{esempiot}{Modulo}{}
+	Se $z=4+3\uimm$ il coniugato è $\abs{z}=\sqrt{16+9}=\sqrt{25}=5$
+\end{esempiot}
+\begin{definizionet}{Vettore}{}
+	Un vettore\index{Vettore} è un segmento orientato. Un segmento che ha 
+	quindi una direzione, la retta dove giace il vettore. Un verso, il modo in 
+	cui si passa dagli estremi del segmento. 
+	La lunghezza del segmento è chiamata modulo.
+\end{definizionet}
 \section{Piano complesso}
-Un numero complesso $z=a+b\uimm$ è una coppia di numeri $(a;b)$. A questa coppia di punti corrisponde un punto del piano chiamato piano di  Argand-Gauss\index{Argand-Gauss!piano}. 
-Nel piano di Argand-Gauss l'asse delle $x$ viene chiamato asse reale $\Re$ mentre l'asse delle $y$ è chiamato asse immaginario $\Im$.\par
-Al numero complesso corrisponde il vettore applicato all'origine ed estremità in $(a;b)$. Nella figura\nobs\vref{fig:pianonumcomplesso} sono rappresentati tre numeri complessi $z$, $\conj{z}$ e $-z$. Ad ogni vettore è associato un angolo $\theta$ che forma con l'asse reale chiamato fase. 
+Un numero complesso $z=a+b\uimm$ è una coppia di numeri $(a;b)$. A questa 
+coppia di punti corrisponde un punto del piano noto come piano di  
+Argand-Gauss\index{Argand-Gauss!piano}.\par  
+Nel piano di Argand-Gauss l'asse delle $x$ viene chiamato asse reale $\Re$. 
+L'asse delle $y$ è detto asse immaginario $\Im$.\par
+Al numero complesso corrisponde il vettore applicato all'origine ed estremità 
+in $(a;b)$. Nella figura\nobs\vref{fig:pianonumcomplesso} sono rappresentati 
+tre numeri complessi $z$, $\conj{z}$ e $-z$.\par Ad ogni numero complesso è 
+associato un angolo $\theta$ che forma con l'asse reale detto fase. 
 \begin{figure}
 	\centering
 	\includestandalone[width=\textwidth]{terzo/complessi/complessi00}
@@ -57,6 +79,7 @@ Al numero complesso corrisponde il vettore applicato all'origine ed estremità i
 	\caption{Numeri complesso, coniugato e opposto}
 	\label{fig:pianonumcomplesso}
 \end{figure}
+
 \section{Operazioni con i numeri complessi}
 \label{sec:NumCompOperazioni}
 \subsection{Somma e differenza di numeri complessi}
@@ -111,6 +134,34 @@ Quindi per ottenere la moltiplicazione di due numeri complessi coniugati basta s
 	Per moltiplicare $z=4-2\uimm $ e\  $\overline{z}=4+2\uimm1$  
 \end{esempiot}	
 	\[z\cdot \overline{z}=(4-2\uimm)(4+2\uimm)= 16+4=20\]
+	\begin{table}
+		\centering
+		\setlength{\extrarowheight}{8pt} 
+		\begin{tabular}{lC}
+			\toprule
+			Unità immaginaria &\uimm^2=-1\\
+			Numero complesso&z=a+\uimm b\\
+			Parte reale di z&\Re(z)=a\\
+			Parte immaginaria di z&\Im(z)=b\\
+			Coniugato di un numero $z$&\conj{z}=a-\uimm b\\
+			Uguaglianza fra numeri complessi&a+\uimm b=a_1+\uimm 
+			b_1\Leftrightarrow \begin{cases}a=a_1\\ b=b_1\end{cases}\\
+			Somma&z+z'=a+\uimm b+a'\uimm b'=(a+a')+\left(b+b'\right)\uimm\\
+			Elemento neutro somma&r=0+i0\\
+			Prodotto&z\cdot z'=\left(a+\uimm b\right)\cdot\left(a'+\uimm 
+			b'\right)=(aa'-bb)'+\left(ab'+ba'\right)\uimm\\
+			Elemento neutro prodotto&z=1+\uimm 0\\
+			Somma fra due numeri coniugati&(a+\uimm b)+(a-\uimm b)=2a\\
+			Prodotto fra due numeri coniugati&(a+\uimm b)\cdot(a-\uimm 
+			b)=a^2+b^2\\
+			Divisione fra numeri complessi&(a+\uimm b):(c+\uimm 
+			d)=\frac{a+\uimm b}{c+\uimm d}=\frac{(a+\uimm b)\cdot(c-\uimm 
+			d)}{c^2+d^2}\\
+			\bottomrule
+		\end{tabular}
+		\caption{Numeri complessi}
+		\label{tab:numericomplessi}
+	\end{table}
 \subsection{Reciproco di un numero complesso}
 \begin{definizionet}{Reciproco}{}
 Il reciproco di un numero complesso $z$ è un numero che moltiplicato per questo da l'unità
@@ -118,18 +169,31 @@ Il reciproco di un numero complesso $z$ è un numero che moltiplicato per questo
 \end{definizionet}
 \subsection{Divisione fra numeri complessi}
 La divisione fra due numeri si può scrivere come il prodotto fra il primo e il reciproco del secondo, cioè \[z\div z_1=z\cdot\dfrac{1}{z_1}\] Resta da dare un significato a $\frac{1}{z_1}$
-\begin{definizionet}{}{}
+\begin{definizionet}{Reciproco}{}
 	Dato un numero complesso\index{Numero!complesso!reciproco} $z=a+b\uimm $ diciamo reciproco di $z$ il numero \[\dfrac{1}{z}=\dfrac{a-b\uimm}{a^2+b^2}=\dfrac{a}{a^2+b^2}-\dfrac{b}{a^2+b^2}\uimm\]
 \end{definizionet}
 \begin{esempiot}{Reciproco numero complesso}{}
 Calcolare il reciproco di $z=2+3\uimm$
+\begin{align*}
+\dfrac{1}{z}=&\dfrac{1}{2+3\uimm}\cdot\dfrac{2-3\uimm}{2-3\uimm}\\
+=&\dfrac{2-3\uimm}{4+9}\\
+=&\dfrac{2}{13}-\dfrac{3}{13}\uimm\\
+\intertext{Resta da verificare se è il reciproco}
+\left(2+3\uimm\right)\left(\dfrac{2}{13}-\dfrac{3}{13}\uimm\right)=&\\
+=&\dfrac{4}{13}-\dfrac{6}{13}\uimm+\dfrac{6}{13}\uimm+\dfrac{9}{13}\\
+=&\dfrac{13}{13}\\
+=&1\\
+\end{align*}
 \end{esempiot}
-\[\dfrac{1}{z}=\dfrac{1}{2+3\uimm}\cdot\dfrac{2-3\uimm}{2-3\uimm}=\dfrac{2-3\uimm}{4+9}=\dfrac{2}{13}-\dfrac{3}{13}\uimm\]
 \begin{esempiot}{Reciproco numero complesso}{}
 	Calcolare il reciproco di $z=-6\uimm$
 \end{esempiot}
-	\[\dfrac{1}{z}=\dfrac{1}{-6\uimm}\cdot\dfrac{6\uimm}{6\uimm}=\dfrac{6\uimm}{36}=\dfrac{1}{6}\uimm\]
-A questo punto la divisione fra due numeri complessi non è difficile.
+\begin{align*}
+\dfrac{1}{z}=&\dfrac{1}{-6\uimm}\cdot\dfrac{6\uimm}{6\uimm}\\
+=&\dfrac{6\uimm}{36}\\
+=&\dfrac{1}{6}\uimm
+\end{align*}
+A questo punto la divisione fra complessi non è difficile.
 \begin{esempiot}{Divisione}{}
 Dividere $z=2+3\uimm$ per $z_1=1-2\uimm$
 \end{esempiot}
@@ -142,29 +206,6 @@ z:z_1=&(2+3\uimm):(1-2\uimm)\\
 =&\dfrac{-4+7\uimm}{5}\\
 =&-\dfrac{4}{5}+\dfrac{7}{5}\uimm
 \end{align*}
-\begin{table}
-\centering
-\setlength{\extrarowheight}{8pt} 
-\begin{tabular}{lC}
-\toprule
-Unità immaginaria &\uimm^2=-1\\
-Numero complesso&z=a+\uimm b\\
-Parte reale di z&\Re(z)=a\\
-Parte immaginaria di z&\Im(z)=b\\
-Coniugato di un numero $z$&\conj{z}=a-\uimm b\\
-Uguaglianza fra numeri complessi&a+\uimm b=a_1+\uimm b_1\Leftrightarrow \begin{cases}a=a_1\\ b=b_1\end{cases}\\
-Somma&z+z'=a+\uimm b+a'\uimm b'=(a+a')+\left(b+b'\right)\uimm\\
-Elemento neutro somma&r=0+i0\\
-Prodotto&z\cdot z'=\left(a+\uimm b\right)\cdot\left(a'+\uimm b'\right)=(aa'-bb)'+\left(ab'+ba'\right)\uimm\\
-Elemento neutro prodotto&z=1+\uimm 0\\
-Somma fra due numeri coniugati&(a+\uimm b)+(a-\uimm b)=2a\\
-Prodotto fra due numeri coniugati&(a+\uimm b)\cdot(a-\uimm b)=a^2+b^2\\
-Divisione fra numeri complessi&(a+\uimm b):(c+\uimm d)=\frac{a+\uimm b}{c+\uimm d}=\frac{(a+\uimm b)\cdot(c-\uimm d)}{c^2+d^2}\\
-\bottomrule
-\end{tabular}
-\caption{Numeri complessi}
-\label{tab:numericomplessi}
-\end{table}
 \section{Algebra dei numeri complessi}
 \label{sec:AlgebraNumeriComplessi}
 Il seguente esempio lega la somma e le potenze di numeri complessi. In pratica basta considerare un numero complesso come un binomio. Questo è chiaro nell'esempio che segue.

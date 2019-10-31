@@ -1,0 +1,492 @@
+\chapter{Sistemi lineari in due incognite}
+\label{sec:sistemiLineariInDueIncognite}
+\section{Equazioni di primo grado}
+Ripassiamo alcuni concetti.
+\begin{definizionet}{Equazione}{}\index{Equazione!definizione}
+	Un'equazione è l'uguaglianza fra due espressioni algebriche in cui 
+	compaiono delle lettere dette incognite.
+\end{definizionet}
+\begin{esempiot}{Definizione di equazione}{}
+Ecco alcuni esempi di equazioni
+\begin{align*}
+3x+1=&5x+3\\
+3x^2+2x=&7x+9\\
+4x^2-2x^3+3=&4x+1
+\end{align*}
+\end{esempiot}
+\begin{definizionet}{Grado di un'equazione}{}\index{Equazione!definizione!grado}
+	Il grado di un'equazione è l'esponente più grande dell'incognita.
+\end{definizionet}
+\section{Equazioni in più variabili}
+\label{sec:EquazioniInPiuVariabili}
+\begin{definizionet}{Equazione in più variabili}{}\index{Equazione!più variabili!definizione}
+	Un'equazione in più variabili è un'equazione in più incognite.
+\end{definizionet}
+\begin{definizionet}{Definizione di soluzione}{}\index{Equazione!più variabili!soluzione}
+Per un'equazione in più variabili, una soluzione, è un insieme ordinato di valori che verificano l'equazione.
+\end{definizionet}
+\begin{esempiot}{Risolvere equazione in due variabili}{}
+	Risolviamo l'equazione\[ 3x+y=7\]
+\end{esempiot}	
+Questa equazione, in due incognite, ha per soluzione
+$x=2$ e $y=1$ infatti \[3\cdot2+1=7\]
+Ma anche $x=3$ e $y=-2$ infatti \[3\cdot3-2=7\] è soluzione.
+In genere un'equazione in più incognite ha più di una soluzione.
+\begin{figure}
+	\centering
+\includestandalone[width=.9\textwidth]{terzo/sistemi/mappe_concettuali_sistema_1}
+	\caption{Classificazione di un sistema}
+	\label{fig:ClassificazioneDiUnSistema}
+\end{figure}
+\section{Sistemi}
+\label{sec:Sistemi}
+Più  equazioni  possono avere le stesse soluzioni. Un sistema è un'insieme di due o più equazioni. Risolvere un sistema è verificare che più equazioni hanno le stesse soluzioni.
+\begin{definizionet}{Definizione di sistema}{}\index{Sistema!definizione}
+Un sistema è un'insieme di due o più  equazioni.
+\end{definizionet}
+\begin{definizionet}{Definizione di grado di sistema}{}\index{Sistema!grado}\label{def:sistemaGrado}
+Il grado di un sistema, di più equazioni in tante incognite,  è il prodotto dei gradi delle equazioni del sistema ridotte in forma normale.
+\end{definizionet}
+\begin{definizionet}{Definizione di soluzione}{}\index{Sistema!definizione!soluzione}
+Una soluzione per un sistema è un insieme ordinato di valori che sono soluzione per ogni equazione del sistema.
+\end{definizionet}
+\section[Classificazione rispetto alle soluzioni]{Classificazione dei sistemi rispetto alle soluzioni}
+\begin{definizionet}{Definizione di equivalenza}{}\index{Sistema!definizione di equivalenza}
+Due sistemi sono equivalenti quando hanno lo stesso insieme soluzione.
+\end{definizionet}
+\begin{definizionet}{Forma normale di un sistema lineare}{}\index{Sistema!lineare!forma normale}{}
+Un sistema di due equazioni di primo grado in due incognite $x$, $y$, a coefficienti numerici, si dice ridotto in forma normale se è del tipo
+\[\left\{\begin{array}{l} {ax+by=c} \\ {a'x+b'y=c'}\end{array}\right. \]
+dove a, b, a', b' sono i coefficienti delle incognite c, c' sono i termini noti.
+\end{definizionet}
+\begin{teoremat}{Teorema fondamentale}{}\index{Sistema!lineare!teorema fondamentale}{}
+Se i coefficienti del sistema lineare sono diversi da zero e non sono tra loro proporzionali $\dfrac{a}{a'} \ne \dfrac{b}{b'}$ il sistema ammette una e una sola soluzione data da
+\[
+\begin{cases}
+	x=\dfrac{b'c-bc'}{ab'-a'b}\\
+	y=\dfrac{ac'-a'c}{ab'-a'b}
+\end{cases}
+\]
+Se, invece, sono proporzionali solo i coefficienti delle incognite cioè; $\dfrac{a'}{a} =\dfrac{b'}{b} \ne \dfrac{c'}{c} $, allora il sistema è impossibile
+Se, invece, sono proporzionali i coefficienti e i termini noti delle equazioni cioè; $\dfrac{a'}{a} =\dfrac{b'}{b} =\dfrac{c'}{c} $, allora il sistema è indeterminato.
+\end{teoremat}
+Consideriamo il sistema canonico, \[ \left\{\begin{array}{l} {ax+by=c} \\ {a'x+b'y=c'} \end{array}\right. \]
+moltiplicando la prima equazione per b' e la seconda per --b, avremo  \[\left\{\begin{array}{l} {ab'x+bb'y=b'c} \\ {-ba'x-bb'y=-bc'} \end{array}\right. \]
+sommando lungo le colonne otteniamo \[\dfrac{\left\{\begin{array}{l} {ab'x+bb'y=b'c} \\ {-ba'x-bb'y=-bc'} \end{array}\right. }{\left(ab'-ba'\right)x=b'c-bc'} \]  da cui  \[x=\dfrac{b'c-bc'}{ab'-a'b} \]
+moltiplicando la prima equazione per a' e la seconda per --a avremo  \[\left\{\begin{array}{l} {aa'x+ba'y=a'c} \\ {-aa'x-ab'y=-ac'} \end{array}\right. \] sommando lungo le colonne otteniamo  \[\dfrac{\left\{\begin{array}{l} {aa'x+ba'y=a'c} \\ {-aa'x-ab'y=-ac'} \end{array}\right. }{\left(a'b-ab'\right)y=a'c-ac'} \] da cui \[y=\dfrac{ac'-a'c}{ab'-a'b} \]  da cui se  \[\dfrac{a'}{a} \ne \dfrac{b'}{b} \] avremo  \[ab'-a'b\ne 0\]  quindi il sistema ha una e una sola soluzione.
+Se \[\dfrac{a'}{a} =\dfrac{b'}{b} \]  avremo due casi  \[\dfrac{a'}{a} =\dfrac{b'}{b} \ne \dfrac{c'}{c} \]  e  \[\dfrac{a'}{a} =\dfrac{b'}{b} =\dfrac{c'}{c} \]
+Nel primo caso il sistema è impossibile perché  $ab'-a'b=0$, $a'c-ac'\ne 0$, $b'c-bc'\ne 0$  e quindi poiché è possibile riscrivere il sistema canonico nella forma  \[\left\{\begin{array}{l} {\left(ab'-ab'\right)x=b'c-bc'} \\ {\left(ab'-ab'\right)y=ac'-a'c} \end{array}\right. \]  da cui  \[\left\{\begin{array}{l} {0=b'c-bc'} \\ {0=ac'-a'c} \end{array}\right. \] impossibile.
+Nel secondo caso il sistema è indeterminato perché  $ab'-a'b=0$, $a'c-ac'=0$, $b'c-bc'=0$  e quindi giacché è possibile riscrivere il sistema canonico nella forma  \[\left\{\begin{array}{l} {\left(ab'-ab'\right)x=b'c-bc'} \\ {\left(ab'-ab'\right)y=ac'-a'c} \end{array}\right. \]  da cui \[\left\{\begin{array}{l} {0=0} \\ {0=0} \end{array}\right. \]  indeterminato
+\section{Metodi di risoluzione}
+\label{sec:MetodiDiRisoluzione}
+\subsection{Sostituzione}
+\label{sec:Sostituzione}
+Un sistema lineare in forma canonica, si risolve con il metodo di sostituzione\index{Sistema!metodo!sostituzione} isolando una variabile in una equazione e sostituendola nelle altre. 
+\begin{esempiot}{Risolvere sistema tramite sostituzione}{}
+	Supponiamo di avere questo sistema lineare in forma normale:
+	\[
+	\begin{cases}
+	2x+y=4\\
+	3x+2y=5
+	\end{cases}
+	\]
+\end{esempiot}
+Il sistema è composto da due equazioni di primo grado in due variabili che formano due righe e tre colonne. Per risolvere un sistema con il metodo di sostituzione è importante sape scegliere quale equazione risolvere per prima. Il criterio di scelta è quello del minimo sforzo. Appare evidente che nella prima riga la variabile $y$ abbia come coefficiente  uno, quindi applicando il metodo di separazione otteniamo \[
+\begin{cases}
+y=4-2x\\
+3x+2y=5
+\end{cases}
+\]
+\'E da notare che se avessimo risolto la stessa riga rispetto a $x$ avremmo ottenuto:
+\[
+\begin{cases}
+	2x=4-y\\
+	3x+2y=5
+\end{cases}
+\begin{cases}
+	x=\dfrac{4-y}{2}\\
+	3x+2y=5
+\end{cases}
+\]
+Introducendo una frazione e per ciò, calcoli più complessi.
+Ritorniamo a \[
+\begin{cases}
+y=4-2x\\
+3x+2y=5
+\end{cases}
+\] Per il vocabolario Treccani sostituire significa [mettere una persona o una cosa al posto di un'altra] In questo caso sostituiamo nella seconda riga il valore trovato di $y$ e otteniamo:
+\[
+\begin{cases}
+y=4-2x\\
+3x+2(4-2x)=5
+\end{cases}
+\]
+Da cui segue che 
+\[
+\begin{cases}
+y=4-2x\\
+3x+2(4-2x)=5
+\end{cases}
+\begin{cases}
+y=4-2x\\
+3x+8-4x=5
+\end{cases}
+\]
+Nella seconda riga abbiamo un'equazione di primo grado in un'incognita che risolviamo con il metodo di separazione.
+\[ 
+\begin{cases}
+	y=4-2x\\
+	x=3
+\end{cases}\]
+Riapplichiamo il metodo di sostituzione e sostituiamo quanto presente nella seconda riga nella prima e otteniamo
+\[ 
+\begin{cases}
+y=4-2(3)\\
+x=3
+\end{cases}\]
+da cui
+\[ 
+\begin{cases}
+y=4-6\\
+x=3
+\end{cases}
+\begin{cases}
+y=-2\\
+x=3
+\end{cases}\]
+
+la coppia ordinata ottenuta è soluzione per entrambe le equazioni che compongono il sistema di partenza. Infatti basta sostituire i valori ed ottenere
+	\[
+\begin{cases}
+2(3)+(-2)=4\\
+3(3)+2(-2)=5
+\end{cases}
+\]
+La coppia è soluzione per entrambe le equazioni. Abbiamo risolto il sistema.
+\begin{esempiot}{Risolvere sistema tramite sostituzione}{}
+Supponiamo di avere un sistema lineare in forma normale
+\[
+\begin{cases}
+	x+2y=1\\
+	3x-y=2
+\end{cases}
+\]
+\end{esempiot}
+risolvo la prima rispetto alla x e ottengo 
+\[
+\begin{cases}
+	x=1-2y\\
+	3x-y=2
+\end{cases}
+\]
+sostituisco nella seconda ed ottengo
+\[
+\begin{cases}
+	x=1-2y\\
+	3(1-2y)-y=2
+\end{cases}
+\begin{cases}
+	x=1-2y\\
+	3-6y-y=2
+\end{cases}
+\begin{cases}
+	x=1-2y\\
+	-7y=2-3
+\end{cases}
+\begin{cases}
+	x=1-2y\\
+	-7y=-1
+\end{cases}
+\begin{cases}
+	x=1-2y\\
+	y=\dfrac{1}{7}
+\end{cases}
+\begin{cases}
+	x=1-2\dfrac{1}{7}\\
+	y=\dfrac{1}{7}
+\end{cases}
+\]
+\[
+\begin{cases}
+	x=\dfrac{7-2}{7} \\
+	y=\dfrac{1}{7}
+\end{cases}
+\begin{cases}
+	x=\dfrac{5}{7}\\
+	y=\dfrac{1}{7}
+\end{cases}
+\]
+\subsection{Confronto}
+\label{sec:Confronto}
+Un sistema lineare in forma canonica si risolve con il metodo del confronto\index{Sistema!metodo!confronto} risolvendo due equazioni rispetto ad un stessa variabile e confrontando i valori attenuti.
+\begin{esempiot}{Metodo confronto}{}
+	Supponiamo di avere un sistema lineare in forma normale
+	\[
+	\begin{cases}
+	3x+2y=5\\
+	x+5y=6
+	\end{cases}
+	\]
+\end{esempiot}
+ Nella prima riga le incognite sono moltiplicate per valori numerici diversi. Nella seconda riga il coefficiente della $x$ vale uno. Quindi ci conviene risolvere rispetto questa incognita da cui   \[
+\begin{cases}
+3x=5-2y\\
+x=6-5y
+\end{cases}\begin{cases}
+3x=\dfrac{5-2y}{3}\\
+x=6-5y
+\end{cases}
+\]
+Confortando i risultati	\[\begin{cases}
+\dfrac{5-2y}{3}=6-5y\\
+x=6-5y
+\end{cases}
+\]La prima riga è il confronto la seconda permette di ottenere una coppia di soluzioni. Moltiplico la prima riga per tre \[\begin{cases}
+3\dfrac{5-2y}{3}=3(6-5y)\\
+x=6-5y
+\end{cases}
+\]
+da cui \[\begin{cases}
+5-2y=18-15y\\
+x=6-5y
+\end{cases}
+\]Risolvo la prima riga rispetto a $y$\[\begin{cases}
+15y-2y=18-5\\
+x=6-5y
+\end{cases}
+\begin{cases}
+13y=13\\
+x=6-5y
+\end{cases}
+\begin{cases}
+y=1\\
+x=6-5y
+\end{cases}
+\]
+Sostituisco il risultato della prima riga nella seconda\[\begin{cases}
+y=1\\
+x=6-5(1)
+\end{cases}
+\begin{cases}
+y=1\\
+x=1
+\end{cases}
+ \]Resta da verificare che il risultato sia soluzione per il sistema. Cosa che facciamo sostituendo il risultato 
+alle incognite del sistema originario.
+\[
+\begin{cases}
+3(1)+2(1)=5\\
+(1)+5(1)=6
+\end{cases}
+\]
+ \begin{esempiot}{Metodo confronto}{}                  
+	Supponiamo di avere un sistema lineare in forma normale
+	\[
+	\begin{cases}
+	4x-2y=3\\
+	2x+5y=8
+	\end{cases}
+	\]
+\end{esempiot}
+Risolviamo il sistema con il metodo del confronto. Nel sistema non vi sono preferenze fra le due incognite quindi
+possiamo scrivere	\[
+\begin{cases}
+4x=3+2y\\
+2x=8-5y
+\end{cases}
+\begin{cases}
+x=\dfrac{3+2y}{4}\\
+x=\dfrac{8-5y}{2}
+\end{cases}
+\]
+Confrontiamo i due valori di $x$ e otteniamo
+\[
+\begin{cases}
+\dfrac{3+2y}{4}=\dfrac{8-5y}{2}\\
+x=\dfrac{8-5y}{2}
+\end{cases}
+\]Dato che non vi sono vincoli, scegliamo una qualunque delle due relazioni come seconda equazione.
+Per eliminare le frazioni presenti nella prima riga, la moltiplichiamo per il minimo comune multiplo dei denominatori, in questo caso quattro. \[
+\begin{cases}
+4\cdot\dfrac{3+2y}{4}=4\cdot\dfrac{8-5y}{2}\\
+x=\dfrac{8-5y}{2}
+\end{cases}
+\]
+Semplificando
+\[
+\begin{cases}
+3+2y=16-10y\\
+x=\dfrac{8-5y}{2}
+\end{cases}
+\begin{cases}
+10y+2y=16-3\\
+x=\dfrac{8-5y}{2}
+\end{cases}
+\begin{cases}
+12y=13\\
+x=\dfrac{8-5y}{2}
+\end{cases}
+\begin{cases}
+y=\dfrac{13}{12}\\
+x=\dfrac{8-5y}{2}
+\end{cases}
+\]
+Resta da determinare il valore della $x$. 
+\[
+\begin{cases}
+y=\dfrac{13}{12}\\
+x=4-\dfrac{5}{2}y
+\end{cases}
+\begin{cases}
+y=\dfrac{13}{12}\\
+x=4-\dfrac{5}{2}\cdot\dfrac{13}{12}
+\end{cases}
+\begin{cases}
+y=\dfrac{13}{12}\\
+x=4-\dfrac{65}{24}
+\end{cases}
+\begin{cases}
+y=\dfrac{13}{12}\\
+x=\dfrac{96-65}{24}
+\end{cases}
+\begin{cases}
+y=\dfrac{13}{12}\\
+x=\dfrac{31}{24}
+\end{cases}
+\]
+Verifichiamo che il risultato è soluzione. 
+\[
+\begin{cases}
+4\cdot\dfrac{13}{12}-2\cdot\dfrac{31}{24}=3\\
+2\cdot\dfrac{13}{12}+5\cdot\dfrac{31}{24}=8
+\end{cases}
+\]
+ \begin{esempiot}{Metodo confronto}{}                  
+Supponiamo di avere un sistema lineare in forma normale
+\[
+\begin{cases}
+	x+2y=1\\
+	3x-y=2
+\end{cases}
+\]
+\end{esempiot}
+Risolvo rispetto ad x e ottengo
+\[ 
+\begin{cases}
+	x=-2y+1\\
+	x=\dfrac{2+y}{3}
+\end{cases}
+\begin{cases}
+	-2y+1=\dfrac{2+y}{3}\\
+		x=-2y+1
+\end{cases}
+\begin{cases}
+	-6y+3=2+y\\
+	x=-2y+1
+\end{cases}
+\begin{cases}
+	-7y=-1\\
+	x=-2y+1
+\end{cases}
+\begin{cases}
+	y=\dfrac{1}{7}\\
+	x=-2y+1
+\end{cases}
+\]
+\[
+\begin{cases}
+	y=\dfrac{1}{7}\\
+	x=-2\dfrac{1}{7}+1
+\end{cases}
+\begin{cases}
+	y=\dfrac{1}{7}\\
+	x=\dfrac{5}{7}
+\end{cases}
+\]
+
+\subsection{Riduzione}
+\label{sec:Riduzionesist}
+Questo metodo è chiamato anche di somma sottrazione\index{Sistema!metodo!riduzione} e consiste nel sommare o sottrarre le equazioni in modo che vengano determinate le incognite. Iniziamo con un po di vocabolario, chiamiamo riga un'equazione del sistema. Mentre la colonna è formate in verticale dalla stessa incognita nelle varie equazioni.
+\begin{esempiot} {Metodo di riduzione}{}
+	Risolvere il sistema \[
+	\begin{cases}
+	2y+3x=2\\
+	x+y=5
+	\end{cases}\]
+	con il metodo di riduzione.
+\end{esempiot}
+Il sistema è formato da due equazioni, quindi da due righe. Il sistema non è ordinato per colonne quindi bisogna riscriverlo in questo modo \[
+\begin{cases}
+3x+2y=2\\
+x+y=5
+\end{cases}\]
+Il metodo consiste nel moltiplicare le righe per dei valori  opportuni e  sommare o sottrarre lungo le colonne in modo che una variabile scompaia.
+\[
+\begin{cases}
+3x+2y=2\\
+\tikzmark{1}3x+3y=15\tikzmark{2}
+\end{cases}\]
+\begin{tikzpicture}[remember picture, overlay]
+\node[below=0.1cm and 0cm of 1](3){};
+\node[below=0.1cm and 0cm of 2](4){};
+\node[left=2cm and 0cm of 1](5){$3$};
+\node[below right=0.2cm and 0.1cm of 5](6) {$0-y=-13$};
+\draw (3) edge  (4);
+\end{tikzpicture}\\
+
+Moltiplicando la seconda riga per tre e sottraendola alla prima otteniamo che $y=13$. 
+
+\[
+\begin{cases}
+3x+2y=2\\
+\tikzmark{1}2x+2y=10\tikzmark{2}
+\end{cases}\]
+
+\begin{tikzpicture}[remember picture, overlay]
+\node[below=0.1cm and 0cm of 1](3){};
+\node[below=0.1cm and 0cm of 2](4){};
+\node[left=2cm and 0cm of 1](5){$2$};
+\node[below right=0.2cm and 0.1cm of 5](6) {$x+0 =-8$};
+\draw (3) edge  (4);
+\end{tikzpicture}\\
+
+Ripartendo dal sistema iniziale e moltiplicando la seconda riga per due otteniamo che $x=-8$
+\begin{esempiot} {Metodo di riduzione}{}
+	Risolvere il sistema \[
+	\begin{cases}
+	3x-4y=7\\
+	9x+7y=4
+	\end{cases}\]
+con il metodo di riduzione.
+\end{esempiot}
+Iniziamo a determinare il valore di $y$. Dobbiamo fare in modo che nella prima colonna la somma sia zero. Il minimo comune multiplo tra nove e tre  è nove, quindi basta moltiplicare la prima riga per tre. Otteniamo:
+\newpage
+\[
+\begin{cases}
+\tikzmark{1}-9x+12y=-21\tikzmark{2}\\
+\phantom{++}9x+7y=4
+\end{cases}\]
+\begin{tikzpicture}[remember picture, overlay]
+\node[below=0.6cm and 0cm of 1](3){};
+\node[below=0.6cm and 0cm of 2](4){};
+\node[left=2cm and 0cm of 1](5){$-3$};
+\node[below right=0.8cm and 1.2cm of 5](6) {$19y=-17$};
+\draw (3) edge  (4);
+\end{tikzpicture}\\
+ Quindi la soluzione è $y=-\dfrac{17}{19}$
+ 
+\[
+\begin{cases}
+\tikzmark{1}21x-28y=49\tikzmark{2}\\
+36x+28y=16
+\end{cases}\]
+\begin{tikzpicture}[remember picture, overlay]
+\node[below=0.6cm and 0cm of 1](3){};
+\node[below=0.6cm and 0cm of 2](4){};
+\node[left=2cm and 0cm of 1](5){$7$};
+\node[below=0.1cm and 0cm of 5](6){$4$};
+\node[below right=0.8cm and 0.4cm of 5](6) {$57x+0=65$};
+\draw (3) edge  (4);
+\end{tikzpicture}\\ 
+
+Quindi la soluzione è $x=\dfrac{65}{57}$

@@ -1,0 +1,111 @@
+\chapter{Sistemi lineari in tre incognite}
+\label{sec:sistemiLineariIntreIncognite}
+
+
+\section{Sistemi in tre incognite}
+\label{sec:Sistemi3}
+
+\begin{definizionet}{Forma normale di un sistema lineare}{}\index{Sistema!lineare!forma normale}{}
+Un sistema di tre equazioni di primo grado in tre incognite $x$, $y$ e $z$, a coefficienti numerici, si dice ridotto in forma normale se è del tipo
+\[\left\{
+\begin{array}{*{3}{r@{~}c@{~}}r}
+a_1x & + & b_1y & + & c_1z & =&d_1\\
+a_2x & + & b_2y & + & c_2z & =&d_2\\
+a_3x & + & b_3y & + & c_3z & =&d_3\\
+\end{array}\right.\]
+dove $a_1\cdots a_3\text{,~}b_1\cdots b_3\text{,~}c_1\cdots c_3$ sono i   coefficienti delle incognite, mentre $d_1\cdots d_3$ sono i termini noti.
+\end{definizionet}
+Vi sono vari modi per risolvere un sistema tre per tre di seguito sono esposti alcuni metodi.
+\section{Metodi di risoluzione}
+\label{sec:MetodiDiRisoluzionetre}
+\subsection{Metodo di sostituzione}
+\label{sec:Sostituzionetre}
+Un sistema lineare in forma canonica, si risolve con il metodo di sostituzione\index{Sistema!metodo!sostituzione} isolando una variabile in una equazione e sostituendola nelle altre. 
+\begin{esempiot}{Risolvere sistema tre per tre tramite sostituzione}{}
+Risolvere il seguente sistema lineare in forma normale:
+\[\left\{
+\begin{array}{*{3}{r@{~}c@{~}}r}
+-2x & + & y &  &  & =&4\\
+-2x & & & - & z & =&-6\\
+5x & &  &  &  & =&2\\
+\end{array}\right.\]
+\end{esempiot}
+Risolviamo rispetto a $x$
+\[\left\{
+\begin{array}{*{3}{r@{~}c@{~}}r}
+-2x & + & y &  &  & =&4\\
+-2x & & & - & z & =&-6\\
+ x &= & \dfrac{2}{5} &  &  & &\\
+\end{array}\right.\]
+Sostituiamo $x$ nelle prime due equazioni e otteniamo
+\[\left\{
+\begin{array}{*{3}{r@{~}c@{~}}r}
+-2\cdot\dfrac{2}{5} & + & y &  &  & =&4\\[.28cm]
+-2\cdot\dfrac{2}{5} & & & - & z & =&-6\\
+ & &  &  & x &= &\dfrac{2}{5}\\
+\end{array}\right.\left\{
+\begin{array}{*{3}{r@{~}c@{~}}r}
+-\dfrac{4}{5} & + & y &  &  & =&4\\[.28cm]
+-\dfrac{4}{5} & & & - & z & =&-6\\
+& &  &  & x &= &\dfrac{2}{5}\\
+\end{array}\right.\left\{
+\begin{array}{*{3}{r@{~}c@{~}}r}
+ y& = & 4 & +  & \dfrac{4}{5}&\\[.28cm]
+z&= &6& -&\dfrac{4}{5} &&\\
+x&= &\dfrac{2}{5}  &  & &&\\
+\end{array}\right.\left\{
+\begin{array}{*{3}{r@{~}c@{~}}r}
+y&=&\dfrac{20+4}{5} & = &\dfrac{24}{5} &\\[.28cm]
+z&=&\dfrac{30-4}{5}&=&\dfrac{26}{5} & &\\
+x&=&\dfrac{2}{5}&& &&\\
+\end{array}\right.\]
+\subsection{Metodo di riduzione}
+\label{sec:Riduzionetre}
+Un sistema lineare in forma canonica, si risolve con il metodo di riduzione\index{Sistema!metodo!riduzione} sommando le righe fra loro in modo che venga ridotto il numero delle incognite.
+\begin{esempiot}{Risolvere sistema tre per tre tramite riduzione}{}
+	Risolvere il seguente sistema lineare in forma normale:
+	\[\left\{
+	\begin{array}{*{3}{r@{~}c@{~}}r}
+	x & + & 2y &  +&  3z& =&4\\
+	2x &- & 5y& + & z & =&5\\
+	4x &- & 2y & + & 2z & =&0\\
+	\end{array}\right.\]
+\end{esempiot}
+Moltiplichiamo la prima riga per meno due e la sommiamo alla seconda, così otteniamo:
+\begin{align*}
+&\left\{%
+\begin{array}{*{3}{r@{~}c@{~}}r}
+x & + & 2y &  +&  3z& =&4\\
+&- & 9y& - & 5z & =&-3\\
+4x &- & 2y & + & 2z & =&0\\
+\end{array}\right.%
+\intertext{Moltiplichiamo la prima riga per meno quattro e la sommo alla terza e otteniamo:}
+&\left\{%
+\begin{array}{*{3}{r@{~}c@{~}}r}
+x & + & 2y &  +&  3z& =&4\\
+&- & 9y& - & 5z & =&-3\\
+&- & 10y & + & 10z & =&-16\\
+\end{array}\right.%
+\intertext{Moltiplichiamo la seconda riga per due e la sommo alla terza e otteniamo:}
+&\left\{%
+\begin{array}{*{3}{r@{~}c@{~}}r}
+x & + & 2y &  +&  3z& =&4\\
+&- & 9y& - & 5z & =&-3\\
+& &  &  & 8y & =&-10\\
+\end{array}\right.%
+\intertext{Quindi}
+y=&-\dfrac{5}{4}\\
+\intertext{Sostituendo $y$ nella seconda, otteniamo}
+-9\left(-\dfrac{5}{4}\right)-5z=3\\
+\dfrac{45}{4}-5z=&-3\\
+-5z=&-\dfrac{45}{4}-3\\
+5z=&\dfrac{12+45}{4}\\
+z=&\dfrac{57}{20}\\
+\intertext{Sostituendo $z$ e $y$ nella prima riga otteniamo}
+x+2\left(-\dfrac{5}{4}\right)+3\left(\dfrac{57}{20}\right)=&4\\
+x-\dfrac{10}{4}+\dfrac{171}{20}=&4\\
+20x-50+171=&80\\
+20x=&-41\\
+x=&-\dfrac{41}{20}
+\end{align*}
+Quindi ricapitolando\[x=-\dfrac{41}{20}\text{,~}y=-\dfrac{5}{4}\text{,~}z=\dfrac{57}{20}\]

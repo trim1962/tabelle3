@@ -1,0 +1,22 @@
+\documentclass[preview=true]{standalone}
+\usepackage{grafica}
+\usepackage{base}
+\input{impostazioniTikz}
+\begin{document}
+  \begin{tikzpicture}
+    \node[main node] (1) {Un sistema};
+    \node[main verb] (2) [right =of 1]  {\'e};
+     \node[main node] (3) [above right= of 2]  {determinato};
+\node[main node] (4) [right= of 2]  {indeterminato};
+\node[main node] (5) [below right= of 2]  {impossibile};
+    \node[main verb] (6) [right =of 3]  {ha};
+    \node[main verb] (7) [right =of 4]  {ha};
+    \node[main verb] (8) [right =of 5]  {ha};
+    \node[main node] (9) [right= of 6]  {una soluzione};
+    \node[main node] (10) [right= of 7]  {infinite soluzioni};
+    \node[main node] (11) [right= of 8]  {nessuna soluzione};
+\foreach \x /\y in{1/2,2/3,2/4,2/5,3/6,4/7,5/8,6/9,7/10,8/11}
+  \path[linea] (\x) edge node {} (\y);
+%  
+\end{tikzpicture}
+\end{document}

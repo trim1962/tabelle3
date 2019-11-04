@@ -71,8 +71,15 @@ Un sistema lineare in forma canonica, si risolve con il metodo di riduzione\inde
 	4x &- & 2y & + & 2z & =&0\\
 	\end{array}\right.\]
 \end{esempiot}
-Moltiplichiamo la prima riga per meno due e la sommiamo alla seconda, così otteniamo:
+Moltiplichiamo la prima riga per meno due e la sommiamo alla seconda quindi:
 \begin{align*}
+&\begin{array}{*{3}{r@{~}c@{~}}r}
+-2x & - & 4y &  -&  6z& =&-4\\
+2x &- & 5y& + & z & =&5\\
+\midrule
+ &- & 9y & - & 5z & =&-3\\
+\end{array}\\
+\intertext{Sostituisco alla reconda e otteniamo}
 &\left\{%
 \begin{array}{*{3}{r@{~}c@{~}}r}
 x & + & 2y &  +&  3z& =&4\\
@@ -80,13 +87,27 @@ x & + & 2y &  +&  3z& =&4\\
 4x &- & 2y & + & 2z & =&0\\
 \end{array}\right.%
 \intertext{Moltiplichiamo la prima riga per meno quattro e la sommiamo alla terza e otteniamo:}
+&\begin{array}{*{3}{r@{~}c@{~}}r}
+-4x & - & 8y &  -&  12z& =&-16\\
+4x &- & 2y & + & 2z & =&0\\
+\midrule
+&- & 10y& - & 10z & =&-16\\
+\end{array}
+\intertext{Che sostituiamo alla terza}
 &\left\{%
 \begin{array}{*{3}{r@{~}c@{~}}r}
 x & + & 2y &  +&  3z& =&4\\
 &- & 9y& - & 5z & =&-3\\
-&- & 10y & + & 10z & =&-16\\
+&- & 10y & - & 10z & =&-16\\
 \end{array}\right.%
-\intertext{Moltiplichiamo la seconda riga per due e la sommiamo alla terza e otteniamo:}
+\intertext{Moltiplichiamo la seconda riga per meno due e la sommiamo alla terza e otteniamo:}
+&\begin{array}{*{3}{r@{~}c@{~}}r}
+& & 18y& + & 10z & =&6\\
+&- & 10y & - & 10z & =&-16\\
+\midrule
+ & + & 8y &  & 0& =&-10\\
+\end{array}\\
+\intertext{Che sostuiamo alla terza}
 &\left\{%
 \begin{array}{*{3}{r@{~}c@{~}}r}
 x & + & 2y &  +&  3z& =&4\\
@@ -113,27 +134,47 @@ Quindi ricapitolando\[x=-\dfrac{41}{20}\text{,~}y=-\dfrac{5}{4}\text{,~}z=\dfrac
 	Risolvere il seguente sistema lineare in forma normale:
 	\[\left\{
 	\begin{array}{*{3}{r@{~}c@{~}}r}
-	x & + & y &  +&  3z& =&-2\\
+	x & + & y &  +&  3z& =&2\\
 	2x &- & 3y& + & 4z & =&1\\
 	3x &- & 2y & + & z & =&0\\
 	\end{array}\right.\]
 \end{esempiot}
 Moltiplichiamo la prima riga per meno due e la sommiamo alla seconda, così otteniamo:
 \begin{align*}
+&\begin{array}{*{3}{r@{~}c@{~}}r}
+-2x & - & 2y &  -&  6z& =&-4\\
+2x &- & 3y& + & 4z & =&1\\
+\midrule
+&- & 5y & - & 2z & =&-3\\
+\end{array}
+\intertext{Sostituiamo alla seconda}
 &\left\{%
 \begin{array}{*{3}{r@{~}c@{~}}r}
-x & + & y &  +&  3z& =&-2\\
+x & + & y &  +&  3z& =&2\\
 &- & 5y& - & 2z & =&-3\\
 3x &- & 2y & + & z & =&0\\
 \end{array}\right.%
 \intertext{Moltiplichiamo la prima riga per meno tre e la sommiamo alla terza e otteniamo:}
+&\begin{array}{*{3}{r@{~}c@{~}}r}
+-3x & - & 3y &  -&  9z& =&-6\\
+3x &- & 2y & + & z & =&0\\
+\midrule
+&- & 5y& - & 8z & =&-6\\
+\end{array}\\
 &\left\{%
 \begin{array}{*{3}{r@{~}c@{~}}r}
-x & + & y &  +&  3z& =&-2\\
+x & + & y &  +&  3z& =&2\\
 &- & 5y& - & 2z & =&-3\\
  &- & 5y & - & 8z & =&-6\\
 \end{array}\right.%
-\intertext{Moltiplichiamo la seconda riga per uno e la sommo alla terza e otteniamo:}
+\intertext{Moltiplichiamo la seconda riga per meno uno e la sommo alla terza e otteniamo:}
+&\begin{array}{*{3}{r@{~}c@{~}}r}
+& & 5y& + & 2z & =&3\\
+&- & 5y & - & 8z & =&-6\\
+\midrule
+ &  & 0 &  -&  6z& =&-3\\
+\end{array}
+\intertext{Finalmente}
 &\left\{%
 \begin{array}{*{3}{r@{~}c@{~}}r}
 x & + & y &  +&  3z& =&-2\\
@@ -143,13 +184,13 @@ x & + & y &  +&  3z& =&-2\\
 \intertext{Quindi}
 z=&\dfrac{3}{6}=\dfrac{1}{2}\\
 \intertext{Sostituendo $z$ nella seconda, otteniamo}
--5y -2\dfrac{1}{2}  =&-3\\
+-5y -2\left(\dfrac{1}{2}\right)  =&-3\\
 -5y -1  =&-3\\
 -5y=&-3+1\\
 -5y=&-2\\
 y=&\dfrac{2}{5}\\
 \intertext{Sostituendo $z$ e $y$ nella prima riga otteniamo}
-x  +  \dfrac{2}{5}   +  3\dfrac{1}{2}=&2\\
+x  +  \dfrac{2}{5}   +  3\left(\dfrac{1}{2}\right)=&2\\
 \dfrac{10x+4+15}{10}=&\dfrac{20}{10}\\
 10x+4+15=&20\\
 10x=&1\\

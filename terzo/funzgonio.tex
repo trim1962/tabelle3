@@ -54,7 +54,7 @@ Un grado\index{Grado!sessagesimale} è la trecentosessantesima parte in un angol
 \ang{;1;}=&\dfrac{\ang{1}}{60}\\
 \ang{;;1}=&\dfrac{\ang{;1;}}{60}=\dfrac{\ang{1}}{3600}
  \end{align*}
-\begin{esempiot}{Angoli sessagesimali}{}
+\begin{esempiot}{Angoli sessagesimali}{}\index{Grado!sessagesimale}
 L'angolo \ang{45;30;20} ha l'ampiezza di \ang{45} gradi \ang{;30;} minuti o primi e \ang{;;20} secondi. L'angolo \ang{30;45;23,7} secondo ha l'ampiezza di \ang{30} gradi \ang{;45;} primi e \ang{;;23} secondi e $7$ decimi.
 \end{esempiot}
 Un angolo giro\index{Angolo!giro} ha un'ampiezza di \ang{360} gradi. L'angolo piatto\index{Angolo!piatto}, metà di un angolo giro, ha quindi, l'ampiezza di \ang{180} gradi. L'angolo retto\index{Angolo!retto} metà di una angolo piatto, ha un'ampiezza di \ang{90} gradi. Per convertire i gradi in primi si moltiplica i gradi  per $\num{60}$ per ottenere i secondi dai primi si moltiplica per  $\num{60}$ per ottenere i secondi dai gradi si moltiplicano i gradi per  $\num{3600}$. Per convertire i secondi in primi si divide per  $\num{60}$. Per convertire i primi in gradi si dividono i primi per  $\num{60}$. Per passare da seconfi a gradi si divide per  $\num{3600}$.
@@ -64,16 +64,15 @@ Un angolo giro\index{Angolo!giro} ha un'ampiezza di \ang{360} gradi. L'angolo pi
 	\caption{Convertire gradi primi e secondi}\label{fig:Convertiregradiprimisecondi}
 \end{figure}
 \subsection{Angolo sessadecimale}
-\begin{definizionet}{Grado sessagesimale}{}
-	Un grado\index{Grado!sessadecimale} è la trecentosessantesima parte in un angolo giro. Come sottomultipli non ha il primo o il secondo ma solo numeri decimali.
+\begin{definizionet}{Grado sessadecimale}{}\index{Grado!sessadecimale}
+	Un grado\index{Grado!sessadecimale} è la trecentosessantesima parte in un angolo giro. Non ha sottomultipli come il grado sessagesimale.
 \end{definizionet}
 \begin{esempiot}{Conversione}{}
 Convertire in forma decimale un angolo di ampiezza pari a \ang{44;58;48} arrotondato alla \tlungarrotandamento
 \end{esempiot}
  Abbiamo un angolo di ampiezza pari a \ang{44;58;48} e vogliamo
  scriverlo in forma decimale\index{Grado!forma decimale}. Dato che $\ang{;1;}=\dfrac{\ang{1}}{60}$ e che $\ang{;;1}=\dfrac{\ang{;1;}}{60}=\dfrac{\ang{1}}{3600}$ avremo
-
-	\begin{align*}
+\begin{align*}
 \alpha=&\ang{44}+\left(\dfrac{58}{60}\right)^{\si{\degree} }+\left(\dfrac{48}{3600}\right)^{\si{\degree} }\\
 =&\ang{44}+\left(\dfrac{58\cdot 60+48}{3600}\right)^{\si{\degree}}\\
 =&\ang{44}+\left(\dfrac{3528}{3600}\right)^{\si{\degree}}\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{44,98}
@@ -158,6 +157,12 @@ Quanto corrisponde in gradi un radiante?
 	\approx&\ang[round-precision=\lungarrotandamento,round-mode=places]{0.017453292}\cdot 1\\
 	\approx&\ang[round-precision=\lungarrotandamento,round-mode=places]{0.017453292}\\
 	\end{align*}
+	 \begin{center}
+		\begin{tabular}{ll}
+			\tastopgreco\tastodiv\tasto{180}\tastoper\tasto{1}\tastouguale&
+			\tasto{\num[round-precision=\lungarrotandamento,round-mode=places]{0.017453292}}\\
+		\end{tabular} 
+	\end{center}
 \section{Funzioni goniometriche}
 \label{sec:FunzioniGoniometriche}
 \begin{definizionet}{Circonferenza goniometrica}{}
@@ -694,7 +699,7 @@ Supponiamo di conoscere un valore di $\tan\alpha$
 \caption{Angoli associati}
 	\label{fig:angoliassociati}
 \end{figure}
-Sono angoli la cui somma\index{Angoli!Somma!$\ang{180}$} come gli angoli $\ang{180}$, $\alpha$, $\ang{180}-\alpha$ la figura corrispondente è la\nobs\vref{fig:AngoliAssociatisupplementari}
+Sono angoli la cui somma\index{Angoli!Somma!$\ang{180}$} è un angolo piatto.  Sono supplementari  gli angoli, $\alpha$, $\ang{180}-\alpha$ la figura corrispondente è la\nobs\vref{fig:AngoliAssociatisupplementari}
 Per questi angoli valgono le seguenti relazioni
 \begin{align*}
 \cos\alpha=&{}-\cos(\ang{180}-\alpha)\\
@@ -757,7 +762,7 @@ Per questi angoli valgono le seguenti relazioni
 	\caption{Angoli complementari}
 	\label{fig:angolicomplementari}
 \end{figure}
-Sono angoli la cui somma\index{Angoli!Somma!$\ang{90}$} è $\ang{90}$, $\alpha$ e $\ang{90}-\alpha$ la figura corrispondente è la\nobs\vref{fig:angolicomplementari1}
+Sono angoli la cui somma\index{Angoli!Somma!retto} è un angolo retto.  $\alpha$ e $\ang{90}-\alpha$ la figura corrispondente è la\nobs\vref{fig:angolicomplementari1}
 %\begin{figure} %[H]
 %	\centering
 %	\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angolicomplementari1}
@@ -799,7 +804,7 @@ Per questi angoli valgono le seguenti relazioni
 \cot\alpha=&{}+\tan(\ang{270}-\alpha)
 \end{align*}
 \subsection{Angoli la cui differenza è tre angoli retti}
-Sono angoli la cui differenza è $\ang{270}$, $\alpha$ e $\ang{270}+\alpha$ la figura corrispondente è la\nobs\vref{tab:angolicomplementari4}
+Sono angoli la cui differenza è di tre angoli retti. Come per esempio $\alpha$ e $\ang{270}+\alpha$ la figura corrispondente è la\nobs\vref{tab:angolicomplementari4}
 %\begin{figure} %[H]
 %	\centering
 %		\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angolicomplementari4}
@@ -853,13 +858,13 @@ La tabella\nobs\vref{tab:differnzediangoli} riassume i risultati precedenti.
 %	\caption{Seno e Coseno, somma o differenza di angoli}
 %	\label{Tab:sommadifferenzacosenoseno}
 %\end{table}
-\section{Equazioni goniometriche elementari}
+\chapter{Equazioni goniometriche elementari}
 \label{sec:EquazioniGoniometricheElementari}
 Le equazioni goniometriche elementari\index{Equazione!elementare!seno} sono equazioni del tipo
 \begin{align*}
 	\sin x&=m&\cos x&=n&\tan x&=q
 \end{align*}
-\subsection{Equazione elementare seno}
+\section{Equazione elementare seno}
 \begin{figure}
 	\begin{subfigure}[b]{.5\linewidth}
 		\centering
@@ -1036,7 +1041,7 @@ x&=\ang{100}+k\ang{360}
 x&=\dfrac{\ang{20}}{3}+k\ang{120}\\
 x&=\ang{100}+k\ang{360}
 	\end{align*}
-\subsection{Equazione elementare coseno}
+\section{Equazione elementare coseno}
 Il coseno di un angolo\index{Equazione!elementare!coseno} è come il seno, una funzione limitata. Il coseno  assume valori compresi tra meno uno ed uno $(1\leq\cos x\leq 1)$. Quindi l'equazione è impossibile per valori di $m$ esterni a tale intervallo. Abbiamo vari casi:
 \begin{description}
 	\item[$0<m<1$] Le soluzioni sono due come dalla\nobs\vref{fig:EquaElementareCoseno1} $x=\alpha+k\ang{360}$ e $x=-\alpha+k\ang{360}$
@@ -1127,7 +1132,7 @@ x&=\ang{80}+k\ang{180}\\
 x&=\ang{30}+k\ang{45}\\
 x&=\ang{80}+k\ang{180}
 	\end{align*}
-\subsection{Equazione elementare tangente}
+\section{Equazione elementare tangente}
 La tangente\index{Equazione!elementare!tangente} è una funzione non limitata che esiste per valori di $x\neq\ang{90}+k\ang{180}$ 
 \begin{figure}
 	\centering

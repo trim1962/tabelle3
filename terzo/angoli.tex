@@ -1,0 +1,168 @@
+% !TeX root = terzoMANUTENZIONE.tex
+
+\chapter{Angoli}
+\label{cha:angoli}
+\section{Angoli}
+\label{sec:gonioang}
+\begin{definizionet}{Angolo}{}
+	Un angolo\index{Angolo} è la parte di piano compreso fra due semirette dette lati. I lati hanno in comune l'origine chiamata vertice.
+\end{definizionet}
+
+Due semirette formano due angoli: uno convesso,\index{Angolo!convesso} l'altro concavo\index{Angolo!concavo} come nella\nobs\vref{fig:angconconvposoneg}. 
+\begin{figure} %[htbp]
+	\centering
+	\includestandalone[width=.6\textwidth]{terzo/funzgonioTikz/angoliconcaviconvessi}
+	\caption{Angoli concavi e convessi, positivi e negativi}\label{fig:angconconvposoneg}
+\end{figure}
+\begin{figure} %[htbp]
+	\centering
+	\includestandalone[width=0.9\textwidth]{terzo/funzgonioTikz/angolinotevoli}
+	\caption{Angoli notevoli}\label{fig:Angolorettoposneggonio}
+\end{figure}
+\begin{figure}
+	\includestandalone[width=\textwidth]{terzo/funzgonioTikz/mappe_concettuali_Angoli_1}
+	%\includestandalone[width=\textwidth]{terzo/funzgonioTikz/mappagomiometricaangolo}
+	\caption{Mappa goniometria l'angolo}\label{fig:MappaGonometria1}
+\end{figure}
+\begin{definizionet}{Angoli positivi e negativi}{}
+	Fissato un lato, l'angolo è positivo\index{Angolo!positivo} se per costruirlo ruotiamo l'altra semiretta in senso antiorario. Un angolo è negativo\index{Angolo!negativo} se ruoteremo l'altro lato in senso orario come nella\nobs\vref{fig:angconconvposoneg}. 
+\end{definizionet}
+\begin{definizionet}{Angolo giro}{}
+	Un angolo è giro\index{Angolo!giro} quando dopo la rotazione, le due semirette coincidono. 
+\end{definizionet}
+\begin{definizionet}{Angolo piatto}{}
+	Un angolo è piatto\index{Angolo!retto} quando i suoi lati sono sulla stessa retta.
+\end{definizionet}
+\begin{definizionet}{Angolo retto}{}
+	Un angolo è retto\index{Angolo!retto} quando è la metà di un angolo piatto. 
+\end{definizionet}
+\begin{definizionet}{Angolo acuto}{}
+	Un angolo è acuto\index{Angolo!acuto} se minore di un angolo retto.
+\end{definizionet}
+\begin{definizionet}{Angolo ottuso}{}
+	Un angolo è ottuso\index{Angolo!ottuso} se maggiore di un angolo retto.
+\end{definizionet}
+La\nobs\vref{fig:Angolorettoposneggonio} mostra i vari casi.
+\section{Misura dell'angolo}
+\label{sec:MisuraAngoloGonio}
+
+A ogni angolo viene associata una grandezza detta ampiezza. Nel SI, come unità di misura per l'angolo piano, viene definito il radiante. Oltre al radiante vi sono 
+altre unità di misura per l'ampiezza e sono il grado sessagesimale, il grado sessadecimale  e il grado Centesimale\footnote{In questo sistema di misura l'angolo giro viene suddiviso in quattrocento parti.}.  
+\subsection{Angolo sessagesimale}
+\begin{definizionet}{Grado sessagesimale}{}
+	Un grado\index{Grado!sessagesimale} è la trecentosessantesima parte in un angolo giro. Il grado si suddivide in minuti e secondi. Il minuto è la sessantesima parte di un grado. Il secondo è la sessantesima parte di un minuto. Il secondo è suddiviso in decimi e centesimi.
+\end{definizionet}
+Quindi
+\begin{align*}
+\ang{;1;}=&\dfrac{\ang{1}}{60}\\
+\ang{;;1}=&\dfrac{\ang{;1;}}{60}=\dfrac{\ang{1}}{3600}
+\end{align*}
+\begin{esempiot}{Angoli sessagesimali}{}\index{Grado!sessagesimale}
+	L'angolo \ang{45;30;20} ha l'ampiezza di \ang{45} gradi \ang{;30;} minuti o primi e \ang{;;20} secondi. L'angolo \ang{30;45;23,7} secondo ha l'ampiezza di \ang{30} gradi \ang{;45;} primi e \ang{;;23} secondi e $7$ decimi.
+\end{esempiot}
+Un angolo giro\index{Angolo!giro} ha un'ampiezza di \ang{360} gradi. L'angolo piatto\index{Angolo!piatto}, metà di un angolo giro, ha quindi, l'ampiezza di \ang{180} gradi. L'angolo retto\index{Angolo!retto} metà di una angolo piatto, ha un'ampiezza di \ang{90} gradi. Per convertire i gradi in primi si moltiplica i gradi  per $\num{60}$ per ottenere i secondi dai primi si moltiplica per  $\num{60}$ per ottenere i secondi dai gradi si moltiplicano i gradi per  $\num{3600}$. Per convertire i secondi in primi si divide per  $\num{60}$. Per convertire i primi in gradi si dividono i primi per  $\num{60}$. Per passare da seconfi a gradi si divide per  $\num{3600}$.
+\begin{figure} %[htbp]
+	\centering
+	\includestandalone[width=0.9\textwidth]{terzo/funzgonioTikz/gradiprimisecondiconversione}
+	\caption{Convertire gradi primi e secondi}\label{fig:Convertiregradiprimisecondi}
+\end{figure}
+\subsection{Angolo sessadecimale}
+\begin{definizionet}{Grado sessadecimale}{}\index{Grado!sessadecimale}
+	Un grado\index{Grado!sessadecimale} è la trecentosessantesima parte in un angolo giro. Non ha sottomultipli come il grado sessagesimale.
+\end{definizionet}
+\begin{esempiot}{Conversione}{}
+	Convertire in forma decimale un angolo di ampiezza pari a \ang{44;58;48} arrotondato alla \tlungarrotandamento
+\end{esempiot}
+Abbiamo un angolo di ampiezza pari a \ang{44;58;48} e vogliamo
+scriverlo in forma decimale\index{Grado!forma decimale}. Dato che $\ang{;1;}=\dfrac{\ang{1}}{60}$ e che $\ang{;;1}=\dfrac{\ang{;1;}}{60}=\dfrac{\ang{1}}{3600}$ avremo
+\begin{align*}
+\alpha=&\ang{44}+\left(\dfrac{58}{60}\right)^{\si{\degree} }+\left(\dfrac{48}{3600}\right)^{\si{\degree} }\\
+=&\ang{44}+\left(\dfrac{58\cdot 60+48}{3600}\right)^{\si{\degree}}\\
+=&\ang{44}+\left(\dfrac{3528}{3600}\right)^{\si{\degree}}\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{44,98}
+\end{align*}
+usando la calcolatrice
+
+\begin{center}
+	\begin{tabular}{ll}
+		\tasto{58}\tastoper\tasto{60}\tastouguale & 3480 \\ 
+		\tastoans\tastopiu\tasto{48}\tastouguale & 3528 \\
+		\tastoans\tastodiv\tasto{3600}\tastouguale & \num[round-precision=\lungarrotandamento,round-mode=places]{0.98} \\
+		\tastoans\tastopiu\tasto{44}\tastouguale&\num[round-precision=\lungarrotandamento,round-mode=places]{44.98} \\
+	\end{tabular}
+\end{center} 
+\begin{esempiot}{Convertire in forma sessagesimale}{}
+	Convertiamo $7,42^{\circ}$ in gradi minuti e secondi:
+\end{esempiot}
+\begin{align*}
+\alpha^{\si{\degree}}&=\ang{7,42}-\ang{7}=\ang{0.42}\\ 
+=&\ang{0.42}\cdot 60=\ang{;25.2;}\\
+=&\ang{;25.2;}-\ang{;25;}=\ang{;0.2;}\\
+=&\ang{;0.2;}\cdot 60=\ang{;;12}\\
+\end{align*}
+Quindi \[\alpha=\ang{7;25;12}\]
+usando la calcolatrice
+
+\begin{center}
+	\begin{tabular}{ll}
+		\tasto{7.42}\tastomeno\tasto{7}\tastouguale & \num{0.42} \\ 
+		\tastoans\tastoper\tasto{60}\tastouguale & \num{25.2} \\
+		\tasto{25.2}\tastomeno\tasto{25}\tastouguale & \num{0.2} \\ 
+		\tastoans\tastoper\tasto{60}\tastouguale & \num{12} \\
+	\end{tabular}
+\end{center} 
+\subsection{Radiante}
+\begin{definizionet}{Radiante}{}\index{Radiante}
+	Data una circonferenza di raggio $r$ e un angolo $\alpha$ con il vertice nel centro $C$ della circonferenza, come nella\nobs\vref{fig:radinatidefgonio}, se $l$ è la lunghezza dell'arco di circonferenza sotteso dall'angolo, diciamo radiante il rapporto \[\rho=\dfrac{l}{r} \]
+\end{definizionet}
+Dato che il radiante è uguale al rapporto fra due lunghezze è segue che è una grandezza adimensionale.
+\begin{figure}
+	\centering
+	\includestandalone[width=0.6\textwidth]{terzo/funzgonioTikz/radianti}
+	\caption{Radianti}
+	\label{fig:radinatidefgonio}
+\end{figure}
+Avremo quindi che un angolo ha l'ampiezza di un radiante\index{Radiante} se l'arco di circonferenza $l$ è uguale al raggio $r$.
+
+In un angolo giro\index{Angolo!giro} l'arco è lungo quanto la circonferenza. La sua misura in radianti è quindi:\[\rho=\dfrac{2\pi r}{r}=2\pi\]
+Un angolo piatto, meta di un giro, misura \[\rho=\pi\]\index{Angolo!piatto} e un angolo
+retto\index{Angolo!retto} misura: \[\rho=\dfrac{\pi}{2} \] 
+
+Per convertire da gradi sessagesimali a radianti\index{Grado!radiante!conversione} si procede in questo modo:
+\begin{align*}
+\dfrac{l}{2\pi r}&=\dfrac{\alpha}{\ang{360}}\\
+\dfrac{\rho}{2\pi}&=\dfrac{\alpha}{\ang{360}}\\
+\rho&=\dfrac{\alpha 2\pi}{\ang{360}}\\
+\rho&=\dfrac{\pi}{\ang{180}}\alpha
+\intertext{segue che per passare da radianti a gradi sessagesimali avremo}
+\alpha&=\dfrac{\ang{180}}{\pi}\rho
+\end{align*}
+Alcuni semplici esempi di conversione fra angoli e radianti
+\begin{esempiot}{Radianti in gradi}{}
+	Quanto corrisponde in gradi un radiante?
+\end{esempiot} 
+\begin{align*}
+\alpha=&\dfrac{180}{\pi}\cdot 1^{\si{\degree} }\\
+\approx&\ang[round-precision=\lungarrotandamento,round-mode=places]{57.29577951}\cdot\ang{1}\\
+\approx&\ang[round-precision=\lungarrotandamento,round-mode=places]{57.29577951}\\
+\end{align*}
+
+\begin{center}
+	\begin{tabular}{ll}
+		\tasto{180}\tastodiv\tastopgreco\tastoper\tasto{1}\tastouguale&
+		\tasto{\num[round-precision=\lungarrotandamento,round-mode=places]{57.29577951}}\\
+	\end{tabular} 
+\end{center}
+\begin{esempiot}{Gradi in radianti}{}
+	Quanto corrisponde in radianti un grado?
+\end{esempiot}
+\begin{align*}
+\rho=&\dfrac{\pi}{180}\cdot 1\\
+\approx&\ang[round-precision=\lungarrotandamento,round-mode=places]{0.017453292}\cdot 1\\
+\approx&\ang[round-precision=\lungarrotandamento,round-mode=places]{0.017453292}\\
+\end{align*}
+\begin{center}
+	\begin{tabular}{ll}
+		\tastopgreco\tastodiv\tasto{180}\tastoper\tasto{1}\tastouguale&
+		\tasto{\num[round-precision=\lungarrotandamento,round-mode=places]{0.017453292}}\\
+	\end{tabular} 
+\end{center}

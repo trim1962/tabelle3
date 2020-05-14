@@ -1,7 +1,7 @@
 % Tikz File 'mytikz.tex'
 \documentclass{standalone}
 %\input{../../Mod_base/grafica}
-\input{../Mod_base/grafica}
+\usepackage{grafica}
 \begin{document}
 \begin{tikzpicture}
 \pgfmathsetmacro{\moltiplicatore}{1};
@@ -22,7 +22,7 @@
 \tkzMarkAngle[size=1cm](C,B,A)
 \tkzLabelAngle[pos=1.5](C,B,A){$\beta$}
 \tkzMarkAngle[size=1cm](B,A,C)
-\tkzLabelAngle[pos=-1.5](B,A,C){$\alpha$}
+\tkzLabelAngle[pos=1.5](B,A,C){$\alpha$}
 \tkzLabelSegment[left](C,B){a}
 \tkzLabelSegment[below](C,A){b}
 \tkzLabelSegment[above](B,A){c}

@@ -1,0 +1,40 @@
+% Tikz File 'mytikz.tex'
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage{grafica}
+\usepackage{amsmath, amssymb}
+\usetikzlibrary{decorations.markings,arrows}
+
+\begin{document}
+\begin{tikzpicture}[>= {Stealth[scale=2.2,inset=0pt,angle'=20]}]  
+
+\tkzDefPoint(0,0){A}
+\tkzDefPoint(8,0){B}
+\tkzDefPoint(10,6){C}
+\tkzDefPoint(2,6){D}
+
+\tkzMarkAngle[size=1cm](B,A,D)
+\tkzLabelAngle[pos=1.5](B,A,D){$\alpha$}
+\tkzMarkAngle[size=1cm](D,C,B)
+\tkzLabelAngle[pos=1.5](D,C,B){$\alpha$}
+\tkzMarkAngle[size=1cm](C,B,A)
+\tkzLabelAngle[pos=1.5](C,B,A){$\beta$}
+\tkzMarkAngle[size=1cm](A,D,C)
+\tkzLabelAngle[pos=1.5](A,D,C){$\beta$}
+
+\tkzLabelSegment[left](A,D){$\vec{a}$}
+\tkzLabelSegment[below](A,B){$\vec{b}$}
+\tkzLabelSegment[left](A,C){$\vec{a} +\vec{b}$}
+\tkzMarkSegments[mark=|](A,D B,C)
+\tkzMarkSegments[mark=||](A,B D,C)
+\tkzDrawPoints(A,B,C,D)
+\tkzLabelPoints[right](C)
+\tkzLabelPoints[left](D)
+\tkzLabelPoints[right](B)
+\tkzLabelPoints[left](A)
+\tkzDrawSegment[->](A,B)
+\tkzDrawSegment[->](A,D)
+\tkzDrawSegment[->](A,C)
+\tkzDrawSegment(C,B)
+\tkzDrawSegment(C,D)
+\end{tikzpicture}
+\end{document}

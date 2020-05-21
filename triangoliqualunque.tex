@@ -13,11 +13,12 @@ c<&b+a\\
 	\caption{Teorema dei seni}
 	\label{fig:TeoremDeiSeni}
 \end{figure}
+\begin{teoremat}{Teorema dei seni}{}
 Per un triangolo qualunque\index{Teorema!seni} valgono le seguenti uguaglianze\[\dfrac{a}{\sin\alpha}=\dfrac{b}{\sin\beta}=\dfrac{c}{\sin\beta}=2R \]
+\end{teoremat}
+Quindi in un triangolo qualunque il rapporto fra il lato e il seno dell'angolo opposto è costante ed è uguale al diametro della circonferenza circoscritta. La figura\nobs\vref{fig:TeoremDeiSeni} mostra le relazioni.
 
-Quindi in un triangolo qualunque il rapporto fra il lato e il seno dell'angolo opposto è costante e uguale al diametro della circonferenza circoscritta. La figura\nobs\vref{fig:TeoremDeiSeni} mostra le relazioni.
-
-Possiamo riscrivere il teorema dei seni in questa maniera: 
+Possiamo ottenere da quanto scritto in precedenza: 
 \begin{align*}
 a=&b\dfrac{\sin\alpha}{\sin\beta}& a=&c\dfrac{\sin\alpha}{\sin\gamma}\\
 b=&a\dfrac{\sin\beta}{\sin\beta}& b=&c\dfrac{\sin\beta}{\sin\gamma}\\
@@ -36,13 +37,16 @@ o in questa
 	\caption{Teorema di Carnot}
 	\label{fig:TeoremDiCarnot_1}
 \end{figure}
-Una versione più generale del teorema di Pitagora è il teorema di Carnot\index{Teorema!Carnot}. Partendo dalla figura\nobs\vref{fig:TeoremDiCarnot_1} avremo queste relazioni.
-\begin{align*}
-a^2=&b^2+c^2-2bc\cos\alpha\\
-b^2=&a^2+c^2-2ac\cos\beta\\
-c^2=&a^2+b^2-2ab\cos\gamma
-\end{align*}
-Possiamo scrivere le precedenti equazioni isolando i coseni cioè:
+Una versione più generale del teorema di Pitagora è quello di Carnot\index{Teorema!Carnot}. Partendo dalla figura\nobs\vref{fig:TeoremDiCarnot_1} avremo queste relazioni.
+\begin{teoremat}{Teorema dei Carnot}{}
+	Per un triangolo qualunque\index{Teorema!Carnot} valgono le seguenti uguaglianze:
+	\begin{align*}
+	a^2=&b^2+c^2-2bc\cos\alpha\\
+	b^2=&a^2+c^2-2ac\cos\beta\\
+	c^2=&a^2+b^2-2ab\cos\gamma
+	\end{align*}
+\end{teoremat}
+Riscrivendo  le precedenti equazioni isolando i coseni otteniamo:
 \begin{align*}
 \cos\alpha=&\dfrac{b^2+c^2-a^2}{2bc}\\
 \cos\beta=&\dfrac{a^2+c^2-b^2}{2ac}\\
@@ -108,22 +112,19 @@ In questo caso supponiamo noti i lati $b$ e $c$ e l'angolo $\beta$ fra loro non 
 a=&b\dfrac{\sin\alpha}{\sin\beta}
 \end{align*}
 \subsection{Tre lati}
-In questo caso supponiamo noti i lati $a$ $b$ e $c$  come nella figura\nobs\vref{fig:risTriangQqualunque_4} avremo:
+In questo caso sono noti i lati $a$ $b$ e $c$  come nella figura\nobs\vref{fig:risTriangQqualunque_4} avremo:
 \begin{align*}
 \alpha=&\arccos(\dfrac{b^2+c^2-a^2}{2bc})\\
 \beta=&\arccos(\dfrac{a^2+c^2-b^2}{2ac})\\
 \gamma=&\arccos(\dfrac{a^2+b^2-c^2}{2ab})\\
 \end{align*}
 \section{Applicazioni teorema di Carnot}
-\includestandalone{trigonometria/Parasommavettori}
-
 \begin{figure}
 	\centering
 	\includestandalone[width=0.7\linewidth]{trigonometria/Parasommavettori}
 	\caption{Somma di vettori}
 	\label{fig:parasommavettori}
 \end{figure}
-
 \begin{teoremat}{Somme di vettori}{}
 	Dati due vettori $\vec{a}$ e $\vec{b}$ e se $\alpha$ è l'angolo fra essi compreso allora:
 	\begin{align*}

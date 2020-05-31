@@ -1,5 +1,13 @@
 \section{Triangoli qualunque}
-In un triangolo qualunque l'angolo maggiore non è necessariamente retto. La nomenclatura dei lati, spigoli ed angoli è analoga a quella di un triangolo rettangolo. Ricordiamo che  in un triangolo un lato è minore della somma degli altri due e che l'unione degli angoli interni è un angolo piatto. Abbiamo quindi:
+\begin{figure}
+	\centering
+	\includestandalone{trigonometria/trasformazioniformula}
+	\caption{Regole di trasformazione}
+	\label{fig:trasformazioniformula}
+\end{figure}
+In un triangolo qualunque l'angolo maggiore non è necessariamente retto. La nomenclatura dei lati, spigoli e degli angoli è analoga a quella usata con un triangolo rettangolo. 
+
+Ricordiamo che un lato è minore della somma degli altri due e che l'unione degli angoli interni è un angolo piatto. Abbiamo quindi:
  \begin{align*}
 a<&b+c\\
 b<&a+c\\
@@ -7,58 +15,59 @@ c<&b+a\\
 \alpha+\beta+\gamma=&\ang{180}\\
 \alpha+\beta+\gamma=&\frac{\pi}{2}\\
 \end{align*}
-\subsection{Teorema dei seni}
-\begin{figure}
-	\centering
-	\includestandalone{trigonometria/TeoSeni_1}
-	\caption{Teorema dei seni}
-	\label{fig:TeoremDeiSeni}
-\end{figure}
-\begin{teoremat}{Teorema dei seni}{}
-Per un triangolo qualunque\index{Teorema!seni} valgono le seguenti uguaglianze\[\dfrac{a}{\sin\alpha}=\dfrac{b}{\sin\beta}=\dfrac{c}{\sin\beta}=2R \]
-\end{teoremat}
-Quindi in un triangolo, il rapporto fra il lato e il seno dell'angolo opposto è costante ed questo è uguale al diametro della circonferenza circoscritta. Si può dire che il seno e l'angolo sono direttamente proporzionali. La figura\nobs\vref{fig:TeoremDeiSeni} mostra le relazioni.
-
-Possiamo ottenere da quanto scritto in precedenza: 
-\begin{align*}
-a=&b\dfrac{\sin\alpha}{\sin\beta}& a=&c\dfrac{\sin\alpha}{\sin\gamma}\\
-b=&a\dfrac{\sin\beta}{\sin\beta}& b=&c\dfrac{\sin\beta}{\sin\gamma}\\
-c=&a\dfrac{\sin\gamma}{\sin\alpha}& c=&b\dfrac{\sin\gamma}{\sin\beta}
-\end{align*}
-o in questa
-\begin{align*}
-\sin\alpha=&\dfrac{a}{b}\sin\beta&\sin\alpha=&\dfrac{a}{c}\sin\gamma\\
-\sin\beta=&\dfrac{b}{a}\sin\alpha&\sin\beta=&\dfrac{b}{c}\sin\gamma\\
-\sin\gamma=&\dfrac{c}{a}\sin\alpha&\sin\gamma=&\dfrac{c}{b}\sin\beta\\
-\end{align*}
-\subsection{Teorema di Carnot}
+La~\vref{fig:trasformazioniformula} mostra come ottenere le regole di sostituzione valide per le formule seguenti.
 \begin{figure}
 	\centering
 	\includestandalone{trigonometria/canot_1}
 	\caption{Teorema di Carnot}
 	\label{fig:TeoremDiCarnot_1}
 \end{figure}
+\subsection{Teorema dei seni}
+\begin{teoremat}{Teorema dei seni}{}
+Per un triangolo qualunque\index{Teorema!seni} valgono le seguenti uguaglianze\[\dfrac{a}{\sin\alpha}=\dfrac{b}{\sin\beta}=\dfrac{c}{\sin\beta}=2R \]
+\end{teoremat}
+In un triangolo, il rapporto fra un suo  lato e il seno dell'angolo opposto a questo è costante ed  è uguale al diametro della circonferenza circoscritta. Segue  che il seno e l'angolo sono direttamente proporzionali. La figura\nobs\vref{fig:TeoremDeiSeni} mostra le relazioni.
+
+Possiamo ottenere da quanto scritto in precedenza: 
+\begin{align*}
+a=&b\dfrac{\sin\alpha}{\sin\beta}& a=&c\dfrac{\sin\alpha}{\sin\gamma}\\
+b=&a\dfrac{\sin\beta}{\sin\alpha}& b=&c\dfrac{\sin\beta}{\sin\gamma}\\
+c=&a\dfrac{\sin\gamma}{\sin\alpha}& c=&b\dfrac{\sin\gamma}{\sin\beta}
+\end{align*}
+o queste
+\begin{align*}
+\sin\alpha=&\dfrac{a}{b}\sin\beta&\sin\alpha=&\dfrac{a}{c}\sin\gamma\\
+\sin\beta=&\dfrac{b}{a}\sin\alpha&\sin\beta=&\dfrac{b}{c}\sin\gamma\\
+\sin\gamma=&\dfrac{c}{a}\sin\alpha&\sin\gamma=&\dfrac{c}{b}\sin\beta\\
+\end{align*}
+\subsection{Teorema di Carnot}
 Una versione più generale del teorema di Pitagora è quello di Carnot\index{Teorema!Carnot}. Partendo dalla figura\nobs\vref{fig:TeoremDiCarnot_1} avremo queste relazioni.
-\begin{teoremat}{Teorema dei Carnot}{}
-	Per un triangolo qualunque\index{Teorema!Carnot} valgono le seguenti uguaglianze:
+\begin{teoremat}{Teorema di Carnot}{}
+	Per un triangolo qualunque\index{Teorema!Carnot} seguono le seguenti uguaglianze:
 	\begin{align*}
 	a^2=&b^2+c^2-2bc\cos\alpha\\
 	b^2=&a^2+c^2-2ac\cos\beta\\
 	c^2=&a^2+b^2-2ab\cos\gamma
 	\end{align*}
 \end{teoremat}
-Riscrivendo  le precedenti equazioni isolando i coseni otteniamo:
+Riscrivendo  le precedenti equazioni, isolando i coseni, si ottiene:
 \begin{align*}
 \cos\alpha=&\dfrac{b^2+c^2-a^2}{2bc}\\
 \cos\beta=&\dfrac{a^2+c^2-b^2}{2ac}\\
 \cos\gamma=&\dfrac{a^2+b^2-c^2}{2ab}\\
 \end{align*}
-queste soluzioni possono servire per definire gli angoli del triangolo cioè:
+queste relazioni ci  permettono di trovare gli angoli:
 \begin{align*}
 \alpha=&\arccos(\dfrac{b^2+c^2-a^2}{2bc})\\
 \beta=&\arccos(\dfrac{a^2+c^2-b^2}{2ac})\\
 \gamma=&\arccos(\dfrac{a^2+b^2-c^2}{2ab})\\
 \end{align*}
+\begin{figure}
+	\centering
+	\includestandalone{trigonometria/TeoSeni_1}
+	\caption{Teorema dei seni}
+	\label{fig:TeoremDeiSeni}
+\end{figure}
 \begin{figure}
 	\begin{subfigure}[b]{.5\linewidth}
 		\centering
@@ -81,7 +90,7 @@ queste soluzioni possono servire per definire gli angoli del triangolo cioè:
 	\begin{subfigure}[b]{.5\linewidth}
 		\centering
 		\includestandalone{trigonometria/risTriangQualunque_4}
-		\caption{Due lati l'angolo fra loro non compreso noti}
+		\caption{Tre lati noti}
 		\label{fig:risTriangQqualunque_4}
 	\end{subfigure}
 	\captionof{figure}{Risoluzione triangoli qualunque}
@@ -89,14 +98,31 @@ queste soluzioni possono servire per definire gli angoli del triangolo cioè:
 \end{figure}
 \section{Risoluzione di triangolo qualunque}
 \subsection{Un lato e due angoli}
-Se è noto il lato $c$ e gli angoli $\alpha$ e $\beta$ come nella figura\nobs\vref{fig:risTriangQqualunque_1} avremo:
+Se è noto il lato $c$ e gli angoli $\alpha$ e $\beta$, come nella figura\nobs\vref{fig:risTriangQqualunque_1} avremo:
 \begin{align*}
 \gamma=&\ang{180}-(\alpha+\beta)\\
 a=&c\dfrac{\sin\alpha}{\sin\gamma}\\
 b=&c\dfrac{\sin\beta}{\sin\gamma}\\
 \end{align*}
+\begin{esempiot}{Un lato e due angoli noti}{}
+	Trovare gli altri elementi di un triangolo sapendo che il lato $a=5$ e  gli angoli $\beta=\ang{30}$ $\alpha=\ang{68}$.
+\end{esempiot}
+Per prima cosa partiamo dagli angoli
+\begin{align*}
+\beta+\alpha=&\ang{50}+\ang{68}<\ang{180}\\
+\gamma=&\ang{180}-\ang{98}=\ang{82}
+\end{align*}
+Applicando il teorema dei seni
+\begin{align*}
+\dfrac{a}{\sin\alpha}=&\dfrac{b}{\sin\beta}\\
+\dfrac{5}{\sin 68}=&\dfrac{b}{\sin 30}\\
+b=&5\dfrac{\sin 30}{\sin 68}\approx\num[round-precision=\lungarrotandamento,round-mode=places]{2,696336857}\\
+\dfrac{a}{\sin\alpha}=&\dfrac{c}{\sin\gamma}\\
+\dfrac{5}{\sin 68}=&\dfrac{c}{\sin 82}\\
+c=&5\dfrac{\sin 82}{\sin 68}\approx\num[round-precision=\lungarrotandamento,round-mode=places]{5,340192584}\\
+\end{align*}
 \subsection{Due lati e l'angolo fra essi compreso} 
-In questo caso supponiamo noti i lati $b$ e $c$ e l'angolo $\alpha$ fra loro compreso, come nella figura\nobs\vref{fig:risTriangQqualunque_2} avremo:
+In questo caso supponiamo noti i lati $b$ e $c$ e l'angolo $\alpha$ fra loro compreso. Dalla figura\nobs\vref{fig:risTriangQqualunque_2} segue:
 \begin{align*}
 a=&\sqrt{b^2+c^2-2bc\cos\alpha}\\
 \beta=&\arccos(\dfrac{a^2+c^2-b^2}{2ac})\\
@@ -104,8 +130,31 @@ a=&\sqrt{b^2+c^2-2bc\cos\alpha}\\
 \intertext{verificando che}
 \alpha+&\beta+\gamma=\ang{180}
 \end{align*}
+\begin{esempiot}{Due lati e l'angolo fra esso compreso}{}
+	Trovare gli altri elementi di un triangolo sapendo che il lato $a=40$, $b=20$ e  $\gamma=\ang{50}$.
+\end{esempiot}
+Applicando il teorema di Carnot
+\begin{align*}
+c^2=&a^2+b^2-2ab\cos\gamma\\
+c^2=&20^2+40^2-2\cdot 20\cdot 40\cos 50\\
+&\approx\num[round-precision=\lungarrotandamento,round-mode=places]{971.5398245}\\
+c&\approx\num[round-precision=\lungarrotandamento,round-mode=places]{31.16953359}\\
+\cos\alpha\approx&\dfrac{b^2+c^2-a^2}{2bc}\\
+&\approx\dfrac{20^2+\num{31.1695}^2-40^2}{2\cdot 20\cdot\num{31.1695}}\\
+&\approx\num[round-precision=\lungarrotandamento,round-mode=places]{-0.183241846}\\
+\alpha=&\arccos(\num[round-precision=\lungarrotandamento,round-mode=places]{-0.183241846})\\
+&\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{100.5586455}\\
+\cos\beta\approx&\dfrac{a^2+c^2-b^2}{2ac}\\
+&\approx\dfrac{40^2+\num{31.1695}^2-20^2}{2\cdot 40\cdot\num{31.1695}}\\
+&\approx\num[round-precision=\lungarrotandamento,round-mode=places]{0.870858423}\\
+\beta=&\arccos(\num[round-precision=\lungarrotandamento,round-mode=places]{0.870858423})\\
+&\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{29.44145243}\\
+\alpha+\beta+\gamma&\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{100.5586455}+\ang[round-precision=\lungarrotandamento,round-mode=places]{29.44145243}+\ang{50}\\
+\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{180.0000979}\\
+\end{align*}
+Corretto.
 \subsection{Due lati e l'angolo apposto a quello compreso}
-In questo caso supponiamo noti i lati $b$ e $c$ e l'angolo $\beta$ fra loro non compreso, come nella figura\nobs\vref{fig:risTriangQqualunque_3} avremo:
+In questo caso supponiamo che sono noti i lati $b$ e $c$ e l'angolo $\beta$ fra loro non compreso, come nella figura\nobs\vref{fig:risTriangQqualunque_3} avremo:
 \begin{align*}
 \intertext{verificando le soluzioni}
 \gamma=&\arcsin(\dfrac{c}{b}{\sin\beta}) \\
@@ -127,7 +176,7 @@ In questo caso sono noti i lati $a$ $b$ e $c$  come nella figura\nobs\vref{fig:r
 	\label{fig:parasommavettori}
 \end{figure}
 \begin{teoremat}{Somme di vettori}{}
-	Dati due vettori $\vec{a}$ e $\vec{b}$ e se $\alpha$ è l'angolo fra essi compreso allora:
+	Dati due vettori $\vec{a}$ e $\vec{b}$, se $\alpha$ è l'angolo fra essi compreso allora:
 	\begin{align*}
 	\abs{\overrightarrow{a+b}}=&\sqrt{b^2+a^2+2ab\cos\alpha}\\
 	\abs{\overrightarrow{a-b}}=&a^2+b^2-2ab\cos\gamma

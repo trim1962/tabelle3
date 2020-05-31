@@ -1,0 +1,44 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{grafica}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows,calc,positioning,shapes.symbols,shapes.geometric,shapes.misc}
+\pagestyle{empty}
+\usepackage{siunitx}
+\begin{document}
+\begin{tikzpicture}[scale=1,vect/.style={->,shorten >=3pt,>=latex'}]
+%\tkzSetUpLine[color=blue!60]
+\begin{scope}[rotate=30]
+	\tkzDefPoint(2,3){C}
+	\begin{scope}[shift=(C)]
+		\tkzDefPoint(90:4){B}
+		\tkzDefPoint(30:4){A}
+	\end{scope}
+\end{scope}
+
+\tkzDrawSegments[vect](A,B)
+\tkzDrawSegments[vect](B,C)
+\tkzDrawSegments[vect](C,A)
+\tkzLabelPoint[above](B){$\beta$}
+\tkzLabelPoint[above](A){$\alpha$}
+\tkzLabelPoint[below](C){$\gamma$}
+\tkzDrawPoints(A,B,C)
+
+\begin{scope}[rotate=30]
+\tkzDefPoint(7,.1){D}
+\begin{scope}[shift=(D)]
+\tkzDefPoint(90:4){F}
+\tkzDefPoint(30:4){E}
+\end{scope}
+\end{scope}
+
+\tkzDrawSegments[vect](E,F)
+\tkzDrawSegments[vect](F,D)
+\tkzDrawSegments[vect](D,E)
+\tkzLabelPoint[above](F){$b$}
+\tkzLabelPoint[above](E){$a$}
+\tkzLabelPoint[below](D){$c$}
+\tkzDrawPoints(D,E,F)
+\end{tikzpicture}
+\end{document}

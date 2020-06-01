@@ -254,6 +254,39 @@ Risolviamo questo caso, conosciamo, come nella figura\nobs\vref{fig:risTriangRet
 \beta=&\ang{90}-\gamma&\gamma=&\ang{90}-\beta\\
 a=&\dfrac{c}{\sin\gamma}&a=&\dfrac{c}{\cos\beta}
 \end{align*}
+\begin{esempiot}{Cateti noti}{}
+I cateti sono $b=8$ e $c=4$ determinare gli elementi del triangolo.
+\end{esempiot}
+\begin{align*}
+	a=&\sqrt{8^2+4^2}\approx\num[round-precision=\lungarrotandamento,round-mode=places]{8.94427191}\\
+	\beta=&\arcsin\dfrac{b}{a}\\
+	&\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{63.43494882}\\
+	\gamma&\approx90-\ang[round-precision=\lungarrotandamento,round-mode=places]{63.43494882}\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{26.56505118}\\
+\end{align*}
+analogo risultato se si procedeva
+\begin{align*}
+a=&\sqrt{8^2+4^2}\approx\num[round-precision=\lungarrotandamento,round-mode=places]{8.94427191}\\
+\beta=&\arctan\dfrac{b}{c}\\
+&\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{63.43494882}\\
+\gamma&\approx90-\ang[round-precision=\lungarrotandamento,round-mode=places]{63.43494882}\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{26.56505118}\\
+\end{align*}
+\begin{cesempiot}{Cateti noti e arrotondamenti}{}
+	I cateti sono $b=8$ e $c=4$ determinare gli elementi del triangolo.
+\end{cesempiot}
+\begin{align*}
+a=&\sqrt{8^2+4^2}\approx\num[round-precision=2,round-mode=places]{8.94427191}\\
+\beta=&\arcsin\dfrac{b}{a}\\
+&\approx\ang[round-precision=2,round-mode=places]{63.48}\\
+\gamma&\approx90-\ang[round-precision=2,round-mode=places]{63.48}\approx\ang[round-precision=2,round-mode=places]{26.51}\\
+\end{align*}
+analogo risultato non si ottiene procedendo nel seguente modo
+\begin{align*}
+a=&\sqrt{8^2+4^2}\approx\num[round-precision=2,round-mode=places]{8.94427191}\\
+\beta=&\arctan\dfrac{b}{c}\\
+&\approx\ang[round-precision=2,round-mode=places]{63.43494882}\\
+\gamma&\approx90-\ang[round-precision=2,round-mode=places]{63.43494882}\approx\ang[round-precision=2,round-mode=places]{26.56505118}\\
+\end{align*}
+Questa divergenza è dovuta dal aver utilizzato, nel primo metodo, un arrotondamento alla seconda decimale per $a$
 \begin{esempiot}{Numeri complessi}{}
 Dato il numero complesso $z=4+8\uimm$, trovarne il modulo e l'angolo $\phi$
 \end{esempiot}

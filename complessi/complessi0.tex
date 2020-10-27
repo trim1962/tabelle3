@@ -20,7 +20,9 @@ ystyle={left=7pt},xstyle={below left=5pt}](A)
 ystyle={below left=7pt}](B)
 \tkzPointShowCoord[xlabel=$-a$,%
 xstyle={above=2pt}](C)
-\tkzDrawVectors(O,A O,B O,C) 
+\tkzDrawSegment(O,A)% O,B O,C) 
+\tkzDrawSegment(O,B)% O,C)
+\tkzDrawSegment(O,C)
 \tkzLabelSegment[above=3pt](O,A){$z$}
 \tkzLabelSegment[above=3pt](O,B){$\conj{z}$}
 \tkzLabelSegment[above=3pt](O,C){$-z$}

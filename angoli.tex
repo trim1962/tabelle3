@@ -64,9 +64,9 @@ Un angolo giro\index{Angolo!giro} ha un'ampiezza di \ang{360} gradi. L'angolo pi
 
 \subsection{Radiante}
 \begin{definizionet}{Radiante}{}\index{Radiante}
-	Data una circonferenza di raggio $r$ e un angolo $\alpha$ con il vertice nel centro $C$ della circonferenza, come nella\nobs\vref{fig:radinatidefgonio}, se $l$ è la lunghezza dell'arco di circonferenza sotteso dall'angolo, diciamo radiante il rapporto \[\rho=\dfrac{l}{r} \]
+	Data una circonferenza di raggio $r$ e un angolo $\alpha$ con il vertice nel centro $C$ della circonferenza, come nella\nobs\vref{fig:radinatidefgonio}, se $l$ è la lunghezza dell'arco di circonferenza sotteso dall'angolo, chiamiamo radiante il rapporto \[\rho=\dfrac{l}{r} \]
 \end{definizionet}
-Dato che il radiante è uguale al rapporto fra due lunghezze è segue che è una grandezza adimensionale.
+Dato che il radiante è il quoziente fra due lunghezze da ciò segue che è una grandezza adimensionale.
 \begin{figure}
 	\centering
 	\includestandalone[width=0.6\textwidth]{funzgonioTikz/radianti}
@@ -74,18 +74,59 @@ Dato che il radiante è uguale al rapporto fra due lunghezze è segue che è una
 	\label{fig:radinatidefgonio}
 \end{figure}
 Avremo quindi che un angolo ha l'ampiezza di un radiante\index{Radiante} se l'arco di circonferenza $l$ è uguale al raggio $r$.
-
 In un angolo giro\index{Angolo!giro} l'arco è lungo quanto la circonferenza. La sua misura in radianti è quindi:\[\rho=\dfrac{2\pi r}{r}=2\pi\]
 Un angolo piatto, meta di un giro, misura \[\rho=\pi\]\index{Angolo!piatto} e un angolo
 retto\index{Angolo!retto} misura: \[\rho=\dfrac{\pi}{2} \] 
 \section{Conversioni}
 \subsection{Angoli sessagesimali e sottomultipli}
- Per convertire i gradi in primi si moltiplica i gradi  per $\num{60}$ per ottenere i secondi dai primi si moltiplica per  $\num{60}$ per ottenere i secondi dai gradi si moltiplicano i gradi per  $\num{3600}$. Per convertire i secondi in primi si divide per  $\num{60}$. Per convertire i primi in gradi si dividono i primi per  $\num{60}$. Per passare da secondi a gradi si divide per  $\num{3600}$.
+La conversione fra i gradi e i suoi sottomultipli è ben illustrata dalla~\cref{fig:Convertiregradiprimisecondi}. 
+Quindi quando si scende si moltiplica il valore dato per \num{60} mentre se si sale si divide la misura per \num{60}.
 \begin{figure} %[htbp]
 	\centering
 	\includestandalone[width=0.9\textwidth]{funzgonioTikz/gradiprimisecondiconversione}
 	\caption{Convertire gradi primi e secondi}\label{fig:Convertiregradiprimisecondi}
 \end{figure}
+\begin{esempiot}{Conversione gradi, minuti e secondi}{}
+Se un angolo ha un'ampiezza di \ang{134} a quanti minuti corrisponde e a quanti secondi?
+\end{esempiot}
+Semplicemente 
+\begin{align*}
+	\intertext{i minuti}
+	\ang{134}\times 60=&\ang{;8040;}\\
+		\intertext{i secondi}
+	\ang{;8040;}\times  60=&\ang{;;482400}\\
+\end{align*}
+usando la calcolatrice
+\begin{center}
+	\begin{tabular}{ll}
+	\tasto{134}\tastoper\tasto{60}\tastouguale & \num{8040} \\ 
+	\tastoans\tastoper\tasto{60}\tastouguale & \num{482400} \\
+\end{tabular}
+\end{center}
+\begin{esempiot}{Conversione secondi, minuti e gradi}{}
+	Se un angolo ha un'ampiezza di \ang{;;11292} a quanti minuti corrisponde e a quanti gradi?
+\end{esempiot}
+\begin{align*}
+\intertext{Da secondi a minuti}
+\ang{;;11292}\div 60=&\num{188.2}
+\intertext{Quindi il \num{60} sta \num{188} volte nel \num{11292} }\\
+\intertext{quindi il resto è}
+\num{11292}-\num{60}\times\num{188}=&12\\
+\intertext{quindi}\\
+\ang{;;11292}=&\ang{;188;12}
+\end{align*}
+\begin{align*}
+\intertext{Da minuti a gradi}
+\ang{;188;}\div 60=&3.1\overline{3}
+\intertext{Quindi il \num{60} sta \num{3} volte nel \num{188} }
+\intertext{quindi il resto è}
+\num{188}-\num{60}\times\num{3}=&8\\
+\intertext{quindi}
+\ang{;188;}=&\ang{3;8;}
+\end{align*}
+Ricapitolando:
+\[\ang{;;11292}=\ang{3;8;12}\]
+\subsection{Da sessagesimale a sessa-decimale}
 \begin{esempiot}{Conversione}{}
 Convertire in forma decimale un angolo di ampiezza pari a \ang{44;58;48} arrotondato alla \tlungarrotandamento
 \end{esempiot}
